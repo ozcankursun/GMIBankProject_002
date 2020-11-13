@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="9.832">
-<testcase classname="DataBase Test" name="TC02_kullanici database baglantini kontrol eder" time="9.534">
-<system-out><![CDATA[Given kullanici veritabanina baglanir.......................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.46">
+<testcase classname="" name="TC_006 An account info" time="12.132">
+<system-out><![CDATA[Given Go to the sign in page................................................passed
+And Type username and password than click on sign in button.................passed
+And Click on My Operations dropdown menu....................................passed
+And Click on Manage Accounts................................................passed
+And Click an ID item to choose an account created on manage accounts........passed
+Then Verify Account.........................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

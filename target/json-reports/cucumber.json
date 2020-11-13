@@ -1,50 +1,110 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-05T14:24:35.070Z",
         "line": 3,
-        "name": "TC02_kullanici database baglantini kontrol eder",
+        "name": "US_015 Create a new account",
         "description": "",
-        "id": "database-test;tc02-kullanici-database-baglantini-kontrol-eder",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9628000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Go to the sign in page",
+            "match": {
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.go_to_the_sign_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 264000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Type username and password than click on sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.type_username_and_password_than_click_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 573000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on My Operations dropdown menu",
+            "match": {
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_My_Operations_dropdown_menu()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T21:59:15.325Z",
+        "line": 41,
+        "name": "TC_006 An account info",
+        "description": "",
+        "id": ";tc-006-an-account-info",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 9482000000,
+              "duration": 71000000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "kullanici veritabanina baglanir",
+            "line": 42,
+            "name": "Click on Manage Accounts",
             "match": {
-              "location": "gmibank.stepdefinitions.DBStepDefinitions.kullanici_veritabanina_baglanir()"
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_Manage_Accounts()"
             },
-            "keyword": "Given "
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1497000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Click an ID item to choose an account created on manage accounts",
+            "match": {
+              "location": "gmibank.stepdefinitions.US15_StepDefs.click_an_ID_item_to_choose_an_account_created_on_manage_accounts()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Verify Account",
+            "match": {
+              "location": "gmibank.stepdefinitions.US15_StepDefs.verify_Account()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@db"
+            "name": "@accountinfo"
           }
         ]
       }
     ],
-    "name": "DataBase Test",
+    "name": "",
     "description": "",
-    "id": "database-test",
+    "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/db.feature",
-    "tags": [
-      {
-        "name": "@db",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/createAccountDate.feature",
+    "tags": []
   }
 ]
