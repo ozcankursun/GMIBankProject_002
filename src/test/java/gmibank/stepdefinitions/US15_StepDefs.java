@@ -16,6 +16,7 @@ public class US15_StepDefs {
 
     @Then("Verify Account")
     public void verify_Account() {
+        System.out.println("Feature");
         String accountInf = createAccountPage.accountInformation.getText();
         Assert.assertTrue(accountInf.equals("Account"));
 
