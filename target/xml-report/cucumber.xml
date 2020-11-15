@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.46">
-<testcase classname="" name="TC_006 An account info" time="12.132">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.917">
+<testcase classname="US_014 Create Account" name="TC_06 User creates account successfully" time="11.581">
 <system-out><![CDATA[Given Go to the sign in page................................................passed
 And Type username and password than click on sign in button.................passed
 And Click on My Operations dropdown menu....................................passed
 And Click on Manage Accounts................................................passed
-And Click an ID item to choose an account created on manage accounts........passed
-Then Verify Account.........................................................passed
+And Click on +Create a new Account..........................................passed
+And Click on Descriptions text box and type some descriptions in the text box.passed
+And Click on Balance text box and Type a balance in the text box............passed
+And Select an account type as CHECKING, SAVING,CREDIT_CARD or INVESTING.....passed
+And Select an account status type from the Account Status Type dropdown and verify.passed
+And Click on the Create Date textbox and type the time of account creation..passed
+And Click on the Closed Date textbox and type the time later than the time of account creation.passed
+And Select an employee from the Employee dropdown and verify................passed
+Then Click save button......................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

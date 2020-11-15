@@ -1,20 +1,20 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "US_015 Create a new account",
+        "line": 4,
+        "name": "Create a new account",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 9628000000,
+              "duration": 9495000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "Go to the sign in page",
             "match": {
               "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.go_to_the_sign_in_page()"
@@ -23,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 264000000,
+              "duration": 279000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "Type username and password than click on sign in button",
             "match": {
               "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.type_username_and_password_than_click_on_sign_in_button()"
@@ -35,33 +35,22 @@
           },
           {
             "result": {
-              "duration": 573000000,
+              "duration": 495000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "Click on My Operations dropdown menu",
             "match": {
               "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_My_Operations_dropdown_menu()"
             },
             "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-12T21:59:15.325Z",
-        "line": 41,
-        "name": "TC_006 An account info",
-        "description": "",
-        "id": ";tc-006-an-account-info",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+          },
           {
             "result": {
-              "duration": 71000000,
+              "duration": 105000000,
               "status": "passed"
             },
-            "line": 42,
+            "line": 8,
             "name": "Click on Manage Accounts",
             "match": {
               "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_Manage_Accounts()"
@@ -70,41 +59,148 @@
           },
           {
             "result": {
-              "duration": 1497000000,
+              "duration": 108000000,
               "status": "passed"
             },
-            "line": 43,
-            "name": "Click an ID item to choose an account created on manage accounts",
+            "line": 9,
+            "name": "Click on +Create a new Account",
             "match": {
-              "location": "gmibank.stepdefinitions.US15_StepDefs.click_an_ID_item_to_choose_an_account_created_on_manage_accounts()"
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_Create_a_new_Account()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T15:03:11.241Z",
+        "line": 34,
+        "name": "TC_06 User creates account successfully",
+        "description": "",
+        "id": "us-014-create-account;tc-06-user-creates-account-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 110000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Click on Descriptions text box and type some descriptions in the text box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_Descriptions_text_box_and_type_some_descriptions_in_the_text_box()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 31000000,
+              "duration": 81000000,
               "status": "passed"
             },
-            "line": 44,
-            "name": "Verify Account",
+            "line": 36,
+            "name": "Click on Balance text box and Type a balance in the text box",
             "match": {
-              "location": "gmibank.stepdefinitions.US15_StepDefs.verify_Account()"
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_Balance_text_box_and_Type_a_balance_in_the_text_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 214000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Select an account type as CHECKING, SAVING,CREDIT_CARD or INVESTING",
+            "match": {
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.select_an_account_type_as_CHECKING_SAVING_CREDIT_CARD_or_INVESTING()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Select an account status type from the Account Status Type dropdown and verify",
+            "match": {
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.select_an_account_status_type_from_the_Account_Status_Type_dropdown_and_verify()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 154000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Click on the Create Date textbox and type the time of account creation",
+            "match": {
+              "location": "gmibank.stepdefinitions.US15_StepDefs.click_on_the_Create_Date_textbox_and_type_the_time_of_account_creation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 176000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Click on the Closed Date textbox and type the time later than the time of account creation",
+            "match": {
+              "location": "gmibank.stepdefinitions.US15_StepDefs.click_on_the_Closed_Date_textbox_and_type_the_time_later_than_the_time_of_account_creation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Select an employee from the Employee dropdown and verify",
+            "match": {
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.select_an_employee_from_the_Employee_dropdown_and_verify()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Click save button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_save_button()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@accountinfo"
+            "name": "@createaccount"
+          },
+          {
+            "name": "@accountsave"
           }
         ]
       }
     ],
-    "name": "",
+    "name": "US_014 Create Account",
     "description": "",
-    "id": "",
+    "id": "us-014-create-account",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/createAccountDate.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/createAccount.feature",
+    "tags": [
+      {
+        "name": "@createaccount",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
