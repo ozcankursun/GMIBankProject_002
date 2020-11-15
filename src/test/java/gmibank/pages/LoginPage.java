@@ -19,6 +19,9 @@ public class LoginPage {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement signInButton;
 
+    @FindBy(xpath="//div[@class='alert alert-danger fade show']")
+    public WebElement alertFailMessage;
+
     @FindBy(xpath = "//span[.='Cancel']")
     public WebElement cancelButton;
 
@@ -28,8 +31,8 @@ public class LoginPage {
     @FindBy(id="login-item")
     public WebElement signInText;
 
-    @FindBy(xpath = "//div[@role='dialog']")
-    public String signInPage;
+    @FindBy(id= "login-title")
+    public WebElement signInPage;
 
     @FindBy(xpath = "(//div[@class='alert alert-warning fade show'])[1]")
     public WebElement resetPasswordOption;
