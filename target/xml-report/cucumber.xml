@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="57.341">
 <testcase classname="US_002 Create Regester" name="TC_01 User should not see the success message when don't typing address" time="37.242">
 <system-out><![CDATA[Given Go to registration page "http://gmibank.com/account/register".........passed
@@ -43,6 +44,23 @@ And Type valid password "Sami.23"...........................................pass
 And Type valid  password confirmation "Sami.23".............................passed
 And Click register button...................................................passed
 Then Verify the message "Your Last Name is required"........................passed
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.917">
+<testcase classname="US_014 Create Account" name="TC_06 User creates account successfully" time="11.581">
+<system-out><![CDATA[Given Go to the sign in page................................................passed
+And Type username and password than click on sign in button.................passed
+And Click on My Operations dropdown menu....................................passed
+And Click on Manage Accounts................................................passed
+And Click on +Create a new Account..........................................passed
+And Click on Descriptions text box and type some descriptions in the text box.passed
+And Click on Balance text box and Type a balance in the text box............passed
+And Select an account type as CHECKING, SAVING,CREDIT_CARD or INVESTING.....passed
+And Select an account status type from the Account Status Type dropdown and verify.passed
+And Click on the Create Date textbox and type the time of account creation..passed
+And Click on the Closed Date textbox and type the time later than the time of account creation.passed
+And Select an employee from the Employee dropdown and verify................passed
+Then Click save button......................................................passed
+>>>>>>> master
 ]]></system-out>
 </testcase>
 </testsuite>

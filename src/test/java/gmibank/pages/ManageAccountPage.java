@@ -14,6 +14,9 @@ public class ManageAccountPage {
     }
 
 
+    @FindBy (xpath = "//a[@id='jh-create-entity']")
+    public WebElement createAccountButton;
+
     @FindBy (xpath = "//input[@name='description']")
     public WebElement descriptionTextBox;
 
