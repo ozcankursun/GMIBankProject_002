@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/loginValidAccess.feature");
 formatter.feature({
@@ -13,10 +14,16 @@ formatter.feature({
   "name": "US_014 Create Account",
 >>>>>>> master
 >>>>>>> master
+=======
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/editAccountDateUS_0012.feature");
+formatter.feature({
+  "name": "US_012_An Edit Customer data",
+>>>>>>> Stashed changes
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       "name": "@US_04LoginValid"
 =======
@@ -26,10 +33,14 @@ formatter.feature({
       "name": "@createaccount"
 >>>>>>> master
 >>>>>>> master
+=======
+      "name": "@editcustomerdate"
+>>>>>>> Stashed changes
     }
   ]
 });
 formatter.background({
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   "name": "access login page",
 =======
@@ -39,6 +50,9 @@ formatter.background({
   "name": "Create a new account",
 >>>>>>> master
 >>>>>>> master
+=======
+  "name": "US_012_An Employee can edit Customer data",
+>>>>>>> Stashed changes
   "description": "",
   "keyword": "Background"
 });
@@ -110,7 +124,7 @@ formatter.match({
   "location": "gmibank.stepdefinitions.RegistrationStepDefinitions.do_not_enter_anything_in_address_box()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Type valid mobile phone number \"444-666-7777\"",
@@ -121,7 +135,7 @@ formatter.match({
 >>>>>>> master
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
 <<<<<<< HEAD
@@ -212,23 +226,84 @@ formatter.match({
   "location": "gmibank.stepdefinitions.RegistrationStepDefinitions.go_to_registration_page(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "Click on Manage Accounts",
+  "name": "click on Edit button",
   "keyword": "And "
 });
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.scenario({
+  "name": "TC_0010 The Edit portal can allow user to create or update the user \"Email address\"",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@editcustomerdate"
+    },
+    {
+      "name": "@editemailaddress"
+    }
+  ]
+});
+formatter.step({
+  "name": "Customer\u0027s \"Email address\" is updated",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Click on Save button",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User should see “translation-not-found[gmiBankBackendApp.tPCustomer.updated]\" massege",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.background({
+  "name": "US_012_An Employee can edit Customer data",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "Go to the sign in page",
+  "keyword": "Given "
+});
 formatter.match({
-  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_Manage_Accounts()"
+  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.go_to_the_sign_in_page()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "Click on +Create a new Account",
+  "name": "Type username and password than click on sign in button",
   "keyword": "And "
 });
 formatter.match({
+  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.type_username_and_password_than_click_on_sign_in_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Click on My Operations dropdown menu",
+  "keyword": "And "
+});
+formatter.match({
+<<<<<<< Updated upstream
   "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_Create_a_new_Account()"
 >>>>>>> master
 });
@@ -245,10 +320,28 @@ formatter.scenario({
   "name": "TC_06 User creates account successfully",
 >>>>>>> master
 >>>>>>> master
+=======
+  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_My_Operations_dropdown_menu()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "click on Edit button",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.scenario({
+  "name": "TC_0011 The Edit portal can allow user to create or update the user \"Mobil Phone Number\"",
+>>>>>>> Stashed changes
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       "name": "@US_04LoginValid"
     },
@@ -267,10 +360,17 @@ formatter.scenario({
       "name": "@accountsave"
 >>>>>>> master
 >>>>>>> master
+=======
+      "name": "@editcustomerdate"
+    },
+    {
+      "name": "@editmobiltelnumber"
+>>>>>>> Stashed changes
     }
   ]
 });
 formatter.step({
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   "name": "user enters username and password",
   "keyword": "And "
@@ -579,66 +679,143 @@ formatter.match({
   "location": "gmibank.stepdefinitions.RegistrationStepDefinitions.type_valid_password_confirmation(java.lang.String)"
 =======
   "name": "Click on Descriptions text box and type some descriptions in the text box",
+=======
+  "name": "Customer\u0027s \"Mobil Phone Number\" is updated",
+>>>>>>> Stashed changes
   "keyword": "And "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_Descriptions_text_box_and_type_some_descriptions_in_the_text_box()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "Click on Balance text box and Type a balance in the text box",
+  "name": "Click on Save button",
   "keyword": "And "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_Balance_text_box_and_Type_a_balance_in_the_text_box()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "Select an account type as CHECKING, SAVING,CREDIT_CARD or INVESTING",
-  "keyword": "And "
+  "name": "User should see “translation-not-found[gmiBankBackendApp.tPCustomer.updated]\" massege",
+  "keyword": "Then "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.select_an_account_type_as_CHECKING_SAVING_CREDIT_CARD_or_INVESTING()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
+});
+formatter.background({
+  "name": "US_012_An Employee can edit Customer data",
+  "description": "",
+  "keyword": "Background"
 });
 formatter.step({
-  "name": "Select an account status type from the Account Status Type dropdown and verify",
-  "keyword": "And "
+  "name": "Go to the sign in page",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.select_an_account_status_type_from_the_Account_Status_Type_dropdown_and_verify()"
+  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.go_to_the_sign_in_page()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "Click on the Create Date textbox and type the time of account creation",
+  "name": "Type username and password than click on sign in button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US15_StepDefs.click_on_the_Create_Date_textbox_and_type_the_time_of_account_creation()"
+  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.type_username_and_password_than_click_on_sign_in_button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "Click on the Closed Date textbox and type the time later than the time of account creation",
+  "name": "Click on My Operations dropdown menu",
   "keyword": "And "
 });
 formatter.match({
+  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_My_Operations_dropdown_menu()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "click on Edit button",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.scenario({
+  "name": "TC_0012 The Edit portal can allow user to create or update the user \"Phone Number\"",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@editcustomerdate"
+    },
+    {
+      "name": "@editphonenumber"
+    }
+  ]
+});
+formatter.step({
+  "name": "Customer\u0027s \"Phone Number\" is updated",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Click on Save button",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User should see “translation-not-found[gmiBankBackendApp.tPCustomer.updated]\" massege",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.background({
+  "name": "US_012_An Employee can edit Customer data",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "Go to the sign in page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.go_to_the_sign_in_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Type username and password than click on sign in button",
+  "keyword": "And "
+});
+formatter.match({
+<<<<<<< Updated upstream
   "location": "gmibank.stepdefinitions.US15_StepDefs.click_on_the_Closed_Date_textbox_and_type_the_time_later_than_the_time_of_account_creation()"
 >>>>>>> master
+=======
+  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.type_username_and_password_than_click_on_sign_in_button()"
+>>>>>>> Stashed changes
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   "name": "Click register button",
   "keyword": "And "
@@ -652,11 +829,19 @@ formatter.match({
 formatter.match({
   "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.select_an_employee_from_the_Employee_dropdown_and_verify()"
 >>>>>>> master
+=======
+  "name": "Click on My Operations dropdown menu",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_My_Operations_dropdown_menu()"
+>>>>>>> Stashed changes
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   "name": "Verify the message \"Your Last Name is required\"",
   "keyword": "Then "
@@ -671,8 +856,54 @@ formatter.match({
   "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_save_button()"
 >>>>>>> master
 >>>>>>> master
+=======
+  "name": "click on Edit button",
+  "keyword": "And "
 });
+formatter.match({});
 formatter.result({
+  "status": "undefined"
+});
+formatter.scenario({
+  "name": "TC_0013 The Edit portal can allow user to create or update the user \"Address\"",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@editcustomerdate"
+    },
+    {
+      "name": "@editaddress"
+    }
+  ]
+});
+formatter.step({
+  "name": "Customer\u0027s \"Address\" is updated",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Click on Save button",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User should see “translation-not-found[gmiBankBackendApp.tPCustomer.updated]\" massege",
+  "keyword": "Then "
+>>>>>>> Stashed changes
+});
+formatter.match({});
+formatter.result({
+<<<<<<< Updated upstream
   "status": "skipped"
+=======
+  "status": "undefined"
+>>>>>>> Stashed changes
 });
 });

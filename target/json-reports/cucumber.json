@@ -12,15 +12,20 @@
         "name": "Create a new register",
 =======
         "line": 4,
+<<<<<<< Updated upstream
         "name": "Create a new account",
 >>>>>>> master
 >>>>>>> master
+=======
+        "name": "US_012_An Employee can edit Customer data",
+>>>>>>> Stashed changes
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
               "duration": 16075000000,
               "status": "passed"
@@ -39,6 +44,10 @@
 =======
               "duration": 9495000000,
               "status": "passed"
+=======
+              "duration": 3000000,
+              "status": "skipped"
+>>>>>>> Stashed changes
             },
             "line": 5,
             "name": "Go to the sign in page",
@@ -443,6 +452,7 @@
           },
           {
             "result": {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
               "duration": 1000000,
               "status": "skipped"
@@ -461,6 +471,10 @@
 =======
               "duration": 279000000,
               "status": "passed"
+=======
+              "duration": 1000000,
+              "status": "skipped"
+>>>>>>> Stashed changes
             },
             "line": 6,
             "name": "Type username and password than click on sign in button",
@@ -478,6 +492,7 @@
           },
           {
             "result": {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
               "duration": 225000000,
               "status": "passed"
@@ -487,6 +502,10 @@
 =======
               "duration": 495000000,
               "status": "passed"
+=======
+              "duration": 1000000,
+              "status": "skipped"
+>>>>>>> Stashed changes
             },
             "line": 7,
             "name": "Click on My Operations dropdown menu",
@@ -499,6 +518,7 @@
           },
           {
             "result": {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
               "duration": 913000000,
               "status": "passed"
@@ -554,30 +574,122 @@
 =======
               "duration": 105000000,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> Stashed changes
             },
             "line": 8,
-            "name": "Click on Manage Accounts",
+            "name": "click on Edit button",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T19:52:19.460Z",
+        "line": 11,
+        "name": "TC_0010 The Edit portal can allow user to create or update the user \"Email address\"",
+        "description": "",
+        "id": "us-012-an-edit-customer-data;tc-0010-the-edit-portal-can-allow-user-to-create-or-update-the-user-\"email-address\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "Customer\u0027s \"Email address\" is updated",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "Click on Save button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "User should see “translation-not-found[gmiBankBackendApp.tPCustomer.updated]\" massege",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@editcustomerdate"
+          },
+          {
+            "name": "@editemailaddress"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "US_012_An Employee can edit Customer data",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Go to the sign in page",
             "match": {
-              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_Manage_Accounts()"
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.go_to_the_sign_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Type username and password than click on sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.type_username_and_password_than_click_on_sign_in_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 108000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
-            "line": 9,
-            "name": "Click on +Create a new Account",
+            "line": 7,
+            "name": "Click on My Operations dropdown menu",
             "match": {
-              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_Create_a_new_Account()"
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_My_Operations_dropdown_menu()"
             },
             "keyword": "And "
+<<<<<<< Updated upstream
 >>>>>>> master
+=======
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "click on Edit button",
+            "match": {},
+            "keyword": "And "
+>>>>>>> Stashed changes
           }
         ]
       },
       {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         "start_timestamp": "2020-11-15T22:52:01.930Z",
         "line": 33,
@@ -592,11 +704,19 @@
         "id": "us-014-create-account;tc-06-user-creates-account-successfully",
 >>>>>>> master
 >>>>>>> master
+=======
+        "start_timestamp": "2020-11-15T19:52:19.666Z",
+        "line": 17,
+        "name": "TC_0011 The Edit portal can allow user to create or update the user \"Mobil Phone Number\"",
+        "description": "",
+        "id": "us-012-an-edit-customer-data;tc-0011-the-edit-portal-can-allow-user-to-create-or-update-the-user-\"mobil-phone-number\"",
+>>>>>>> Stashed changes
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
               "duration": 3000000,
               "status": "skipped"
@@ -761,41 +881,94 @@
 =======
               "duration": 110000000,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> Stashed changes
             },
-            "line": 35,
-            "name": "Click on Descriptions text box and type some descriptions in the text box",
+            "line": 18,
+            "name": "Customer\u0027s \"Mobil Phone Number\" is updated",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "Click on Save button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "User should see “translation-not-found[gmiBankBackendApp.tPCustomer.updated]\" massege",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@editcustomerdate"
+          },
+          {
+            "name": "@editmobiltelnumber"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "US_012_An Employee can edit Customer data",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Go to the sign in page",
             "match": {
-              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_Descriptions_text_box_and_type_some_descriptions_in_the_text_box()"
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.go_to_the_sign_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Type username and password than click on sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.type_username_and_password_than_click_on_sign_in_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 81000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
-            "line": 36,
-            "name": "Click on Balance text box and Type a balance in the text box",
+            "line": 7,
+            "name": "Click on My Operations dropdown menu",
             "match": {
-              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_Balance_text_box_and_Type_a_balance_in_the_text_box()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 214000000,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "Select an account type as CHECKING, SAVING,CREDIT_CARD or INVESTING",
-            "match": {
+<<<<<<< Updated upstream
               "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.select_an_account_type_as_CHECKING_SAVING_CREDIT_CARD_or_INVESTING()"
 >>>>>>> master
+=======
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_My_Operations_dropdown_menu()"
+>>>>>>> Stashed changes
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
               "status": "skipped"
             },
@@ -865,11 +1038,47 @@
             "match": {
               "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.select_an_account_status_type_from_the_Account_Status_Type_dropdown_and_verify()"
 >>>>>>> master
+=======
+              "status": "undefined"
             },
+            "line": 8,
+            "name": "click on Edit button",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T19:52:19.691Z",
+        "line": 23,
+        "name": "TC_0012 The Edit portal can allow user to create or update the user \"Phone Number\"",
+        "description": "",
+        "id": "us-012-an-edit-customer-data;tc-0012-the-edit-portal-can-allow-user-to-create-or-update-the-user-\"phone-number\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "Customer\u0027s \"Phone Number\" is updated",
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+              "status": "undefined"
+>>>>>>> Stashed changes
+            },
+            "line": 25,
+            "name": "Click on Save button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
               "duration": 180000000,
               "status": "passed"
@@ -881,18 +1090,53 @@
 =======
               "duration": 154000000,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> Stashed changes
             },
-            "line": 39,
-            "name": "Click on the Create Date textbox and type the time of account creation",
+            "line": 26,
+            "name": "User should see “translation-not-found[gmiBankBackendApp.tPCustomer.updated]\" massege",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@editcustomerdate"
+          },
+          {
+            "name": "@editphonenumber"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "US_012_An Employee can edit Customer data",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Go to the sign in page",
             "match": {
+<<<<<<< Updated upstream
               "location": "gmibank.stepdefinitions.US15_StepDefs.click_on_the_Create_Date_textbox_and_type_the_time_of_account_creation()"
 >>>>>>> master
 >>>>>>> master
+=======
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.go_to_the_sign_in_page()"
+>>>>>>> Stashed changes
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
               "status": "skipped"
             },
@@ -941,43 +1185,90 @@
 =======
               "duration": 176000000,
               "status": "passed"
+=======
+              "duration": 1000000,
+              "status": "skipped"
+>>>>>>> Stashed changes
             },
-            "line": 40,
-            "name": "Click on the Closed Date textbox and type the time later than the time of account creation",
+            "line": 6,
+            "name": "Type username and password than click on sign in button",
             "match": {
-              "location": "gmibank.stepdefinitions.US15_StepDefs.click_on_the_Closed_Date_textbox_and_type_the_time_later_than_the_time_of_account_creation()"
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.type_username_and_password_than_click_on_sign_in_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 113000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
-            "line": 41,
-            "name": "Select an employee from the Employee dropdown and verify",
+            "line": 7,
+            "name": "Click on My Operations dropdown menu",
             "match": {
-              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.select_an_employee_from_the_Employee_dropdown_and_verify()"
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_My_Operations_dropdown_menu()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 70000000,
-              "status": "passed"
+              "status": "undefined"
             },
+<<<<<<< Updated upstream
             "line": 42,
             "name": "Click save button",
             "match": {
               "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_save_button()"
 >>>>>>> master
 >>>>>>> master
+=======
+            "line": 8,
+            "name": "click on Edit button",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T19:52:19.717Z",
+        "line": 29,
+        "name": "TC_0013 The Edit portal can allow user to create or update the user \"Address\"",
+        "description": "",
+        "id": "us-012-an-edit-customer-data;tc-0013-the-edit-portal-can-allow-user-to-create-or-update-the-user-\"address\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
             },
+            "line": 30,
+            "name": "Customer\u0027s \"Address\" is updated",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "Click on Save button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+>>>>>>> Stashed changes
+            },
+            "line": 32,
+            "name": "User should see “translation-not-found[gmiBankBackendApp.tPCustomer.updated]\" massege",
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
             "name": "@US_04LoginValid"
           },
@@ -996,10 +1287,17 @@
             "name": "@accountsave"
 >>>>>>> master
 >>>>>>> master
+=======
+            "name": "@editcustomerdate"
+          },
+          {
+            "name": "@editaddress"
+>>>>>>> Stashed changes
           }
         ]
       }
     ],
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     "name": "US_04 Login page feature",
     "description": "",
@@ -1021,15 +1319,22 @@
         "name": "@createregistration",
 =======
     "name": "US_014 Create Account",
+=======
+    "name": "US_012_An Edit Customer data",
+>>>>>>> Stashed changes
     "description": "",
-    "id": "us-014-create-account",
+    "id": "us-012-an-edit-customer-data",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/createAccount.feature",
+    "uri": "file:src/test/resources/features/editAccountDateUS_0012.feature",
     "tags": [
       {
+<<<<<<< Updated upstream
         "name": "@createaccount",
 >>>>>>> master
 >>>>>>> master
+=======
+        "name": "@editcustomerdate",
+>>>>>>> Stashed changes
         "type": "Tag",
         "location": {
           "line": 1,
