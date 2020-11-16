@@ -29,3 +29,16 @@ Feature: US_014 Create Account
   @employee
   Scenario: TC_05 User selects an employee
     Then Select an employee from the Employee dropdown and verify
+
+    @accountsave
+  Scenario: TC_06 User creates account successfully
+      And Click on Descriptions text box and type some descriptions in the text box
+      And Click on Balance text box and Type a balance in the text box
+      And Select an account type as CHECKING, SAVING,CREDIT_CARD or INVESTING
+      And Select an account status type from the Account Status Type dropdown and verify
+      And Click on the Create Date textbox and type the time of account creation
+      And Click on the Closed Date textbox and type the time later than the time of account creation
+      And Select an employee from the Employee dropdown and verify
+      Then Click save button
+
+
