@@ -1,4 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="57.341">
+<testcase classname="US_002 Create Regester" name="TC_01 User should not see the success message when don't typing address" time="37.242">
+<system-out><![CDATA[Given Go to registration page "http://gmibank.com/account/register".........passed
+And Type a valid SSN "876-62-9758"..........................................passed
+And Type firstname "Sami"...................................................passed
+And Type  lastname "Kacmaz".................................................passed
+And Do not enter anything in address box....................................passed
+And Type valid mobile phone number "444-666-7777"...........................passed
+And Type username "Samibulur"...............................................passed
+And Type  email "sami@gmail.com"............................................passed
+And Type valid password "Sami.25"...........................................passed
+And Type valid  password confirmation "Sami.25".............................passed
+And Click register button...................................................passed
+Then Verify the user register is not success................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US_002 Create Regester" name="TC_02 User should not see the success message when don't typing mobile phone number" time="9.911">
+<system-out><![CDATA[Given Go to registration page "http://gmibank.com/account/register".........passed
+And Type a valid SSN "876-62-9754"..........................................passed
+And Type firstname "Sami Can"...............................................passed
+And Type  lastname "Kacmaz".................................................passed
+And Type address "Amsterdam/Hollanda".......................................passed
+And Do not enter anything in  mobile phone number text box..................passed
+And Type  username "Samiyolcu"..............................................passed
+And Type email "samican@gmail.com"..........................................passed
+And Type valid password "Sami.2525".........................................passed
+And Type valid  password confirmation "Sami.2525"...........................passed
+And Click register button...................................................passed
+Then Verify the user register is not success................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US_002 Create Regester" name="TC_03 User should see the red box when don't typing last name" time="9.202">
+<system-out><![CDATA[Given Go to registration page "http://gmibank.com/account/register".........passed
+And Type a valid SSN "876-62-9755"..........................................passed
+And Type firstname "Sami Eren"..............................................passed
+And Do not enter anything in  last name text box............................passed
+And Type address "Rotterdam-Netherland".....................................passed
+And Type mobile phone number "444-666-7777".................................passed
+And Type  username "Samizaman"..............................................passed
+And Type email "samican@gmail.com"..........................................passed
+And Type valid password "Sami.23"...........................................passed
+And Type valid  password confirmation "Sami.23".............................passed
+And Click register button...................................................passed
+Then Verify the message "Your Last Name is required"........................passed
+=======
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.917">
 <testcase classname="US_014 Create Account" name="TC_06 User creates account successfully" time="11.581">
 <system-out><![CDATA[Given Go to the sign in page................................................passed
@@ -14,6 +60,7 @@ And Click on the Create Date textbox and type the time of account creation..pass
 And Click on the Closed Date textbox and type the time later than the time of account creation.passed
 And Select an employee from the Employee dropdown and verify................passed
 Then Click save button......................................................passed
+>>>>>>> master
 ]]></system-out>
 </testcase>
 </testsuite>
