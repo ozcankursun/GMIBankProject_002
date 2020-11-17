@@ -38,11 +38,16 @@ public class RegistrationPage {
 
     @FindBy(id = "register-submit")
     public WebElement button;
-    //<div class="Toastify__toast-body"><span><strong>Registration saved!</strong> Please check your email for confirmation.</span></div>@FindBy(partialLinkText = "Registration saved!")
+
    @FindBy(xpath = "//div[.='Registration saved!']")
     public WebElement successverify;
-   //<div class="Toastify__toast-body">translation-not-found[error.ssnexists]</div>
+
     @FindBy(css = ".Toastify__toast-body")
     public WebElement errorverify;
+
+    @FindBy(xpath = "//div[.='Your SSN is invalid']")
+    public WebElement invalidSSNmessage;
+
+
 
 }

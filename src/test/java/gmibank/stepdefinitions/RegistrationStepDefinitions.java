@@ -9,10 +9,16 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.junit.rules.ExpectedException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
  public class RegistrationStepDefinitions {
 
@@ -72,14 +78,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
     @Given("Click register button")
     public void click_register_button() {
-    registrationPage.button.click();
+
+       registrationPage.button.click();
     }
 
     @Then("Verify the user register is not success")
     public void verify_the_user_register_is_not_success() {
     WebDriverWait wait=new WebDriverWait(Driver.getDriver(),10);
-    boolean verify=wait.until(ExpectedConditions.textToBe(By.cssSelector(".Toastify__toast-body"),"translation-not-found[error.ssnexists]"));
-    Assert.assertTrue(verify);
+    WebElement verify=wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".Toastify__toast-body")));
+    Assert.assertEquals("translation-not-found[error.ssnexists]",verify.getText());
     }
 
     @Given("Type address {string}")
@@ -125,4 +132,42 @@ import org.openqa.selenium.support.ui.WebDriverWait;
        boolean content=verify.contains("Your Last Name is required");
         Assert.assertTrue(content);
     }
-}
+    @Given("Type any of the punctuation marks except {string} between the numbers in SSN {string}")
+    public void type_any_of_the_punctuation_marks_except_between_the_numbers_in_SSN(String string, String string2) {
+     registrationPage.SSN.sendKeys(string,string2);
+    }
+
+    @Then("Verify the red box which has alert {string}")
+    public void verify_the_red_box_which_has_alert(String string) {
+       /*WebDriverWait wait=new WebDriverWait(Driver.getDriver(),10);
+       WebElement invalidSSN=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='invalid-feedback']")));
+       boolean message=invalidSSN.isDisplayed();
+       Assert.assertTrue(message);
+        */
+       Wait<WebDriver> wait = new FluentWait<WebDriver>(Driver.getDriver())
+               .withTimeout(30, TimeUnit.SECONDS)
+               .pollingEvery(5, TimeUnit.SECONDS)
+               .ignoring(Exception.class);
+       WebElement invalid=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='invalid-feedback']")));
+       boolean message=invalid.isDisplayed();
+       Assert.assertTrue(message);
+
+    }
+
+    @Given("Enter  any of the punctuation marks except {string} between the numbers in mobile phone number text box {string}")
+    public void enter_any_of_the_punctuation_marks_except_between_the_numbers_in_mobile_phone_number_text_box(String string, String string2) {
+    registrationPage.phone.sendKeys(string,string2);
+    }
+
+
+    @And("Enter an email id without -@- mark {string}")
+    public void enterAnEmailIdWithoutMark(String arg0) {
+    registrationPage.email.sendKeys(arg0);
+    }
+
+
+    @And("Enter an email id which extension is  -.c- after -@- mark {string}")
+    public void enterAnEmailIdWhichExtensionIsCAfterMark(String arg0) {
+   registrationPage.email.sendKeys(arg0);
+    }
+ }
