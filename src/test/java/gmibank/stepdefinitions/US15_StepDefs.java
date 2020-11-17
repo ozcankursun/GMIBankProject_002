@@ -110,6 +110,8 @@ public class US15_StepDefs {
     public void verify_Account() {
         String accountInf = manageAccountPage.accountInformation.getText();
         Assert.assertTrue(accountInf.equals("Account"));
+
+        //Hello !!
     }
 
 
