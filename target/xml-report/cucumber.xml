@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="27.205">
 <testcase classname="US_002 Create Regester" name="TC_01 User should not see the success message when don't typing address" time="26.139">
 <failure message="expected:&lt;[translation-not-found[error.ssnexists]]&gt; but was:&lt;[Registration saved! Please check your email for confirmation.]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given Go to registration page "http://gmibank.com/account/register".........passed
@@ -22,4 +23,281 @@ org.junit.ComparisonFailure: expected:<[translation-not-found[error.ssnexists]]]
 	at ✽.Verify the user register is not success(file:///C:/Users/LENOVO/IdeaProjects/GMIBankProject_002/GMIBankProject_002/src/test/resources/features/registration.feature:18)
 ]]></failure>
 </testcase>
+=======
+<testsuite errors="0" failures="5" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="32" time="380.568">
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="There should be a valid SSN respecting the &quot;-&quot; where necessary, it should be 9 digits long" time="45.686">
+        <system-out><![CDATA[Given Go to gmibank.com home page us01......................................passed
+And Click to User Account menu and Click to Register........................passed
+And Enter the SSN "111-11-1111" with valid credential.......................passed
+And Click on first name box.................................................passed
+Then There should be a valid SSN respecting.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="There should be a valid SSN respecting the &quot;-&quot; where necessary, it should be 9 digits long 2" time="15.255">
+        <system-out><![CDATA[Given Go to gmibank.com home page us01......................................passed
+And Click to User Account menu and Click to Register........................passed
+And Enter the SSN "111-11-9999" with valid credential.......................passed
+And Click on first name box.................................................passed
+Then There should be a valid SSN respecting.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="There should be a valid SSN respecting the &quot;-&quot; where necessary, it should be 9 digits long 3" time="15.431">
+        <system-out><![CDATA[Given Go to gmibank.com home page us01......................................passed
+And Click to User Account menu and Click to Register........................passed
+And Enter the SSN "111-99-9999" with valid credential.......................passed
+And Click on first name box.................................................passed
+Then There should be a valid SSN respecting.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="There should be a valid SSN respecting the &quot;-&quot; where necessary, it should be 9 digits long 4" time="5.5">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given Go to gmibank.com home page us01......................................passed
+And Click to User Account menu and Click to Register........................passed
+And Enter the SSN "999-99-9999" with valid credential.......................passed
+And Click on first name box.................................................passed
+Then There should be a valid SSN respecting.................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_SSN_respecting(US01_UserRegistrationStepDef.java:47)
+	at ✽.There should be a valid SSN respecting(file:///C:/Users/ca/IdeaProjects/GMIBankProject_002/src/test/resources/features/us01_user_register.feature:10)
+]]></failure>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="There should be a valid SSN respecting the &quot;-&quot; where necessary, it should be 9 digits long 5" time="5.162">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given Go to gmibank.com home page us01......................................passed
+And Click to User Account menu and Click to Register........................passed
+And Enter the SSN "999-99-1111" with valid credential.......................passed
+And Click on first name box.................................................passed
+Then There should be a valid SSN respecting.................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_SSN_respecting(US01_UserRegistrationStepDef.java:47)
+	at ✽.There should be a valid SSN respecting(file:///C:/Users/ca/IdeaProjects/GMIBankProject_002/src/test/resources/features/us01_user_register.feature:10)
+]]></failure>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="There should be a valid SSN respecting the &quot;-&quot; where necessary, it should be 9 digits long 6" time="5.997">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given Go to gmibank.com home page us01......................................passed
+And Click to User Account menu and Click to Register........................passed
+And Enter the SSN "999-11-1111" with valid credential.......................passed
+And Click on first name box.................................................passed
+Then There should be a valid SSN respecting.................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_SSN_respecting(US01_UserRegistrationStepDef.java:47)
+	at ✽.There should be a valid SSN respecting(file:///C:/Users/ca/IdeaProjects/GMIBankProject_002/src/test/resources/features/us01_user_register.feature:10)
+]]></failure>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="There should be a valid SSN respecting the &quot;-&quot; where necessary, it should be 9 digits long 7" time="15.075">
+        <system-out><![CDATA[Given Go to gmibank.com home page us01......................................passed
+And Click to User Account menu and Click to Register........................passed
+And Enter the SSN "456-25-1634" with valid credential.......................passed
+And Click on first name box.................................................passed
+Then There should be a valid SSN respecting.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="There should be a valid name that contains chars and cannot be blank" time="10.951">
+        <system-out><![CDATA[And Enter the name "A" with valid credential................................passed
+And click on last name box..................................................passed
+Then There should be a valid name respecting................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="There should be a valid name that contains chars and cannot be blank 2" time="11.794">
+        <system-out><![CDATA[And Enter the name "AbcdefghijklmnoqprstuvwyzAbcdefghijklmnoqprstuvwyz" with valid credential.passed
+And click on last name box..................................................passed
+Then There should be a valid name respecting................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="There should be a valid name that contains chars and cannot be blank 3" time="10.913">
+        <system-out><![CDATA[And Enter the name "John" with valid credential.............................passed
+And click on last name box..................................................passed
+Then There should be a valid name respecting................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="There should be a valid last name that contains chars and cannot be blank" time="11.936">
+        <system-out><![CDATA[And Enter the last name "AbcdefghijklmnoqprstuvwyzAbcdefghijklmnoqprstuvwyz" with valid credential.passed
+And click on Address box....................................................passed
+Then There should be a valid last name respecting...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="There should be a valid last name that contains chars and cannot be blank 2" time="10.937">
+        <system-out><![CDATA[And Enter the last name "A" with valid credential...........................passed
+And click on Address box....................................................passed
+Then There should be a valid last name respecting...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="There should be a valid last name that contains chars and cannot be blank 3" time="10.719">
+        <system-out><![CDATA[And Enter the last name "Smith" with valid credential.......................passed
+And click on Address box....................................................passed
+Then There should be a valid last name respecting...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="We can provide chars and digits to describe a valid address along with zip code" time="0.147">
+        <failure message="Keys to send should be a not null CharSequence" type="java.lang.IllegalArgumentException"><![CDATA[And Enter the Address.......................................................failed
+And click on mobile phone number box........................................skipped
+Then There should be a valid address respecting.............................skipped
+
+StackTrace:
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)
+	at gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_Address(US01_UserRegistrationStepDef.java:102)
+	at ✽.Enter the Address(file:///C:/Users/ca/IdeaProjects/GMIBankProject_002/src/test/resources/features/us01_user_register.feature:46)
+]]></failure>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="User should provide 10 digit-long mobilephone number as a required field respecting the &quot;-&quot;" time="11.461">
+        <system-out><![CDATA[And Enter the GSM "000-111-1111" with valid credential......................passed
+And click on username box...................................................passed
+Then There should be a valid mobile phone number respecting.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="User should provide 10 digit-long mobilephone number as a required field respecting the &quot;-&quot; 2" time="10.988">
+        <system-out><![CDATA[And Enter the GSM "111-000-0000" with valid credential......................passed
+And click on username box...................................................passed
+Then There should be a valid mobile phone number respecting.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="User should provide 10 digit-long mobilephone number as a required field respecting the &quot;-&quot; 3" time="10.939">
+        <system-out><![CDATA[And Enter the GSM "999-999-9999" with valid credential......................passed
+And click on username box...................................................passed
+Then There should be a valid mobile phone number respecting.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="User should provide 10 digit-long mobilephone number as a required field respecting the &quot;-&quot; 4" time="10.882">
+        <system-out><![CDATA[And Enter the GSM "000-000-0000" with valid credential......................passed
+And click on username box...................................................passed
+Then There should be a valid mobile phone number respecting.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="User should provide 10 digit-long mobilephone number as a required field respecting the &quot;-&quot; 5" time="11.056">
+        <system-out><![CDATA[And Enter the GSM "999-000-1111" with valid credential......................passed
+And click on username box...................................................passed
+Then There should be a valid mobile phone number respecting.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="User should provide 10 digit-long mobilephone number as a required field respecting the &quot;-&quot; 6" time="12.67">
+        <system-out><![CDATA[And Enter the GSM "000-999-1111" with valid credential......................passed
+And click on username box...................................................passed
+Then There should be a valid mobile phone number respecting.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="User should provide 10 digit-long mobilephone number as a required field respecting the &quot;-&quot; 7" time="11.139">
+        <system-out><![CDATA[And Enter the GSM "567-891-1234" with valid credential......................passed
+And click on username box...................................................passed
+Then There should be a valid mobile phone number respecting.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="User cannot use just digits for username, but can use any chars and digits along with them and of any length" time="10.898">
+        <system-out><![CDATA[And Enter the valid username "g" with valid credentail......................passed
+And click on email box......................................................passed
+Then There should be a valid username respecting............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="User cannot use just digits for username, but can use any chars and digits along with them and of any length 2" time="10.767">
+        <system-out><![CDATA[And Enter the valid username "a1" with valid credentail.....................passed
+And click on email box......................................................passed
+Then There should be a valid username respecting............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="User cannot use just digits for username, but can use any chars and digits along with them and of any length 3" time="10.963">
+        <system-out><![CDATA[And Enter the valid username "globaluseruser" with valid credentail.........passed
+And click on email box......................................................passed
+Then There should be a valid username respecting............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="User cannot use just digits for username, but can use any chars and digits along with them and of any length 4" time="12.193">
+        <system-out><![CDATA[And Enter the valid username "globaluser0101" with valid credentail.........passed
+And click on email box......................................................passed
+Then There should be a valid username respecting............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="We should provide a valid email format that contains &quot;@&quot;, &quot;.com&quot; extensions" time="11.626">
+        <system-out><![CDATA[And Enter the e-mail "a@gmail.com" with valid credential....................passed
+And click on new password box...............................................passed
+Then There should be a valid email respecting...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="We should provide a valid email format that contains &quot;@&quot;, &quot;.com&quot; extensions 2" time="11.046">
+        <system-out><![CDATA[And Enter the e-mail "a@b.com" with valid credential........................passed
+And click on new password box...............................................passed
+Then There should be a valid email respecting...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="We should provide a valid email format that contains &quot;@&quot;, &quot;.com&quot; extensions 3" time="11.173">
+        <system-out><![CDATA[And Enter the e-mail "globaluser010101@gmail.com" with valid credential.....passed
+And click on new password box...............................................passed
+Then There should be a valid email respecting...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="Password is required to be at least 4 characters" time="11.171">
+        <system-out><![CDATA[And Enter the new "1111" with valid credential..............................passed
+And click on new password confirmation box..................................passed
+Then There should be a valid password respecting............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="Password is required to be at least 4 characters 2" time="11.596">
+        <system-out><![CDATA[And Enter the new "1234@!.Abc ;." with valid credential.....................passed
+And click on new password confirmation box..................................passed
+Then There should be a valid password respecting............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="Password confirmation entry should be same with password" time="11.193">
+        <system-out><![CDATA[And Enter the same password with valid credential "1234@!.Abc ;."...........passed
+And click on new password box02.............................................passed
+Then entry should be same with password.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="System should allow any user to register with valid credentials validating the success message" time="10.351">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class='Toastify__toast Toastify__toast--success toastify-toast']&quot;}&#10;  (Session info: chrome=86.0.4240.198)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-K5I9J0D', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ca\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:53758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: b33855641a473d68673bd59b94ba1ae0&#10;*** Element info: {Using=xpath, value=//div[@class='Toastify__toast Toastify__toast--success toastify-toast']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[And Click to Register button................................................passed
+Then There should be Succes message.........................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='Toastify__toast Toastify__toast--success toastify-toast']"}
+  (Session info: chrome=86.0.4240.198)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K5I9J0D', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ca\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:53758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b33855641a473d68673bd59b94ba1ae0
+*** Element info: {Using=xpath, value=//div[@class='Toastify__toast Toastify__toast--success toastify-toast']}
+	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
+	at gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_Succes_message(US01_UserRegistrationStepDef.java:233)
+	at ✽.There should be Succes message.(file:///C:/Users/ca/IdeaProjects/GMIBankProject_002/src/test/resources/features/us01_user_register.feature:110)
+]]></failure>
+    </testcase>
+>>>>>>> master
 </testsuite>
