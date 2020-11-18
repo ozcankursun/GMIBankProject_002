@@ -111,7 +111,6 @@ public class US15_StepDefs {
         String accountInf = manageAccountPage.accountInformation.getText();
         Assert.assertTrue(accountInf.equals("Account"));
 
-        //Hello !!
     }
 
 
