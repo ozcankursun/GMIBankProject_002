@@ -10,7 +10,11 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features",
         glue = "gmibank/stepdefinitions",
-        tags = "@createregistration",
+<<<<<<< HEAD
+        tags = "@address",
+=======
+        tags = "@US01",
+>>>>>>> master
         dryRun = false
 )
 
