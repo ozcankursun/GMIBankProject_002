@@ -6,6 +6,7 @@
 [1112/180209.347:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [1112/211214.805:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [1112/212806.510:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+<<<<<<< HEAD
 [1115/012927.450:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulam?yor. (0x3)
 [1115/013237.635:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulam?yor. (0x3)
 [1115/013547.884:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulam?yor. (0x3)
@@ -29,3 +30,6 @@
 [1115/233002.083:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulam?yor. (0x3)
 [1115/234401.045:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulam?yor. (0x3)
 [1115/235939.429:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulam?yor. (0x3)
+=======
+[1118/013225.632:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulamýyor. (0x3)
+>>>>>>> master
