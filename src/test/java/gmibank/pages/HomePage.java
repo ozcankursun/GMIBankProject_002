@@ -19,13 +19,6 @@ public class HomePage {
     @FindBy (xpath = "//span[.='Manage Customers']")
     public WebElement manageCustomer;
 
-    @FindBy(xpath = "(//a[@aria-haspopup='true'])[2]")
-    public WebElement userDropdown;
-    @FindBy(xpath = "(//a[@class='dropdown-item'])[4]")
-    public WebElement dropdownPasswordtext;
-
-
-
 
 
 
