@@ -13,6 +13,9 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 21856000000,
+=======
               "duration": 32131857100,
               "status": "passed"
             },
@@ -38,6 +41,7 @@
           {
             "result": {
               "duration": 1241233400,
+>>>>>>> master
               "status": "passed"
             },
             "line": 8,
@@ -173,9 +177,15 @@
         ]
       },
       {
+<<<<<<< HEAD
+        "start_timestamp": "2020-11-17T00:58:25.823Z",
+        "line": 7,
+        "name": "TC_01 User should not see the success message when don\u0027t typing address",
+=======
         "start_timestamp": "2020-11-17T22:23:19.755Z",
         "line": 16,
         "name": "There should be a valid SSN respecting the \"-\" where necessary, it should be 9 digits long",
+>>>>>>> master
         "description": "",
         "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;there-should-be-a-valid-ssn-respecting-the-\"-\"-where-necessary--it-should-be-9-digits-long;test-data-for-ssn;4",
         "type": "scenario",
@@ -183,6 +193,18 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 345000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Type a valid SSN \"876-63-9772\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"876-63-9772\"",
+                  "offset": 17
+=======
               "duration": 3780677600,
               "status": "passed"
             },
@@ -302,6 +324,7 @@
                 {
                   "val": "\"999-99-9999\"",
                   "offset": 14
+>>>>>>> master
                 }
               ],
               "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_SSN_with_valid_credential(java.lang.String)"
@@ -310,7 +333,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 281000000,
+=======
               "duration": 620619200,
+>>>>>>> master
               "status": "passed"
             },
             "line": 9,
@@ -408,6 +435,9 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 254000000,
+=======
               "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertFalse(Assert.java:65)\r\n\tat org.junit.Assert.assertFalse(Assert.java:75)\r\n\tat gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_SSN_respecting(US01_UserRegistrationStepDef.java:47)\r\n\tat ✽.There should be a valid SSN respecting(file:///C:/Users/ca/IdeaProjects/GMIBankProject_002/src/test/resources/features/us01_user_register.feature:10)\r\n",
               "duration": 245844600,
               "status": "failed"
@@ -1339,6 +1369,7 @@
           {
             "result": {
               "duration": 2170661200,
+>>>>>>> master
               "status": "passed"
             },
             "line": 52,
@@ -1356,7 +1387,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 192000000,
+=======
               "duration": 394757700,
+>>>>>>> master
               "status": "passed"
             },
             "line": 53,
@@ -1368,7 +1403,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 378000000,
+=======
               "duration": 10095486900,
+>>>>>>> master
               "status": "passed"
             },
             "line": 54,
@@ -1399,7 +1438,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 288000000,
+=======
               "duration": 654601300,
+>>>>>>> master
               "status": "passed"
             },
             "line": 52,
@@ -1417,7 +1460,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 394000000,
+=======
               "duration": 398757500,
+>>>>>>> master
               "status": "passed"
             },
             "line": 53,
@@ -1429,7 +1476,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 393000000,
+=======
               "duration": 10073611200,
+>>>>>>> master
               "status": "passed"
             },
             "line": 54,
@@ -1460,7 +1511,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 250000000,
+=======
               "duration": 442722000,
+>>>>>>> master
               "status": "passed"
             },
             "line": 67,
@@ -1478,7 +1533,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 168000000,
+=======
               "duration": 397832100,
+>>>>>>> master
               "status": "passed"
             },
             "line": 68,
@@ -1490,8 +1549,14 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[translation-not-found[error.ssnexists]]\u003e but was:\u003c[Registration saved! Please check your email for confirmation.]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat gmibank.stepdefinitions.RegistrationStepDefinitions.verify_the_user_register_is_not_success(RegistrationStepDefinitions.java:92)\r\n\tat ✽.Verify the user register is not success(file:///C:/Users/LENOVO/IdeaProjects/GMIBankProject_002/GMIBankProject_002/src/test/resources/features/registration.feature:18)\r\n",
+              "duration": 1041000000,
+              "status": "failed"
+=======
               "duration": 10031851500,
               "status": "passed"
+>>>>>>> master
             },
             "line": 69,
             "name": "There should be a valid username respecting",
@@ -1509,6 +1574,8 @@
             "name": "@US01TC06"
           }
         ]
+<<<<<<< HEAD
+=======
       },
       {
         "start_timestamp": "2020-11-17T22:26:45.259Z",
@@ -2102,6 +2169,7 @@
             "name": "@US01TC10"
           }
         ]
+>>>>>>> master
       }
     ],
     "name": "System should allow any user to register with valid credentials validating the success message",

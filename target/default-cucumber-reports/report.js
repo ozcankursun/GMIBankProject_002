@@ -1185,7 +1185,11 @@ formatter.scenario({
   ]
 });
 formatter.step({
+<<<<<<< HEAD
+  "name": "Type a valid SSN \"876-63-9772\"",
+=======
   "name": "Enter the GSM \"999-000-1111\" with valid credential",
+>>>>>>> master
   "keyword": "And "
 });
 formatter.match({
@@ -1395,6 +1399,9 @@ formatter.match({
   "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_username_respecting()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[translation-not-found[error.ssnexists]]\u003e but was:\u003c[Registration saved! Please check your email for confirmation.]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat gmibank.stepdefinitions.RegistrationStepDefinitions.verify_the_user_register_is_not_success(RegistrationStepDefinitions.java:92)\r\n\tat ✽.Verify the user register is not success(file:///C:/Users/LENOVO/IdeaProjects/GMIBankProject_002/GMIBankProject_002/src/test/resources/features/registration.feature:18)\r\n",
+=======
   "status": "passed"
 });
 formatter.scenario({
@@ -1909,6 +1916,7 @@ formatter.match({
 });
 formatter.result({
   "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027Toastify__toast Toastify__toast--success toastify-toast\u0027]\"}\n  (Session info: chrome\u003d86.0.4240.198)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-K5I9J0D\u0027, ip: \u0027192.168.1.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\ca\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:53758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: b33855641a473d68673bd59b94ba1ae0\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027Toastify__toast Toastify__toast--success toastify-toast\u0027]}\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)\r\n\tat gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_Succes_message(US01_UserRegistrationStepDef.java:233)\r\n\tat ✽.There should be Succes message.(file:///C:/Users/ca/IdeaProjects/GMIBankProject_002/src/test/resources/features/us01_user_register.feature:110)\r\n",
+>>>>>>> master
   "status": "failed"
 });
 });

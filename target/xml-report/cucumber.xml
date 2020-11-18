@@ -1,4 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="27.205">
+<testcase classname="US_002 Create Regester" name="TC_01 User should not see the success message when don't typing address" time="26.139">
+<failure message="expected:&lt;[translation-not-found[error.ssnexists]]&gt; but was:&lt;[Registration saved! Please check your email for confirmation.]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given Go to registration page "http://gmibank.com/account/register".........passed
+And Type a valid SSN "876-63-9772"..........................................passed
+And Type firstname "Sami"...................................................passed
+And Type  lastname "Kacmaz".................................................passed
+And Do not enter anything in address box....................................passed
+And Type valid mobile phone number "444-666-7777"...........................passed
+And Type username "Samibulur"...............................................passed
+And Type  email "sami@gmail.com"............................................passed
+And Type valid password "Sami.25"...........................................passed
+And Type valid  password confirmation "Sami.25".............................passed
+And Click register button...................................................passed
+Then Verify the user register is not success................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[translation-not-found[error.ssnexists]]]]><![CDATA[> but was:<[Registration saved! Please check your email for confirmation.]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at gmibank.stepdefinitions.RegistrationStepDefinitions.verify_the_user_register_is_not_success(RegistrationStepDefinitions.java:92)
+	at ✽.Verify the user register is not success(file:///C:/Users/LENOVO/IdeaProjects/GMIBankProject_002/GMIBankProject_002/src/test/resources/features/registration.feature:18)
+]]></failure>
+</testcase>
+=======
 <testsuite errors="0" failures="5" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="32" time="380.568">
     <testcase classname="System should allow any user to register with valid credentials validating the success message" name="There should be a valid SSN respecting the &quot;-&quot; where necessary, it should be 9 digits long" time="45.686">
         <system-out><![CDATA[Given Go to gmibank.com home page us01......................................passed
@@ -274,4 +299,5 @@ Session ID: b33855641a473d68673bd59b94ba1ae0
 	at ✽.There should be Succes message.(file:///C:/Users/ca/IdeaProjects/GMIBankProject_002/src/test/resources/features/us01_user_register.feature:110)
 ]]></failure>
     </testcase>
+>>>>>>> master
 </testsuite>
