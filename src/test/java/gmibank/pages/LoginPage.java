@@ -46,6 +46,14 @@ public class LoginPage {
     @FindBy(id = "register-title")
     public WebElement registerTitle;
 
+//    @FindBy(xpath = "//input[@name='username']")
+//    public WebElement username_employee;
+//
+//    @FindBy(xpath = "//input[@id='password']")
+//    public WebElement password_employee;
+
+
+
 
 
 
