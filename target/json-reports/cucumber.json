@@ -1,110 +1,2123 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "US_015 Create a new account",
+        "start_timestamp": "2020-11-17T22:22:18.280Z",
+        "line": 14,
+        "name": "There should be a valid SSN respecting the \"-\" where necessary, it should be 9 digits long",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;there-should-be-a-valid-ssn-respecting-the-\"-\"-where-necessary--it-should-be-9-digits-long;test-data-for-ssn;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 9628000000,
+              "duration": 32131857100,
               "status": "passed"
             },
-            "line": 4,
-            "name": "Go to the sign in page",
+            "line": 6,
+            "name": "Go to gmibank.com home page us01",
             "match": {
-              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.go_to_the_sign_in_page()"
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.goToHomePage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 264000000,
+              "duration": 1533060300,
               "status": "passed"
             },
-            "line": 5,
-            "name": "Type username and password than click on sign in button",
+            "line": 7,
+            "name": "Click to User Account menu and Click to Register",
             "match": {
-              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.type_username_and_password_than_click_on_sign_in_button()"
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_to_User_Account_menu_and_Click_to_Register()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 573000000,
+              "duration": 1241233400,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Click on My Operations dropdown menu",
+            "line": 8,
+            "name": "Enter the SSN \"111-11-1111\" with valid credential",
             "match": {
-              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_My_Operations_dropdown_menu()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-12T21:59:15.325Z",
-        "line": 41,
-        "name": "TC_006 An account info",
-        "description": "",
-        "id": ";tc-006-an-account-info",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 71000000,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "Click on Manage Accounts",
-            "match": {
-              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_Manage_Accounts()"
+              "arguments": [
+                {
+                  "val": "\"111-11-1111\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_SSN_with_valid_credential(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1497000000,
+              "duration": 415747100,
               "status": "passed"
             },
-            "line": 43,
-            "name": "Click an ID item to choose an account created on manage accounts",
+            "line": 9,
+            "name": "Click on first name box",
             "match": {
-              "location": "gmibank.stepdefinitions.US15_StepDefs.click_an_ID_item_to_choose_an_account_created_on_manage_accounts()"
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_first_name_box()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 31000000,
+              "duration": 10150396700,
               "status": "passed"
             },
-            "line": 44,
-            "name": "Verify Account",
+            "line": 10,
+            "name": "There should be a valid SSN respecting",
             "match": {
-              "location": "gmibank.stepdefinitions.US15_StepDefs.verify_Account()"
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_SSN_respecting()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@accountinfo"
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC01"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:23:04.176Z",
+        "line": 15,
+        "name": "There should be a valid SSN respecting the \"-\" where necessary, it should be 9 digits long",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;there-should-be-a-valid-ssn-respecting-the-\"-\"-where-necessary--it-should-be-9-digits-long;test-data-for-ssn;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3087101100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Go to gmibank.com home page us01",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.goToHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 855471100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click to User Account menu and Click to Register",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_to_User_Account_menu_and_Click_to_Register()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 679581700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter the SSN \"111-11-9999\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"111-11-9999\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_SSN_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 320803600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on first name box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_first_name_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10277434400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "There should be a valid SSN respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_SSN_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC01"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:23:19.755Z",
+        "line": 16,
+        "name": "There should be a valid SSN respecting the \"-\" where necessary, it should be 9 digits long",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;there-should-be-a-valid-ssn-respecting-the-\"-\"-where-necessary--it-should-be-9-digits-long;test-data-for-ssn;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3780677600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Go to gmibank.com home page us01",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.goToHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 869465600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click to User Account menu and Click to Register",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_to_User_Account_menu_and_Click_to_Register()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 458716600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter the SSN \"111-99-9999\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"111-99-9999\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_SSN_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 238852400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on first name box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_first_name_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10045666200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "There should be a valid SSN respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_SSN_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC01"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:23:35.275Z",
+        "line": 17,
+        "name": "There should be a valid SSN respecting the \"-\" where necessary, it should be 9 digits long",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;there-should-be-a-valid-ssn-respecting-the-\"-\"-where-necessary--it-should-be-9-digits-long;test-data-for-ssn;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2322574800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Go to gmibank.com home page us01",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.goToHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1370159600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click to User Account menu and Click to Register",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_to_User_Account_menu_and_Click_to_Register()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 756533500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter the SSN \"999-99-9999\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"999-99-9999\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_SSN_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 620619200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on first name box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_first_name_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertFalse(Assert.java:65)\r\n\tat org.junit.Assert.assertFalse(Assert.java:75)\r\n\tat gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_SSN_respecting(US01_UserRegistrationStepDef.java:47)\r\n\tat ✽.There should be a valid SSN respecting(file:///C:/Users/ca/IdeaProjects/GMIBankProject_002/src/test/resources/features/us01_user_register.feature:10)\r\n",
+              "duration": 400753300,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "There should be a valid SSN respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_SSN_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC01"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:23:40.920Z",
+        "line": 18,
+        "name": "There should be a valid SSN respecting the \"-\" where necessary, it should be 9 digits long",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;there-should-be-a-valid-ssn-respecting-the-\"-\"-where-necessary--it-should-be-9-digits-long;test-data-for-ssn;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2372544200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Go to gmibank.com home page us01",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.goToHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1047356900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click to User Account menu and Click to Register",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_to_User_Account_menu_and_Click_to_Register()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1019426600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter the SSN \"999-99-1111\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"999-99-1111\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_SSN_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 444733500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on first name box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_first_name_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertFalse(Assert.java:65)\r\n\tat org.junit.Assert.assertFalse(Assert.java:75)\r\n\tat gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_SSN_respecting(US01_UserRegistrationStepDef.java:47)\r\n\tat ✽.There should be a valid SSN respecting(file:///C:/Users/ca/IdeaProjects/GMIBankProject_002/src/test/resources/features/us01_user_register.feature:10)\r\n",
+              "duration": 245844600,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "There should be a valid SSN respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_SSN_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC01"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:23:46.137Z",
+        "line": 19,
+        "name": "There should be a valid SSN respecting the \"-\" where necessary, it should be 9 digits long",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;there-should-be-a-valid-ssn-respecting-the-\"-\"-where-necessary--it-should-be-9-digits-long;test-data-for-ssn;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2528446500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Go to gmibank.com home page us01",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.goToHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1826874900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click to User Account menu and Click to Register",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_to_User_Account_menu_and_Click_to_Register()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 864476600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter the SSN \"999-11-1111\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"999-11-1111\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_SSN_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 476704200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on first name box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_first_name_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertFalse(Assert.java:65)\r\n\tat org.junit.Assert.assertFalse(Assert.java:75)\r\n\tat gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_SSN_respecting(US01_UserRegistrationStepDef.java:47)\r\n\tat ✽.There should be a valid SSN respecting(file:///C:/Users/ca/IdeaProjects/GMIBankProject_002/src/test/resources/features/us01_user_register.feature:10)\r\n",
+              "duration": 276826900,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "There should be a valid SSN respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_SSN_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC01"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:23:52.180Z",
+        "line": 20,
+        "name": "There should be a valid SSN respecting the \"-\" where necessary, it should be 9 digits long",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;there-should-be-a-valid-ssn-respecting-the-\"-\"-where-necessary--it-should-be-9-digits-long;test-data-for-ssn;8",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3036133700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Go to gmibank.com home page us01",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.goToHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 785518700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click to User Account menu and Click to Register",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_to_User_Account_menu_and_Click_to_Register()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 789516200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter the SSN \"456-25-1634\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"456-25-1634\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_SSN_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 375770500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on first name box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_first_name_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10072125100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "There should be a valid SSN respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_SSN_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC01"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:24:07.288Z",
+        "line": 28,
+        "name": "There should be a valid name that contains chars and cannot be blank",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;there-should-be-a-valid-name-that-contains-chars-and-cannot-be-blank;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 451725000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Enter the name \"A\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"A\"",
+                  "offset": 15
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_First_Name_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 405746900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "click on last name box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_last_name_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10059941800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "There should be a valid name respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_name_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC02"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:24:18.271Z",
+        "line": 29,
+        "name": "There should be a valid name that contains chars and cannot be blank",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;there-should-be-a-valid-name-that-contains-chars-and-cannot-be-blank;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1525070300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Enter the name \"AbcdefghijklmnoqprstuvwyzAbcdefghijklmnoqprstuvwyz\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AbcdefghijklmnoqprstuvwyzAbcdefghijklmnoqprstuvwyz\"",
+                  "offset": 15
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_First_Name_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 161899000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "click on last name box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_last_name_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10095909900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "There should be a valid name respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_name_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC02"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:24:30.107Z",
+        "line": 30,
+        "name": "There should be a valid name that contains chars and cannot be blank",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;there-should-be-a-valid-name-that-contains-chars-and-cannot-be-blank;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 633613100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Enter the name \"John\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"John\"",
+                  "offset": 15
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_First_Name_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 196887600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "click on last name box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_last_name_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10070905900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "There should be a valid name respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_name_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC02"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:24:41.053Z",
+        "line": 40,
+        "name": "There should be a valid last name that contains chars and cannot be blank",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;there-should-be-a-valid-last-name-that-contains-chars-and-cannot-be-blank;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1442114200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Enter the last name \"AbcdefghijklmnoqprstuvwyzAbcdefghijklmnoqprstuvwyz\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AbcdefghijklmnoqprstuvwyzAbcdefghijklmnoqprstuvwyz\"",
+                  "offset": 20
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_Last_Name_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 372771700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "click on Address box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_Address_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10090898800,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "There should be a valid last name respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_last_name_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC03"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:24:53.033Z",
+        "line": 41,
+        "name": "There should be a valid last name that contains chars and cannot be blank",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;there-should-be-a-valid-last-name-that-contains-chars-and-cannot-be-blank;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 491700900,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Enter the last name \"A\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"A\"",
+                  "offset": 20
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_Last_Name_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 273833400,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "click on Address box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_Address_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10137725500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "There should be a valid last name respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_last_name_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC03"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:25:04.006Z",
+        "line": 42,
+        "name": "There should be a valid last name that contains chars and cannot be blank",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;there-should-be-a-valid-last-name-that-contains-chars-and-cannot-be-blank;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 505689900,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Enter the last name \"Smith\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Smith\"",
+                  "offset": 20
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_Last_Name_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 163924800,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "click on Address box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_Address_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10036691500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "There should be a valid last name respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_last_name_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC03"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:25:14.762Z",
+        "line": 45,
+        "name": "We can provide chars and digits to describe a valid address along with zip code",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;we-can-provide-chars-and-digits-to-describe-a-valid-address-along-with-zip-code",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy18.sendKeys(Unknown Source)\r\n\tat gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_Address(US01_UserRegistrationStepDef.java:102)\r\n\tat ✽.Enter the Address(file:///C:/Users/ca/IdeaProjects/GMIBankProject_002/src/test/resources/features/us01_user_register.feature:46)\r\n",
+              "duration": 118927200,
+              "status": "failed"
+            },
+            "line": 46,
+            "name": "Enter the Address",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_Address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2006900,
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "click on mobile phone number box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_mobile_phone_number_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3004200,
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "There should be a valid address respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_address_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC04"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:25:14.965Z",
+        "line": 57,
+        "name": "User should provide 10 digit-long mobilephone number as a required field respecting the \"-\"",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;user-should-provide-10-digit-long-mobilephone-number-as-a-required-field-respecting-the-\"-\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 904447700,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Enter the GSM \"000-111-1111\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"000-111-1111\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_Mobile_Phone_Number_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 356787400,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "click on username box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_username_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10078868700,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "There should be a valid mobile phone number respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_mobile_phone_number_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC05"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:25:26.450Z",
+        "line": 58,
+        "name": "User should provide 10 digit-long mobilephone number as a required field respecting the \"-\"",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;user-should-provide-10-digit-long-mobilephone-number-as-a-required-field-respecting-the-\"-\";;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 681581600,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Enter the GSM \"111-000-0000\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"111-000-0000\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_Mobile_Phone_Number_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 206871800,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "click on username box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_username_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10087934600,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "There should be a valid mobile phone number respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_mobile_phone_number_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC05"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:25:37.478Z",
+        "line": 59,
+        "name": "User should provide 10 digit-long mobilephone number as a required field respecting the \"-\"",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;user-should-provide-10-digit-long-mobilephone-number-as-a-required-field-respecting-the-\"-\";;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 648604300,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Enter the GSM \"999-999-9999\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"999-999-9999\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_Mobile_Phone_Number_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235856800,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "click on username box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_username_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10046128900,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "There should be a valid mobile phone number respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_mobile_phone_number_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC05"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:25:48.450Z",
+        "line": 60,
+        "name": "User should provide 10 digit-long mobilephone number as a required field respecting the \"-\"",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;user-should-provide-10-digit-long-mobilephone-number-as-a-required-field-respecting-the-\"-\";;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 579650800,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Enter the GSM \"000-000-0000\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"000-000-0000\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_Mobile_Phone_Number_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 229854900,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "click on username box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_username_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10061816900,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "There should be a valid mobile phone number respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_mobile_phone_number_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC05"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:25:59.374Z",
+        "line": 61,
+        "name": "User should provide 10 digit-long mobilephone number as a required field respecting the \"-\"",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;user-should-provide-10-digit-long-mobilephone-number-as-a-required-field-respecting-the-\"-\";;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 701566200,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Enter the GSM \"999-000-1111\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"999-000-1111\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_Mobile_Phone_Number_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 230848700,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "click on username box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_username_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10099927400,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "There should be a valid mobile phone number respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_mobile_phone_number_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC05"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:26:10.459Z",
+        "line": 62,
+        "name": "User should provide 10 digit-long mobilephone number as a required field respecting the \"-\"",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;user-should-provide-10-digit-long-mobilephone-number-as-a-required-field-respecting-the-\"-\";;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2170661200,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Enter the GSM \"000-999-1111\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"000-999-1111\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_Mobile_Phone_Number_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 394757700,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "click on username box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_username_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10095486900,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "There should be a valid mobile phone number respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_mobile_phone_number_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC05"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:26:23.161Z",
+        "line": 63,
+        "name": "User should provide 10 digit-long mobilephone number as a required field respecting the \"-\"",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;user-should-provide-10-digit-long-mobilephone-number-as-a-required-field-respecting-the-\"-\";;8",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 654601300,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Enter the GSM \"567-891-1234\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"567-891-1234\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_Mobile_Phone_Number_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 398757500,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "click on username box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_username_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10073611200,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "There should be a valid mobile phone number respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_mobile_phone_number_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC05"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:26:34.325Z",
+        "line": 72,
+        "name": "User cannot use just digits for username, but can use any chars and digits along with them and of any length",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;user-cannot-use-just-digits-for-username--but-can-use-any-chars-and-digits-along-with-them-and-of-any-length;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 442722000,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "Enter the valid username \"g\" with valid credentail",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"g\"",
+                  "offset": 25
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_username_with_valid_credentail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 397832100,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "click on email box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_email_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10031851500,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "There should be a valid username respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_username_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC06"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:26:45.259Z",
+        "line": 73,
+        "name": "User cannot use just digits for username, but can use any chars and digits along with them and of any length",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;user-cannot-use-just-digits-for-username--but-can-use-any-chars-and-digits-along-with-them-and-of-any-length;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 521678700,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "Enter the valid username \"a1\" with valid credentail",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a1\"",
+                  "offset": 25
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_username_with_valid_credentail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 194879500,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "click on email box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_email_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10041772000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "There should be a valid username respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_username_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC06"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:26:56.064Z",
+        "line": 74,
+        "name": "User cannot use just digits for username, but can use any chars and digits along with them and of any length",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;user-cannot-use-just-digits-for-username--but-can-use-any-chars-and-digits-along-with-them-and-of-any-length;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 747549500,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "Enter the valid username \"globaluseruser\" with valid credentail",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"globaluseruser\"",
+                  "offset": 25
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_username_with_valid_credentail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 161897100,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "click on email box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_email_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10033786800,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "There should be a valid username respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_username_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC06"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:27:07.056Z",
+        "line": 75,
+        "name": "User cannot use just digits for username, but can use any chars and digits along with them and of any length",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;user-cannot-use-just-digits-for-username--but-can-use-any-chars-and-digits-along-with-them-and-of-any-length;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1461107400,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "Enter the valid username \"globaluser0101\" with valid credentail",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"globaluser0101\"",
+                  "offset": 25
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_username_with_valid_credentail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 602626200,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "click on email box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_email_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10114232900,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "There should be a valid username respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_username_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC06"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:27:19.293Z",
+        "line": 84,
+        "name": "We should provide a valid email format that contains \"@\", \".com\" extensions",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;we-should-provide-a-valid-email-format-that-contains-\"@\"--\".com\"-extensions;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 977399900,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "Enter the e-mail \"a@gmail.com\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@gmail.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_e_mail_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 510687100,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "click on new password box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_new_password_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10089317000,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "There should be a valid email respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_email_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC07"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:27:30.972Z",
+        "line": 85,
+        "name": "We should provide a valid email format that contains \"@\", \".com\" extensions",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;we-should-provide-a-valid-email-format-that-contains-\"@\"--\".com\"-extensions;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 736552800,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "Enter the e-mail \"a@b.com\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_e_mail_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 242842800,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "click on new password box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_new_password_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10045769000,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "There should be a valid email respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_email_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC07"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:27:42.064Z",
+        "line": 86,
+        "name": "We should provide a valid email format that contains \"@\", \".com\" extensions",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;we-should-provide-a-valid-email-format-that-contains-\"@\"--\".com\"-extensions;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 869468800,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "Enter the e-mail \"globaluser010101@gmail.com\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"globaluser010101@gmail.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_e_mail_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 214865800,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "click on new password box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_new_password_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10075717300,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "There should be a valid email respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_email_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC07"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:27:53.265Z",
+        "line": 96,
+        "name": "Password is required to be at least 4 characters",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;password-is-required-to-be-at-least-4-characters;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 614624600,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "Enter the new \"1111\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1111\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_new_password_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 464714100,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "click on new password confirmation box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_new_password_confirmation_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10061467700,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "There should be a valid password respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_password_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC08"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:28:04.491Z",
+        "line": 97,
+        "name": "Password is required to be at least 4 characters",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;password-is-required-to-be-at-least-4-characters;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1241234600,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "Enter the new \"1234@!.Abc ;.\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234@!.Abc ;.\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_new_password_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 273836300,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "click on new password confirmation box",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_new_password_confirmation_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10064586900,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "There should be a valid password respecting",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_a_valid_password_respecting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC08"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:28:16.156Z",
+        "line": 101,
+        "name": "Password confirmation entry should be same with password",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;password-confirmation-entry-should-be-same-with-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 778510600,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "Enter the same password with valid credential \"1234@!.Abc ;.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234@!.Abc ;.\"",
+                  "offset": 46
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.enter_the_same_password_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 348785600,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "click on new password box02",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_on_new_password_box02()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10047756900,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "entry should be same with password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.entry_should_be_same_with_password()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC09"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-17T22:28:27.395Z",
+        "line": 108,
+        "name": "System should allow any user to register with valid credentials validating the success message",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 253843100,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "Click to Register button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.click_to_Register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027Toastify__toast Toastify__toast--success toastify-toast\u0027]\"}\n  (Session info: chrome\u003d86.0.4240.198)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-K5I9J0D\u0027, ip: \u0027192.168.1.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\ca\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:53758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: b33855641a473d68673bd59b94ba1ae0\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027Toastify__toast Toastify__toast--success toastify-toast\u0027]}\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)\r\n\tat gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_Succes_message(US01_UserRegistrationStepDef.java:233)\r\n\tat ✽.There should be Succes message.(file:///C:/Users/ca/IdeaProjects/GMIBankProject_002/src/test/resources/features/us01_user_register.feature:110)\r\n",
+              "duration": 10078726800,
+              "status": "failed"
+            },
+            "line": 110,
+            "name": "There should be Succes message.",
+            "match": {
+              "location": "gmibank.stepdefinitions.US01_UserRegistrationStepDef.there_should_be_Succes_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC10"
           }
         ]
       }
     ],
-    "name": "",
+    "name": "System should allow any user to register with valid credentials validating the success message",
     "description": "",
-    "id": "",
+    "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/createAccountDate.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/us01_user_register.feature",
+    "tags": [
+      {
+        "name": "@US01",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
