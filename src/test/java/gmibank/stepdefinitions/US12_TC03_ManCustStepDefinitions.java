@@ -13,7 +13,7 @@ public class US12_TC03_ManCustStepDefinitions {
     @Then("there should be an Edit button")
     public void there_should_be_an_Edit_button() {
         boolean editButton = manageCustomerPage.editButton.isDisplayed();
-        System.out.println("Edit button seen" + editButton);
+        System.out.println("Edit button seen " + editButton);
     }
 
 }

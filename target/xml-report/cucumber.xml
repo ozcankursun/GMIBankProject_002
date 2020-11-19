@@ -1,36 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.599">
-<testcase classname="US_012_TC04 Edit Button and Save date" name="TC_0004 The Edit portal can allow the user to create or update the user info" time="11.379">
-<failure message="invalid selector: An invalid or illegal selector was specified&#10;  (Session info: chrome=86.0.4240.198)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-88SLRP4G', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\mhmty\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 791d8ab581f56afe862c0d2146f29057&#10;*** Element info: {Using=id, value=}" type="org.openqa.selenium.InvalidSelectorException"><![CDATA[And Click on Edit button....................................................failed
-And Click on the customer First Name textbox and type a new First Name......skipped
-And Click on the customer Last Name textbox and type a new Last Name........skipped
-And Click on the customer Middle Initial textbox and type a new Middle Initial.skipped
-And Click on the customer Email textbox and type a new Email................skipped
-And Click on the customer Mobile Phone Number textbox and type a new Mobile Phone Number.skipped
-And Click on the customer Phone Number textbox and type a new Phone Number..skipped
-And Click on the customer Zip Code textbox and type a new Zip Code..........skipped
-And Click on the customer Address textbox and type a new Address............skipped
-And Click on the customer City textbox and type a new City..................skipped
-And Click on the customer Ssn textbox and type a new Ssn number.............skipped
-And Click on the customer Create Date textbox and type a new Create Date....skipped
-And Click on the customer Country dropdown and type a new Country...........skipped
-And Click on the customer State textbox and type a new State................skipped
-And Click on the customer User dropdown and type a new User.................skipped
-And Select an account status type from the Customer Account Status Type dropdown.skipped
-And Click on Zelle Enrolled.................................................skipped
-And Click on Save button....................................................skipped
-Then The user should see a message confirming that they have saved the edited information..skipped
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.351">
+<testcase classname="US_012_TC05 Delete Button" name="TC_0005 User can delete a customer, but seeing a message if the user is sure about the deletion" time="19.766">
+<failure message="element click intercepted: Element &lt;span class=&quot;d-none d-md-inline&quot;&gt;...&lt;/span&gt; is not clickable at point (1456, 8). Other element would receive the click: &lt;nav class=&quot;navbar navbar-expand-md navbar-light fixed-top&quot; style=&quot;background-color: rgb(8, 57, 150);&quot;&gt;...&lt;/nav&gt;&#10;  (Session info: chrome=86.0.4240.198)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-88SLRP4G', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\mhmty\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64593}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 58b75450618287a1202fbacc22ff7564" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given Go to the GMIBank sign in page........................................passed
+And Type username and password then click on sign in button.................passed
+And Click on My Operations dropdown menu....................................passed
+And Click the Manage Customers button.......................................passed
+And Click the button to last page...........................................passed
+And Click on Delete button..................................................failed
+And The user should see the message -Are you sure you want to delete Customer ....?- on the Confirm delete operation popup.skipped
+And Click on Delete button in Popup window..................................skipped
+Then The user should not see error message..................................skipped
 
 StackTrace:
-org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="d-none d-md-inline">...</span> is not clickable at point (1456, 8). Other element would receive the click: <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: rgb(8, 57, 150);">...</nav>
   (Session info: chrome=86.0.4240.198)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-88SLRP4G', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\mhmty\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 791d8ab581f56afe862c0d2146f29057
-*** Element info: {Using=id, value=}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\mhmty\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64593}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 58b75450618287a1202fbacc22ff7564
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -41,15 +29,16 @@ Session ID: 791d8ab581f56afe862c0d2146f29057
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy16.click(Unknown Source)
-	at gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_Edit_button(US12_TC04_ManCustStepDefinitions.java:19)
-	at ✽.Click on Edit button(file:///C:/Users/mhmty/IdeaProjects/GMIBankProject_002/src/test/resources/features/manageCustUS_0012_TC04.feature:5)
+	at gmibank.stepdefinitions.US12_TC05_ManCustStepDefinitions.click_on_Delete_button(US12_TC05_ManCustStepDefinitions.java:18)
+	at ✽.Click on Delete button(file:///C:/Users/mhmty/IdeaProjects/GMIBankProject_002/src/test/resources/features/manageCustUS_0012_TC05.feature:11)
 ]]></failure>
 </testcase>
 </testsuite>

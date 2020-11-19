@@ -53,7 +53,7 @@ public class ManageCustomerPage {
     @FindBy(xpath = "(//a[@class='btn btn-info btn-sm'])[1]")
     public WebElement viewButton;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//tbody/tr[1]/td[10]/div[1]/a[2]")//(//a[@class='btn btn-primary btn-sm'])[1]
     public WebElement editButton;
 
     @FindBy(id = "tp-customer-firstName")
@@ -113,7 +113,7 @@ public class ManageCustomerPage {
     @FindBy(xpath = "//div[@class='Toastify__toast-body']")
     public WebElement errorMessage;
 
-    @FindBy(xpath = "(//span[@class='d-none d-md-inline'])[3]")
+    @FindBy(xpath = "//*[.='Delete']")
     public WebElement deleteButton;
 
     @FindBy(id = "jhi-confirm-delete-tPCustomer")
@@ -124,6 +124,9 @@ public class ManageCustomerPage {
 
     @FindBy(xpath = "//div[@style='pointer-events: none;']")
     public WebElement confirmMessage;
+
+    @FindBy(id = "gmibankfrontendApp.tPCustomer.delete.question")
+    public WebElement alertConfirmMessage;
 
 
 

@@ -3,105 +3,96 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-18T21:28:44.677Z",
-        "line": 4,
-        "name": "TC_0004 The Edit portal can allow the user to create or update the user info",
+        "start_timestamp": "2020-11-19T18:01:22.850Z",
+        "line": 5,
+        "name": "TC_0005 User can delete a customer, but seeing a message if the user is sure about the deletion",
         "description": "",
-        "id": "us-012-tc04-edit-button-and-save-date;tc-0004-the-edit-portal-can-allow-the-user-to-create-or-update-the-user-info",
+        "id": "us-012-tc05-delete-button;tc-0005-user-can-delete-a-customer--but-seeing-a-message-if-the-user-is-sure-about-the-deletion",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified\n  (Session info: chrome\u003d86.0.4240.198)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-88SLRP4G\u0027, ip: \u0027192.168.1.5\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\mhmty\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 791d8ab581f56afe862c0d2146f29057\n*** Element info: {Using\u003did, value\u003d}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy16.click(Unknown Source)\r\n\tat gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_Edit_button(US12_TC04_ManCustStepDefinitions.java:19)\r\n\tat ✽.Click on Edit button(file:///C:/Users/mhmty/IdeaProjects/GMIBankProject_002/src/test/resources/features/manageCustUS_0012_TC04.feature:5)\r\n",
-              "duration": 11026000000,
-              "status": "failed"
-            },
-            "line": 5,
-            "name": "Click on Edit button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_Edit_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2000000,
-              "status": "skipped"
+              "duration": 10160000000,
+              "status": "passed"
             },
             "line": 6,
-            "name": "Click on the customer First Name textbox and type a new First Name",
+            "name": "Go to the GMIBank sign in page",
             "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_the_customer_First_Name_textbox_and_type_a_new_First_Name()"
+              "location": "gmibank.stepdefinitions.US12_TC01_ManCustStepDefinitions.go_to_the_GMIBank_sign_in_page()"
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 415000000,
+              "status": "passed"
             },
             "line": 7,
-            "name": "Click on the customer Last Name textbox and type a new Last Name",
+            "name": "Type username and password then click on sign in button",
             "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_the_customer_Last_Name_textbox_and_type_a_new_Last_Name()"
+              "location": "gmibank.stepdefinitions.US12_TC01_ManCustStepDefinitions.type_username_and_password_then_click_on_sign_in_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 695000000,
+              "status": "passed"
             },
             "line": 8,
-            "name": "Click on the customer Middle Initial textbox and type a new Middle Initial",
+            "name": "Click on My Operations dropdown menu",
             "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_the_customer_Middle_Initial_textbox_and_type_a_new_Middle_Initial()"
+              "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_My_Operations_dropdown_menu()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 197000000,
+              "status": "passed"
             },
             "line": 9,
-            "name": "Click on the customer Email textbox and type a new Email",
+            "name": "Click the Manage Customers button",
             "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_the_customer_Email_textbox_and_type_a_new_Email()"
+              "location": "gmibank.stepdefinitions.US12_TC01_ManCustStepDefinitions.click_the_Manage_Customers_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 6891000000,
+              "status": "passed"
             },
             "line": 10,
-            "name": "Click on the customer Mobile Phone Number textbox and type a new Mobile Phone Number",
+            "name": "Click the button to last page",
             "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_the_customer_Mobile_Phone_Number_textbox_and_type_a_new_Mobile_Phone_Number()"
+              "location": "gmibank.stepdefinitions.US12_TC01_ManCustStepDefinitions.click_the_button_to_last_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cspan class\u003d\"d-none d-md-inline\"\u003e...\u003c/span\u003e is not clickable at point (1456, 8). Other element would receive the click: \u003cnav class\u003d\"navbar navbar-expand-md navbar-light fixed-top\" style\u003d\"background-color: rgb(8, 57, 150);\"\u003e...\u003c/nav\u003e\n  (Session info: chrome\u003d86.0.4240.198)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-88SLRP4G\u0027, ip: \u0027192.168.1.5\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\mhmty\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64593}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 58b75450618287a1202fbacc22ff7564\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy16.click(Unknown Source)\r\n\tat gmibank.stepdefinitions.US12_TC05_ManCustStepDefinitions.click_on_Delete_button(US12_TC05_ManCustStepDefinitions.java:18)\r\n\tat ✽.Click on Delete button(file:///C:/Users/mhmty/IdeaProjects/GMIBankProject_002/src/test/resources/features/manageCustUS_0012_TC05.feature:11)\r\n",
+              "duration": 1232000000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "Click on Delete button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US12_TC05_ManCustStepDefinitions.click_on_Delete_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
               "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 11,
-            "name": "Click on the customer Phone Number textbox and type a new Phone Number",
-            "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_the_customer_Phone_Number_textbox_and_type_a_new_Phone_Number()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
               "status": "skipped"
             },
             "line": 12,
-            "name": "Click on the customer Zip Code textbox and type a new Zip Code",
+            "name": "The user should see the message -Are you sure you want to delete Customer ....?- on the Confirm delete operation popup",
             "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_the_customer_Zip_Code_textbox_and_type_a_new_Zip_Code()"
+              "location": "gmibank.stepdefinitions.US12_TC05_ManCustStepDefinitions.the_user_should_see_the_message_Are_you_sure_you_want_to_delete_Customer_on_the_Confirm_delete_operation_popup()"
             },
             "keyword": "And "
           },
@@ -111,9 +102,9 @@
               "status": "skipped"
             },
             "line": 13,
-            "name": "Click on the customer Address textbox and type a new Address",
+            "name": "Click on Delete button in Popup window",
             "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_the_customer_Address_textbox_and_type_a_new_Address()"
+              "location": "gmibank.stepdefinitions.US12_TC05_ManCustStepDefinitions.click_on_Delete_button_in_Popup_window()"
             },
             "keyword": "And "
           },
@@ -122,132 +113,31 @@
               "status": "skipped"
             },
             "line": 14,
-            "name": "Click on the customer City textbox and type a new City",
+            "name": "The user should not see error message",
             "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_the_customer_City_textbox_and_type_a_new_City()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "Click on the customer Ssn textbox and type a new Ssn number",
-            "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_the_customer_Ssn_textbox_and_type_a_new_Ssn_number()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 16,
-            "name": "Click on the customer Create Date textbox and type a new Create Date",
-            "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_the_customer_Create_Date_textbox_and_type_a_new_Create_Date()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "Click on the customer Country dropdown and type a new Country",
-            "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_the_customer_Country_dropdown_and_type_a_new_Country()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 18,
-            "name": "Click on the customer State textbox and type a new State",
-            "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_the_customer_State_textbox_and_type_a_new_State()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 19,
-            "name": "Click on the customer User dropdown and type a new User",
-            "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_the_customer_User_dropdown_and_type_a_new_User()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "Select an account status type from the Customer Account Status Type dropdown",
-            "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.select_an_account_status_type_from_the_Customer_Account_Status_Type_dropdown()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 21,
-            "name": "Click on Zelle Enrolled",
-            "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_Zelle_Enrolled()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 22,
-            "name": "Click on Save button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.click_on_Save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 23,
-            "name": "The user should see a message confirming that they have saved the edited information.",
-            "match": {
-              "location": "gmibank.stepdefinitions.US12_TC04_ManCustStepDefinitions.the_user_should_see_a_message_confirming_that_they_have_saved_the_edited_information()"
+              "location": "gmibank.stepdefinitions.US12_TC05_ManCustStepDefinitions.the_user_should_not_see_error_message()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@testcasefour"
+            "name": "@testcasefive"
+          },
+          {
+            "name": "@deletbutton"
           }
         ]
       }
     ],
-    "name": "US_012_TC04 Edit Button and Save date",
+    "name": "US_012_TC05 Delete Button",
     "description": "",
-    "id": "us-012-tc04-edit-button-and-save-date",
+    "id": "us-012-tc05-delete-button",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/manageCustUS_0012_TC04.feature",
+    "uri": "file:src/test/resources/features/manageCustUS_0012_TC05.feature",
     "tags": [
       {
-        "name": "@testcasefour",
+        "name": "@testcasefive",
         "type": "Tag",
         "location": {
           "line": 1,

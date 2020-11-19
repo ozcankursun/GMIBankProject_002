@@ -11,8 +11,9 @@ import org.openqa.selenium.support.ui.Select;
 
 public class US12_TC04_ManCustStepDefinitions {
     LoginPage loginPage = new LoginPage();
-    HomePage homePage =new HomePage();
+    HomePage homePage = new HomePage();
     ManageCustomerPage manageCustomerPage = new ManageCustomerPage();
+
 
     @Given("Click on Edit button")
     public void click_on_Edit_button() {
@@ -86,8 +87,8 @@ public class US12_TC04_ManCustStepDefinitions {
 
     @Given("Click on the customer Country dropdown and type a new Country")
     public void click_on_the_customer_Country_dropdown_and_type_a_new_Country() {
-      Select country = new Select(manageCustomerPage.countryDropdown);
-      country.selectByIndex(0);
+        Select country = new Select(manageCustomerPage.countryDropdown);
+        country.selectByIndex(0);
 
     }
 
