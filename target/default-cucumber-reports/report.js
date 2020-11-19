@@ -1,82 +1,422 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/createAccountDate.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/passwordCreate.feature");
 formatter.feature({
-  "name": "",
+  "name": "Regristration page should restrict password usage to a secure high level passcode",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@US0103"
+    }
+  ]
 });
 formatter.background({
-  "name": "US_015 Create a new account",
+  "name": "User got to the GMI Bank home page (https://gmibank.com)",
   "description": "",
   "keyword": "Background"
 });
 formatter.step({
-  "name": "Go to the sign in page",
+  "name": "User got to the GMI bank home page",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.go_to_the_sign_in_page()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "Type username and password than click on sign in button",
+  "name": "Click on user button",
   "keyword": "And "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.type_username_and_password_than_click_on_sign_in_button()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "Click on My Operations dropdown menu",
+  "name": "You should navigate to registration page",
   "keyword": "And "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_My_Operations_dropdown_menu()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Click on password textbox",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.scenario({
-  "name": "TC_006 An account info",
+  "name": "There should be at least 1 lowercase char for stronger password and see the level chart change accordingly",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@accountinfo"
+      "name": "@US0103"
+    },
+    {
+      "name": "@US03TC01"
     }
   ]
 });
 formatter.step({
-  "name": "Click on Manage Accounts",
+  "name": "Enter a password with 1 lowercase letter of at least 7 characters",
   "keyword": "And "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_Manage_Accounts()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "Click an ID item to choose an account created on manage accounts",
+  "name": "Color line must be orange or green",
   "keyword": "And "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US15_StepDefs.click_an_ID_item_to_choose_an_account_created_on_manage_accounts()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "Verify Account",
+  "name": "Click on password confirmation textbox",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Enter to second textbox with 1 lowercase letter of at least 7 characters",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "gmibank.stepdefinitions.US15_StepDefs.verify_Account()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
+});
+formatter.background({
+  "name": "User got to the GMI Bank home page (https://gmibank.com)",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "User got to the GMI bank home page",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Click on user button",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "You should navigate to registration page",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Click on password textbox",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.scenario({
+  "name": "There should be at least 1 uppercase char and see the level  chart change accordingly",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@US0103"
+    },
+    {
+      "name": "@US03TC02"
+    }
+  ]
+});
+formatter.step({
+  "name": "Enter a password with 1 uppercase letter of at least 7 characters",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Color line must be orange or green",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Click on password confirmation textbox",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Enter to second textbox with 1 uppercase letter of at least 7 characters",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.background({
+  "name": "User got to the GMI Bank home page (https://gmibank.com)",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "User got to the GMI bank home page",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Click on user button",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "You should navigate to registration page",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Click on password textbox",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.scenario({
+  "name": "There should be at least 1 digit  and see the level  chart change accordingly",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@US0103"
+    },
+    {
+      "name": "@US03TC03"
+    }
+  ]
+});
+formatter.step({
+  "name": "Enter a password with 1 digit of at least 7 characters",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Color line must be orange or green",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Click on password confirmation textbox",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Enter to second textbox with 1 digit of at least 7 characters",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.background({
+  "name": "User got to the GMI Bank home page (https://gmibank.com)",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "User got to the GMI bank home page",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Click on user button",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "You should navigate to registration page",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Click on password textbox",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.scenario({
+  "name": "There should be at least 1 special char and see the level bar change accordingly",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@US0103"
+    },
+    {
+      "name": "@US03TC04"
+    }
+  ]
+});
+formatter.step({
+  "name": "Enter a password with 1 special char of at least 7 characters",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Color line must be orange or green",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Click on password confirmation textbox",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Enter to second textbox with 1 special char of at least 7 characters",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.background({
+  "name": "User got to the GMI Bank home page (https://gmibank.com)",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "User got to the GMI bank home page",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Click on user button",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "You should navigate to registration page",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Click on password textbox",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.scenario({
+  "name": "There should be at least 7 chars for a stronger password",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@US0103"
+    },
+    {
+      "name": "@US03TC05"
+    }
+  ]
+});
+formatter.step({
+  "name": "Enter a password with 7 chars",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Color line must be orange or green",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Click on password confirmation textbox",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Enter to second textbox a password with 7 chars",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 });

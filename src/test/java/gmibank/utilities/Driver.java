@@ -1,6 +1,7 @@
 package gmibank.utilities;
 
 import com.google.common.base.Function;
+import gmibank.pages.PasswordCreatePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.*;
@@ -320,5 +321,17 @@ public class Driver {
         jse.executeScript(command);
     }
 
-
-}
+    public static void passwordReliability(){
+        PasswordCreatePage passCreatePage = new PasswordCreatePage();
+        String renk = passCreatePage.line1.getCssValue("background-color");
+        if(renk.contains(ConfigurationReader.getProperty("red"))){
+            System.out.println("Password is Very Weak...");
+        }else if(renk.contains(ConfigurationReader.getProperty("orange"))){
+            System.out.println("Password is Fair...");
+        }else if(renk.contains(ConfigurationReader.getProperty("yellow"))){
+            System.out.println("Password is Weak...");
+        }else if(renk.contains(ConfigurationReader.getProperty("green"))){
+            System.out.println("Password is Good...");
+        }else if(renk.contains(ConfigurationReader.getProperty("dark_green"))){
+            System.out.println("Password is Strong...");
+        }}}
