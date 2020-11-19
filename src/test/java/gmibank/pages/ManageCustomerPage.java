@@ -7,27 +7,27 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ManageCustomerPage {
 
-    public ManageCustomerPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public ManageCustomerPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy (id = "jh-create-entity")
+    @FindBy(id = "jh-create-entity")
     public WebElement createCustomerButton;
 
-    @FindBy (id = "search-ssn")
+    @FindBy(id = "search-ssn")
     public WebElement ssnTextBox;
 
-    @FindBy (xpath = "//button[.='Search']")
+    @FindBy(xpath = "//button[.='Search']")
     public WebElement searchButton;
 
-    @FindBy (id = "tp-customer-user")
+    @FindBy(id = "tp-customer-user")
     public WebElement userBox;
 
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
