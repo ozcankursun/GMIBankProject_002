@@ -130,14 +130,6 @@ public class US12_TC11_ManCustStepDefinitions {
     public void the_user_should_see_a_message_confirming_that_they_have_saved_the_edited_information() {
         Assert.assertTrue(manageCustomerPage.confirmMessage.isDisplayed());
 
-//        String actualMessage = Driver.getDriver().switchTo().alert().getText();
-//        System.out.println(actualMessage);
-//        String expectedMessage = "translation-not-found[gmiBankBackendApp.tPCustomer.updated]";
-//        Assert.assertEquals(expectedMessage, actualMessage);
-
-//        boolean confirmMessage = manageCustomerPage.confirmMessage.isDisplayed();
-//        System.out.println("Confirm Message: "+confirmMessage);
-//        Assert.assertTrue(confirmMessage);
 
     }
 }
