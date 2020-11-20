@@ -3,44 +3,44 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-19T18:01:22.850Z",
-        "line": 5,
-        "name": "TC_0005 User can delete a customer, but seeing a message if the user is sure about the deletion",
+        "start_timestamp": "2020-11-20T21:44:19.293Z",
+        "line": 4,
+        "name": "TC_00011 The Edit portal can allow the user to create or update the user info",
         "description": "",
-        "id": "us-012-tc05-delete-button;tc-0005-user-can-delete-a-customer--but-seeing-a-message-if-the-user-is-sure-about-the-deletion",
+        "id": "us-012-tc011-edit-button-and-save-date;tc-00011-the-edit-portal-can-allow-the-user-to-create-or-update-the-user-info",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 10160000000,
+              "duration": 10069000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "Go to the GMIBank sign in page",
             "match": {
-              "location": "gmibank.stepdefinitions.US12_TC01_ManCustStepDefinitions.go_to_the_GMIBank_sign_in_page()"
+              "location": "gmibank.stepdefinitions.US12_TC01_TC08_ManCustStepDefs.go_to_the_GMIBank_sign_in_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 415000000,
+              "duration": 407000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "Type username and password then click on sign in button",
             "match": {
-              "location": "gmibank.stepdefinitions.US12_TC01_ManCustStepDefinitions.type_username_and_password_then_click_on_sign_in_button()"
+              "location": "gmibank.stepdefinitions.US12_TC01_TC08_ManCustStepDefs.type_username_and_password_then_click_on_sign_in_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 695000000,
+              "duration": 650000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "Click on My Operations dropdown menu",
             "match": {
               "location": "gmibank.stepdefinitions.US14_CreateAccountStepDefs.click_on_My_Operations_dropdown_menu()"
@@ -49,95 +49,272 @@
           },
           {
             "result": {
-              "duration": 197000000,
+              "duration": 203000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click the Manage Customers button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US12_TC01_TC08_ManCustStepDefs.click_the_Manage_Customers_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 387000000,
               "status": "passed"
             },
             "line": 9,
-            "name": "Click the Manage Customers button",
+            "name": "Click on Edit button",
             "match": {
-              "location": "gmibank.stepdefinitions.US12_TC01_ManCustStepDefinitions.click_the_Manage_Customers_button()"
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.click_on_Edit_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 6891000000,
+              "duration": 348000000,
               "status": "passed"
             },
             "line": 10,
-            "name": "Click the button to last page",
+            "name": "Clear on the customer Email textbox",
             "match": {
-              "location": "gmibank.stepdefinitions.US12_TC01_ManCustStepDefinitions.click_the_button_to_last_page()"
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.clear_on_the_customer_Email_textbox()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cspan class\u003d\"d-none d-md-inline\"\u003e...\u003c/span\u003e is not clickable at point (1456, 8). Other element would receive the click: \u003cnav class\u003d\"navbar navbar-expand-md navbar-light fixed-top\" style\u003d\"background-color: rgb(8, 57, 150);\"\u003e...\u003c/nav\u003e\n  (Session info: chrome\u003d86.0.4240.198)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-88SLRP4G\u0027, ip: \u0027192.168.1.5\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\mhmty\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64593}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 58b75450618287a1202fbacc22ff7564\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy16.click(Unknown Source)\r\n\tat gmibank.stepdefinitions.US12_TC05_ManCustStepDefinitions.click_on_Delete_button(US12_TC05_ManCustStepDefinitions.java:18)\r\n\tat ✽.Click on Delete button(file:///C:/Users/mhmty/IdeaProjects/GMIBankProject_002/src/test/resources/features/manageCustUS_0012_TC05.feature:11)\r\n",
-              "duration": 1232000000,
-              "status": "failed"
+              "duration": 184000000,
+              "status": "passed"
             },
             "line": 11,
-            "name": "Click on Delete button",
+            "name": "Click on the customer Email textbox and type a new Email",
             "match": {
-              "location": "gmibank.stepdefinitions.US12_TC05_ManCustStepDefinitions.click_on_Delete_button()"
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.click_on_the_customer_Email_textbox_and_type_a_new_Email()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 177000000,
+              "status": "passed"
             },
             "line": 12,
-            "name": "The user should see the message -Are you sure you want to delete Customer ....?- on the Confirm delete operation popup",
+            "name": "Clear on the customer Mobile Phone Number textbox",
             "match": {
-              "location": "gmibank.stepdefinitions.US12_TC05_ManCustStepDefinitions.the_user_should_see_the_message_Are_you_sure_you_want_to_delete_Customer_on_the_Confirm_delete_operation_popup()"
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.clear_on_the_customer_Mobile_Phone_Number_textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 172000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click on the customer Mobile Phone Number textbox and type a new Mobile Phone Number",
+            "match": {
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.click_on_the_customer_Mobile_Phone_Number_textbox_and_type_a_new_Mobile_Phone_Number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Clear on the customer Phone Number textbox",
+            "match": {
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.clear_on_the_customer_Phone_Number_textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 169000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Click on the customer Phone Number textbox and type a new Phone Number",
+            "match": {
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.click_on_the_customer_Phone_Number_textbox_and_type_a_new_Phone_Number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 123000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Clear on the customer Zip Code textbox",
+            "match": {
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.clear_on_the_customer_Zip_Code_textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Click on the customer Zip Code textbox and type a new Zip Code",
+            "match": {
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.click_on_the_customer_Zip_Code_textbox_and_type_a_new_Zip_Code()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Clear on the customer Address textbox",
+            "match": {
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.clear_on_the_customer_Address_textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 145000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click on the customer Address textbox and type a new Address",
+            "match": {
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.click_on_the_customer_Address_textbox_and_type_a_new_Address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Clear on the customer City textbox",
+            "match": {
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.clear_on_the_customer_City_textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Click on the customer City textbox and type a new City",
+            "match": {
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.click_on_the_customer_City_textbox_and_type_a_new_City()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Clear on the customer Create Date textbox",
+            "match": {
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.clear_on_the_customer_Create_Date_textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click on the customer Create Date textbox and type a new Create Date",
+            "match": {
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.click_on_the_customer_Create_Date_textbox_and_type_a_new_Create_Date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Clear on the customer State textbox",
+            "match": {
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.clear_on_the_customer_State_textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 139000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Click on the customer State textbox and type a new State",
+            "match": {
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.click_on_the_customer_State_textbox_and_type_a_new_State()"
             },
             "keyword": "And "
           },
           {
             "result": {
               "duration": 1000000,
-              "status": "skipped"
+              "status": "passed"
             },
-            "line": 13,
-            "name": "Click on Delete button in Popup window",
+            "line": 26,
+            "name": "Click on Zelle Enrolled",
             "match": {
-              "location": "gmibank.stepdefinitions.US12_TC05_ManCustStepDefinitions.click_on_Delete_button_in_Popup_window()"
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.click_on_Zelle_Enrolled()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 200000000,
+              "status": "passed"
             },
-            "line": 14,
-            "name": "The user should not see error message",
+            "line": 27,
+            "name": "Click on Save button",
             "match": {
-              "location": "gmibank.stepdefinitions.US12_TC05_ManCustStepDefinitions.the_user_should_not_see_error_message()"
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.click_on_Save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5412000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "The user should see a message confirming that they have saved the edited information.",
+            "match": {
+              "location": "gmibank.stepdefinitions.US12_TC11_ManCustStepDefinitions.the_user_should_see_a_message_confirming_that_they_have_saved_the_edited_information()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@testcasefive"
-          },
-          {
-            "name": "@deletbutton"
+            "name": "@testcasefour"
           }
         ]
       }
     ],
-    "name": "US_012_TC05 Delete Button",
+    "name": "US_012_TC011 Edit Button and Save date",
     "description": "",
-    "id": "us-012-tc05-delete-button",
+    "id": "us-012-tc011-edit-button-and-save-date",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/manageCustUS_0012_TC05.feature",
+    "uri": "file:src/test/resources/features/manageCustUS_0012_TC11.feature",
     "tags": [
       {
-        "name": "@testcasefive",
+        "name": "@testcasefour",
         "type": "Tag",
         "location": {
           "line": 1,

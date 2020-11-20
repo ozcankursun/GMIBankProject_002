@@ -12,7 +12,7 @@ import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
 
-    public class US12_TC01_ManCustStepDefinitions {
+    public class US12_TC01_TC08_ManCustStepDefs {
         LoginPage loginPage=new LoginPage();
         HomePage homePage = new HomePage();
         ManageCustomerPage manageCustomerPage = new ManageCustomerPage();
@@ -40,51 +40,58 @@ import org.openqa.selenium.support.ui.Select;
             manageCustomerPage.lastpagebutton.click();
 
         }
-
+        //TC_0001
         @Then("On the customer page, the user should see the customer's First Name")
         public void on_the_customer_page_the_user_should_see_the_customer_s_First_Name() {
             boolean firstName = manageCustomerPage.firstNameText.isDisplayed();
-            System.out.println(firstName);
+            System.out.println("The customer's First Name is displayed: "+firstName);
         }
+        //TC_0002
         @Then("On the customer page, the user should see the customer's Last Name")
         public void on_the_customer_page_the_user_should_see_the_customer_s_Last_Name() {
             boolean lastName = manageCustomerPage.lastNameText.isDisplayed();
-            System.out.println(lastName);
+            System.out.println("The customer's Last Name is displayed: "+lastName);
         }
+        //TC_0003
         @Then("On the customer page, the user should see the customer's Middle Initial")
         public void on_the_customer_page_the_user_should_see_the_customer_s_Middle_Initial() {
             boolean middleInitial = manageCustomerPage.middleInitialText.isDisplayed();
-            System.out.println(middleInitial);
+            System.out.println("The customer's Middle Initial is displayed: "+middleInitial);
 
         }
+        //TC_0004
         @Then("on the customer page, the user should see the customer's Email")
         public void on_the_customer_page_the_user_should_see_the_customer_s_Email() {
             boolean email = manageCustomerPage.emailText.isDisplayed();
-            System.out.println(email);
+            System.out.println("The customer's Email is displayed: "+email);
 
         }
+        //TC_0005
         @Then("On the customer page, the user should see the customer's Mobile Phone Number")
         public void on_the_customer_page_the_user_should_see_the_customer_s_Mobile_Phone_Number() {
             boolean mobilePhoneNumber = manageCustomerPage.mobilPhoneNumberText.isDisplayed();
-            System.out.println(mobilePhoneNumber);
+            System.out.println("The customer's Mobile Phone Number is displayed: "+mobilePhoneNumber);
 
         }
+        //TC_0006
         @Then("On the customer page, the user should see the customer's Phone Number")
         public void on_the_customer_page_the_user_should_see_the_customer_s_Phone_Number() {
             boolean phoneNumber = manageCustomerPage.phoneNumberText.isDisplayed();
-            System.out.println(phoneNumber);
+            System.out.println("The customer's Phone Number is displayed: "+phoneNumber);
 
         }
+        //TC_0007
         @Then("on the customer page, the user should see the customer's Address")
         public void on_the_customer_page_the_user_should_see_the_customer_s_Address() {
             boolean address = manageCustomerPage.addressText.isDisplayed();
-            System.out.println(address);
+            System.out.println("The customer's Address is displayed: "+address);
 
         }
+        //TC_0008
         @Then("On the customer page, the user should see the customer's Create Date")
         public void on_the_customer_page_the_user_should_see_the_customer_s_Create_Date() {
             boolean createDate = manageCustomerPage.createDateText.isDisplayed();
-            System.out.println(createDate);
+            System.out.println("The customer's Create Date is displayed: "+createDate);
 
         }
 

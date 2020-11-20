@@ -1,8 +1,8 @@
-@customermanage
+@testcaseone
 Feature: US_012_Manage Customers Page
 
-  @testCaseOne
-  Scenario: TC_0001 All customers should show up on manage customers module populating the account
+  @customeralldate
+  Scenario: TC_0001_TC_0008 All customers should show up on manage customers module populating the account
   information of the customer First Name Last Name Middle Initial Email
   Mobile Phone Number Phone Number Address Create Date
     Given Go to the GMIBank sign in page

@@ -5,7 +5,7 @@ import gmibank.pages.LoginPage;
 import gmibank.pages.ManageCustomerPage;
 import io.cucumber.java.en.Then;
 
-public class US12_TC03_ManCustStepDefinitions {
+public class US12_TC10_ManCustStepDefinitions {
     LoginPage loginPage=new LoginPage();
     HomePage homePage = new HomePage();
     ManageCustomerPage manageCustomerPage = new ManageCustomerPage();

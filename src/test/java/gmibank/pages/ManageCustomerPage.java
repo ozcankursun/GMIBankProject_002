@@ -30,7 +30,7 @@ public class ManageCustomerPage {
     public WebElement firstNameText;
 
     @FindBy(xpath = "//*[.='Last Name']")
-    public WebElement lastNameText;//(//th[@class='hand'])[3]
+    public WebElement lastNameText;
 
     @FindBy(xpath = "//*[.='Middle Initial']")
     public WebElement middleInitialText;
@@ -53,7 +53,7 @@ public class ManageCustomerPage {
     @FindBy(xpath = "(//a[@class='btn btn-info btn-sm'])[1]")
     public WebElement viewButton;
 
-    @FindBy(xpath = "//tbody/tr[1]/td[10]/div[1]/a[2]")//(//a[@class='btn btn-primary btn-sm'])[1]
+    @FindBy(xpath = "//tbody/tr[1]/td[10]/div[1]/a[2]")
     public WebElement editButton;
 
     @FindBy(id = "tp-customer-firstName")
@@ -122,7 +122,7 @@ public class ManageCustomerPage {
     @FindBy(xpath = "//div[@class='Toastify__toast-body']")
     public WebElement alertErrorMessage;
 
-    @FindBy(xpath = "//div[@style='pointer-events: none;']")
+    @FindBy(xpath= "//div[@style='pointer-events: none;']")
     public WebElement confirmMessage;
 
     @FindBy(id = "gmibankfrontendApp.tPCustomer.delete.question")
