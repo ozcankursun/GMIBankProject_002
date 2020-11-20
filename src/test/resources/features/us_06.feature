@@ -10,7 +10,7 @@ Feature: US_006_UserInfo
 
     And Click to User drop down menu
     And Click to User info
-    And Click on first name box
+    And Click-on first name box
     And Click on last name box
     And Click on UserInfoEmail
     And Language dropdown

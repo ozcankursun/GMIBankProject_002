@@ -55,7 +55,7 @@ public class US_06_Step_Definitions {
         us_06_page.userInfo.click();
     }
 
-    @And("Click on first name box")
+    @And("Click-on first name box")
     public void Click_on_first_name_box() {
         Assert.assertTrue(us_06_page.firstName.isDisplayed());
     }
