@@ -23,7 +23,6 @@ public class ManageCustomerPage {
     @FindBy(id = "tp-customer-user")
     public WebElement userBox;
 
-<<<<<<< HEAD
     @FindBy(xpath = "(//a[@class='page-link'])[7]")
     public WebElement lastpagebutton;
 
@@ -129,31 +128,7 @@ public class ManageCustomerPage {
     @FindBy(id = "gmibankfrontendApp.tPCustomer.delete.question")
     public WebElement alertConfirmMessage;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
 }
->>>>>>> master
 
 
 
