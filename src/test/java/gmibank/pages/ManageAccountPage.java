@@ -11,6 +11,7 @@ public class ManageAccountPage {
 
     public ManageAccountPage(){
         PageFactory.initElements(Driver.getDriver(),this);
+
     }
 
 
@@ -59,6 +60,12 @@ public class ManageAccountPage {
 
     @FindBy(xpath = "//span[.='Account']")
     public WebElement accountInformation;
+
+
+
+
+
+
 
 
 

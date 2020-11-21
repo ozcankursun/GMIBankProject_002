@@ -10,7 +10,7 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.Select;
 
-public class US14_CreateAccountStepDefs {
+public class US13_CreateAccountStepDefs {
     LoginPage loginPage = new LoginPage();
     HomePage homePage = new HomePage();
     ManageAccountPage manageAccountPage = new ManageAccountPage();
