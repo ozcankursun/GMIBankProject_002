@@ -1,0 +1,522 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "User got to the GMI Bank home page (https://gmibank.com)",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User got to the GMI bank home page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "Click on user button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "You should navigate to registration page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "Click on password textbox",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T10:53:56.856Z",
+        "line": 12,
+        "name": "There should be at least 1 lowercase char for stronger password and see the level chart change accordingly",
+        "description": "",
+        "id": "regristration-page-should-restrict-password-usage-to-a-secure-high-level-passcode;there-should-be-at-least-1-lowercase-char-for-stronger-password-and-see-the-level-chart-change-accordingly",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "Enter a password with 1 lowercase letter of at least 7 characters",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "Color line must be orange or green",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "Click on password confirmation textbox",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "Enter to second textbox with 1 lowercase letter of at least 7 characters",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US0103"
+          },
+          {
+            "name": "@US03TC01"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User got to the GMI Bank home page (https://gmibank.com)",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User got to the GMI bank home page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "Click on user button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "You should navigate to registration page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "Click on password textbox",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T10:53:57.059Z",
+        "line": 19,
+        "name": "There should be at least 1 uppercase char and see the level  chart change accordingly",
+        "description": "",
+        "id": "regristration-page-should-restrict-password-usage-to-a-secure-high-level-passcode;there-should-be-at-least-1-uppercase-char-and-see-the-level--chart-change-accordingly",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "Enter a password with 1 uppercase letter of at least 7 characters",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "Color line must be orange or green",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "Click on password confirmation textbox",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "Enter to second textbox with 1 uppercase letter of at least 7 characters",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US0103"
+          },
+          {
+            "name": "@US03TC02"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User got to the GMI Bank home page (https://gmibank.com)",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User got to the GMI bank home page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "Click on user button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "You should navigate to registration page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "Click on password textbox",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T10:53:57.091Z",
+        "line": 26,
+        "name": "There should be at least 1 digit  and see the level  chart change accordingly",
+        "description": "",
+        "id": "regristration-page-should-restrict-password-usage-to-a-secure-high-level-passcode;there-should-be-at-least-1-digit--and-see-the-level--chart-change-accordingly",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "Enter a password with 1 digit of at least 7 characters",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "Color line must be orange or green",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "Click on password confirmation textbox",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "Enter to second textbox with 1 digit of at least 7 characters",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US0103"
+          },
+          {
+            "name": "@US03TC03"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User got to the GMI Bank home page (https://gmibank.com)",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User got to the GMI bank home page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "Click on user button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "You should navigate to registration page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "Click on password textbox",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T10:53:57.122Z",
+        "line": 33,
+        "name": "There should be at least 1 special char and see the level bar change accordingly",
+        "description": "",
+        "id": "regristration-page-should-restrict-password-usage-to-a-secure-high-level-passcode;there-should-be-at-least-1-special-char-and-see-the-level-bar-change-accordingly",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 34,
+            "name": "Enter a password with 1 special char of at least 7 characters",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 35,
+            "name": "Color line must be orange or green",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 36,
+            "name": "Click on password confirmation textbox",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 37,
+            "name": "Enter to second textbox with 1 special char of at least 7 characters",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US0103"
+          },
+          {
+            "name": "@US03TC04"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User got to the GMI Bank home page (https://gmibank.com)",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User got to the GMI bank home page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "Click on user button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "You should navigate to registration page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "Click on password textbox",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T10:53:57.138Z",
+        "line": 40,
+        "name": "There should be at least 7 chars for a stronger password",
+        "description": "",
+        "id": "regristration-page-should-restrict-password-usage-to-a-secure-high-level-passcode;there-should-be-at-least-7-chars-for-a-stronger-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 41,
+            "name": "Enter a password with 7 chars",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 42,
+            "name": "Color line must be orange or green",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 43,
+            "name": "Click on password confirmation textbox",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 44,
+            "name": "Enter to second textbox a password with 7 chars",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US0103"
+          },
+          {
+            "name": "@US03TC05"
+          }
+        ]
+      }
+    ],
+    "name": "Regristration page should restrict password usage to a secure high level passcode",
+    "description": "",
+    "id": "regristration-page-should-restrict-password-usage-to-a-secure-high-level-passcode",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/passwordCreate.feature",
+    "tags": [
+      {
+        "name": "@US0103",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
