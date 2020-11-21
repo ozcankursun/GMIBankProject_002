@@ -16,7 +16,17 @@ public class HomePage {
     @FindBy(xpath = "//a[@href='/tp-account']")
     public WebElement manageAccount;
 
-    @FindBy (xpath = "//a[@id='jh-create-entity']")
-    public WebElement createAccountButton;
+    @FindBy (xpath = "//span[.='Manage Customers']")
+    public WebElement manageCustomer;
+
+    @FindBy(xpath = "(//a[@aria-haspopup='true'])[2]")
+    public WebElement userDropdown;
+
+    @FindBy(xpath = "(//a[@class='dropdown-item'])[4]")
+    public WebElement dropdownPasswordtext;
+
+
+
+
 
 }

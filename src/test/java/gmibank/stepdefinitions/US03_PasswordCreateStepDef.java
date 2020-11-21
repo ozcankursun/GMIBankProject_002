@@ -8,7 +8,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 
-public class PasswordCreateStepDef {
+public class US03_PasswordCreateStepDef {
     PasswordCreatePage passCreatePage = new PasswordCreatePage();
     @Given("User go to the GMi Bank home page")
     public void userGoToTheGMiBankHomePage() {
