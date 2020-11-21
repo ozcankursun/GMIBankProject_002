@@ -1,3 +1,10 @@
-target/
+
+
+
+
+
+
+
+/target
 target
 debug.log

@@ -1,8 +1,10 @@
 package gmibank.runners;
 
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"html:target/default-cucumber-reports",
@@ -11,7 +13,8 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "gmibank/stepdefinitions",
         tags = "@testcasefour",
-        dryRun = false
+
+        tags = "@createaccount"
 )
-public class Runner {
+class Runner {
 }
