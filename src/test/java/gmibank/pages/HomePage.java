@@ -24,7 +24,8 @@ public class HomePage {
 
     @FindBy(xpath = "(//a[@class='dropdown-item'])[4]")
     public WebElement dropdownPasswordtext;
-
+    @FindBy(xpath = "//a[@class='dropdown-item']")
+    public WebElement myAccountOption;
 
 
 
