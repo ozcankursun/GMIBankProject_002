@@ -30,7 +30,7 @@ Feature: US_014 Create Account
   Scenario: TC_05 User selects an employee
     Then Select an employee from the Employee dropdown and verify
 
-    @accountsave
+  @accountsave
   Scenario: TC_06 User creates account successfully
       And Click on Descriptions text box and type some descriptions in the text box
       And Click on Balance text box and Type a balance in the text box
