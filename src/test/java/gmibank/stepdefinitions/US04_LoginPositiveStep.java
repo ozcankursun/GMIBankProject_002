@@ -13,7 +13,8 @@ public class US04_LoginPositiveStep {
     LoginPage loginPage = new LoginPage();
 
     @Given("user on the login page")
-    public void user_on_the_login_page() { Driver.getDriver().get(ConfigurationReader.getProperty("gmibank_url")); }
+    public void user_on_the_login_page() {
+        Driver.getDriver().get(ConfigurationReader.getProperty("gmibank_url")); }
 
     @Given("mouse go to dropDown")
     public void mouse_go_to_dropDown() { loginPage.loginDropDown.click(); }
