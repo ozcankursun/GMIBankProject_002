@@ -10,6 +10,9 @@ public class HomePage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+    @FindBy(xpath = "//span[.='My Operations']")
+    public WebElement myOperationsDropdown;
+
     @FindBy(xpath = "//li[@id='entity-menu']")
     public WebElement myAccountDropdown;
 
@@ -24,7 +27,8 @@ public class HomePage {
 
     @FindBy(xpath = "(//a[@class='dropdown-item'])[4]")
     public WebElement dropdownPasswordtext;
-
+    @FindBy(xpath = "//a[@class='dropdown-item']")
+    public WebElement myAccountOption;
 
 
 

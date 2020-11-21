@@ -9,7 +9,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 
-public class US008_UpdatePassword {
+public class US08_UpdatePassword {
     HomePage homePage = new HomePage();
     LoginPage loginPage=new LoginPage();
     UpdatePasswordPage updatePasswordPage = new UpdatePasswordPage();
@@ -75,7 +75,7 @@ public class US008_UpdatePassword {
     public void type_New_Password_confirmation_box_as_the(String string) {
         updatePasswordPage.confirmPasswordbox.sendKeys(string);
     }
-    @Given("Click on Save button")
+    @Given("Click-on Save button")
     public void click_on_Save_button() {
         updatePasswordPage.savebutton.click();
     }
