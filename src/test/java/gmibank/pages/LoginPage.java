@@ -13,7 +13,7 @@ public class LoginPage {
     @FindBy(id = "username")
     public WebElement username;
 
-    @FindBy (name= "password")
+    @FindBy (xpath = "//input[@name='password']")
     public WebElement password;
 
     @FindBy(xpath = "//button[@type='submit']")
@@ -45,6 +45,14 @@ public class LoginPage {
 
     @FindBy(id = "register-title")
     public WebElement registerTitle;
+
+//    @FindBy(xpath = "//input[@name='username']")
+//    public WebElement username_employee;
+//
+//    @FindBy(xpath = "//input[@id='password']")
+//    public WebElement password_employee;
+
+
 
 
 
