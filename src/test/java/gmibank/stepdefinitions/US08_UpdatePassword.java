@@ -42,6 +42,7 @@ public class US08_UpdatePassword {
     public void click_on_Sign_in_button() {
         loginPage.signInButton.click();
     }
+
     @Given("Click on User dropdown menu")
     public void click_on_User_dropdown_menu() {
         homePage.userDropdown.click();
