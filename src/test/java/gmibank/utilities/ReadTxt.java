@@ -7,7 +7,8 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ReadTxt {
+public class
+ReadTxt {
     public static List<Customer> returnCustomer(String filePath){
         List<Customer>all = new ArrayList<>();
         try(BufferedReader br = new BufferedReader(new FileReader(ConfigurationReader.getProperty(filePath)))) {

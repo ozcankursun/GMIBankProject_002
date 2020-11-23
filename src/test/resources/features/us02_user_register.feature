@@ -2,7 +2,19 @@
 Feature:US_002 Create Regester
   Background: Create a new register
     Given Go to registration page "http://gmibank.com/account/register"
-
+  @demo
+  Scenario: TC_demo User should type uniqe SSN
+    And Type a valid SSN "842-73-9072"
+    And Type firstname "Team02"
+    And Type  lastname "Europe"
+    And Type address "Lahey/Netherland"
+    And Type valid mobile phone number "444-555-6666"
+    And Type username "Team02halleder"
+    And Type  email "team02@gmail.com"
+    And Type valid password "Team.02"
+    And Type valid  password confirmation "Team.02"
+    And Click register button
+    Then Verify the user register is not success
   @address
     Scenario: TC_01 User should not see the success message when don't typing address
       And Type a valid SSN "876-13-9772"
