@@ -1,10 +1,10 @@
 package gmibank.pages;
 
+
 import gmibank.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 
 
 
@@ -31,15 +31,26 @@ public class UserInfoPage {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement saveButton;
 
-
-    @FindBy(xpath = "//button[.='Sign in']")
-    public WebElement buttonSignin;
-
     @FindBy(xpath = "//*[@id=\"root\"]/div/div/div[1]/div")
     public WebElement saveAlert;
 
 
+    @FindBy(xpath = "//button[.='Sign in']")
+    public WebElement buttonSignin;
+
+    @FindBy(name="langKey")
+    public WebElement languageDropDown;
+
+
+
+    @FindBy(xpath ="//*[@id=\"settings-form\"]/div[3]/div" )
+    public WebElement invalidField;
 
 
 
 }
+
+
+
+
+

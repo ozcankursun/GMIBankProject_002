@@ -10,9 +10,17 @@
       And US09 click to manage customers
       And US09 click to create a new customer
 
-    @SSN_box
-      Scenario: TC_01 SSN  numbers must be only numbers
-        Given US09 TC01 Send some string "888-44-1111"
+    @SSN_box_search
+    Scenario: TC_01 valid SSN numbers and search a new applicant
+      Given US09 TC01 type a valid SSN "876-13-9772"
+      And US09 TC01 click search
+      And US09 getText from firstname
+      And US09 getText from lastname
+      And US09 getText from email
+      And US09 getText from mobile phone number
+      And US09 getText from phone number
+      And US09 getText from phone ssn
+
 
 
     @TC_03

@@ -31,6 +31,9 @@ public class CreateANewCustomerPage {
     @FindBy(id = "search-ssn")
     public WebElement ssnSearch;
 
+    @FindBy(xpath = "//button[@class='btn btn-secondary']")
+    public WebElement search;
+
     @FindBy(name = "firstName")
     public WebElement firstName;
 

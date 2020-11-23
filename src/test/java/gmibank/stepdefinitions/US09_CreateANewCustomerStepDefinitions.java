@@ -4,7 +4,6 @@ import gmibank.pages.CreateANewCustomerPage;
 import gmibank.utilities.Driver;
 import io.cucumber.java.en.Given;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.Wait;
 
 public class US09_CreateANewCustomerStepDefinitions {
 
@@ -46,11 +45,47 @@ public class US09_CreateANewCustomerStepDefinitions {
         createANewCustomerPage.createANewCustomer.click();
     }
 
-    @Given("US09 TC01 Send some string {string}")
-    public void us09_TC01_Send_some_string(String string) throws InterruptedException {
+    @Given("US09 TC01 type a valid SSN {string}")
+    public void us09_TC01_type_a_valid_SSN(String string) {
         createANewCustomerPage.ssnSearch.sendKeys(string);
+    }
+
+    @Given("US09 TC01 click search")
+    public void us09_TC01_click_search() throws InterruptedException {
+        createANewCustomerPage.search.click();
         Thread.sleep(10000);
     }
+
+    @Given("US09 getText from firstname")
+    public void us09_getText_from_firstname() {
+        System.out.println(createANewCustomerPage.firstName.getText());
+    }
+
+    @Given("US09 getText from lastname")
+    public void us09_getText_from_lastname() {
+        System.out.println(createANewCustomerPage.lastName.getText());
+    }
+
+    @Given("US09 getText from email")
+    public void us09_getText_from_email() {
+        System.out.println(createANewCustomerPage.emailBox.getText());
+    }
+
+    @Given("US09 getText from mobile phone number")
+    public void us09_getText_from_mobile_phone_number() {
+        System.out.println(createANewCustomerPage.mobilePhoneNumber.getText());
+    }
+
+    @Given("US09 getText from phone number")
+    public void us09_getText_from_phone_number() {
+        System.out.println(createANewCustomerPage.phoneNumber.getText());
+    }
+
+    @Given("US09 getText from phone ssn")
+    public void us09_getText_from_phone_ssn() {
+        System.out.println(createANewCustomerPage.ssnBox.getText());
+    }
+
 
     @Given("US09 TC03 Send strings to firstname {string}")
     public void us09_TC03_Send_strings_to_firstname(String string) {
