@@ -22,6 +22,7 @@ Feature:Update Password
     And Type New Password confirmation box as the "customerteam2"
     And Click-on Save button
     Then Confirm the warning message
+
   @US0008-TC002
   Scenario: TC-002
 
@@ -29,6 +30,7 @@ Feature:Update Password
     And Click on New Password box
     And Type New Password as the "LLLLLLLLr"
     And Confirm the the level chart change after typing last lowercase letter accorgingly
+
 
   @US0008-TC003
   Scenario: TC-003
@@ -38,6 +40,7 @@ Feature:Update Password
     And Type New Password as the "kkkkkkkkK"
     And Confirm the the level chart change after typing last uppercase letter accorgingly
 
+
   @US0008-TC004
   Scenario: TC-004
 
@@ -45,6 +48,7 @@ Feature:Update Password
     And Click on New Password box
     And Type New Password as the "mmmmmmmm=2"
     And Confirm the the level chart change after typing last digit accorgingly
+
 
   @US0008-TC005
   Scenario: TC-005
@@ -54,6 +58,7 @@ Feature:Update Password
     And Type New Password as the "rrrrrrrrR2["
     Then Confirm the the level chart change after typing the last character accorgingly
 
+
   @US0008-TC006
   Scenario: TC-006
 
@@ -61,6 +66,7 @@ Feature:Update Password
     And Click on New Password box
     And Type New Password as the "rrrghjFg#1"
     Then Confirm the the level chart change after typing 7th char accorgingly
+
 
   @US0008-TC007
   Scenario: TC-007
