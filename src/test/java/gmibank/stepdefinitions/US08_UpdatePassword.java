@@ -75,16 +75,10 @@ public class US08_UpdatePassword {
     public void type_New_Password_confirmation_box_as_the(String string) {
         updatePasswordPage.confirmPasswordbox.sendKeys(string);
     }
-
-
-    @Given("click save button")
-    public void click_save_button() {
+    @Given("Click-on Save button")
+    public void click_on_Save_button() {
         updatePasswordPage.savebutton.click();
     }
-//    @Given("Click-on Save button")
-//    public void click_on_Save_button() {
-//        updatePasswordPage.savebutton.click();
-//    }
     @Then("Confirm the warning message")
     public void confirm_the_warning_message() throws InterruptedException {
         Thread.sleep(2000);
