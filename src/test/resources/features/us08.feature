@@ -20,7 +20,8 @@ Feature:Update Password
     And Type New Password as the "customerteam2"
     And Click on New Password confirmation box
     And Type New Password confirmation box as the "customerteam2"
-    And Click on Save button
+    And click save button
+    #And Click on Save button
     Then Confirm the warning message
   @US0008-TC002
   Scenario: TC-002
