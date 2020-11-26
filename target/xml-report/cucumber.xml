@@ -1,58 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="5" tests="5" time="0.797">
-<testcase classname="Regristration page should restrict password usage to a secure high level passcode" name="There should be at least 1 lowercase char for stronger password and see the level chart change accordingly" time="0.125">
-<skipped><![CDATA[Given User got to the GMI bank home page....................................undefined
-And Click on user button....................................................undefined
-And You should navigate to registration page................................undefined
-And Click on password textbox...............................................undefined
-And Enter a password with 1 lowercase letter of at least 7 characters.......undefined
-And Color line must be orange or green......................................undefined
-And Click on password confirmation textbox..................................undefined
-Then Enter to second textbox with 1 lowercase letter of at least 7 characters.undefined
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="5" tests="5" time="1.816">
+<testcase classname="US_16 tests" name="TC1601 User should have at least 2 accounts" time="0.151">
+<skipped><![CDATA[Given user enters gmibank homepage..........................................undefined
+And user clicks userEntry icon..............................................undefined
+And user clicks signIn link.................................................undefined
+And user enters customer username "aaabbb"..................................undefined
+And user enters customer password "AaaBbb-21"...............................undefined
+And user clicks signIn button...............................................undefined
+Then user clicks customer myOperations link.................................undefined
+Given user clicks My Accounts link..........................................undefined
+And user verify Account Type1 "19669" can be seen...........................undefined
+And user verify Account Type2 "19670" can be seen...........................undefined
+Then user signOut from customer Website.....................................undefined
 ]]></skipped>
 </testcase>
-<testcase classname="Regristration page should restrict password usage to a secure high level passcode" name="There should be at least 1 uppercase char and see the level  chart change accordingly" time="0">
-<skipped><![CDATA[Given User got to the GMI bank home page....................................undefined
-And Click on user button....................................................undefined
-And You should navigate to registration page................................undefined
-And Click on password textbox...............................................undefined
-And Enter a password with 1 uppercase letter of at least 7 characters.......undefined
-And Color line must be orange or green......................................undefined
-And Click on password confirmation textbox..................................undefined
-Then Enter to second textbox with 1 uppercase letter of at least 7 characters.undefined
+<testcase classname="US_16 tests" name="TC1602 User can select the first account as From dropdown where they receive their money from" time="0.01">
+<skipped><![CDATA[Given user enters gmibank homepage..........................................undefined
+And user clicks userEntry icon..............................................undefined
+And user clicks signIn link.................................................undefined
+And user enters customer username "aaabbb"..................................undefined
+And user enters customer password "AaaBbb-21"...............................undefined
+And user clicks signIn button...............................................undefined
+Then user clicks customer myOperations link.................................undefined
+Given user clicks Transfer Money link.......................................undefined
+And user select first account from From dropdown menu and click.............undefined
+And user verify the selected account can be seen............................undefined
+Then user signOut from customer Website.....................................undefined
 ]]></skipped>
 </testcase>
-<testcase classname="Regristration page should restrict password usage to a secure high level passcode" name="There should be at least 1 digit  and see the level  chart change accordingly" time="0">
-<skipped><![CDATA[Given User got to the GMI bank home page....................................undefined
-And Click on user button....................................................undefined
-And You should navigate to registration page................................undefined
-And Click on password textbox...............................................undefined
-And Enter a password with 1 digit of at least 7 characters..................undefined
-And Color line must be orange or green......................................undefined
-And Click on password confirmation textbox..................................undefined
-Then Enter to second textbox with 1 digit of at least 7 characters..........undefined
+<testcase classname="US_16 tests" name="TC1603 User can select a balance that they want to proceed with" time="0.012">
+<skipped><![CDATA[Given user enters gmibank homepage..........................................undefined
+And user clicks userEntry icon..............................................undefined
+And user clicks signIn link.................................................undefined
+And user enters customer username "aaabbb"..................................undefined
+And user enters customer password "AaaBbb-21"...............................undefined
+And user clicks signIn button...............................................undefined
+Then user clicks customer myOperations link.................................undefined
+Given user clicks Transfer Money link.......................................undefined
+And user select first account from From dropdown menu and click.............undefined
+And user select other account from To dropdown menu and click...............undefined
+And user send "100" to Balance and click tab................................undefined
+And user click tab and verify the amount can be seen in Balance.............undefined
+Then user signOut from customer Website.....................................undefined
 ]]></skipped>
 </testcase>
-<testcase classname="Regristration page should restrict password usage to a secure high level passcode" name="There should be at least 1 special char and see the level bar change accordingly" time="0">
-<skipped><![CDATA[Given User got to the GMI bank home page....................................undefined
-And Click on user button....................................................undefined
-And You should navigate to registration page................................undefined
-And Click on password textbox...............................................undefined
-And Enter a password with 1 special char of at least 7 characters...........undefined
-And Color line must be orange or green......................................undefined
-And Click on password confirmation textbox..................................undefined
-Then Enter to second textbox with 1 special char of at least 7 characters...undefined
+<testcase classname="US_16 tests" name="TC1604 User should provide a description for that transfer" time="0.01">
+<skipped><![CDATA[Given user enters gmibank homepage..........................................undefined
+And user clicks userEntry icon..............................................undefined
+And user clicks signIn link.................................................undefined
+And user enters customer username "aaabbb"..................................undefined
+And user enters customer password "AaaBbb-21"...............................undefined
+And user clicks signIn button...............................................undefined
+Then user clicks customer myOperations link.................................undefined
+Given user clicks Transfer Money link.......................................undefined
+And user select first account from From dropdown menu and click.............undefined
+And user select other account from To dropdown menu and click...............undefined
+And user send "100" to Balance and click tab................................undefined
+And user send "transfer between accounts" to Description and click tab......undefined
+Then user signOut from customer Website.....................................undefined
 ]]></skipped>
 </testcase>
-<testcase classname="Regristration page should restrict password usage to a secure high level passcode" name="There should be at least 7 chars for a stronger password" time="0.015">
-<skipped><![CDATA[Given User got to the GMI bank home page....................................undefined
-And Click on user button....................................................undefined
-And You should navigate to registration page................................undefined
-And Click on password textbox...............................................undefined
-And Enter a password with 7 chars...........................................undefined
-And Color line must be orange or green......................................undefined
-And Click on password confirmation textbox..................................undefined
-Then Enter to second textbox a password with 7 chars........................undefined
+<testcase classname="US_16 tests" name="TC1605 User can make sure transfer is done successfully validating the message an amount of the transaction&quot;" time="0.015">
+<skipped><![CDATA[Given user enters gmibank homepage..........................................undefined
+And user clicks userEntry icon..............................................undefined
+And user clicks signIn link.................................................undefined
+And user enters customer username "aaabbb"..................................undefined
+And user enters customer password "AaaBbb-21"...............................undefined
+And user clicks signIn button...............................................undefined
+Then user clicks customer myOperations link.................................undefined
+Given user clicks Transfer Money link.......................................undefined
+And user select first account from From dropdown menu and click.............undefined
+And user select other account from To dropdown menu and click...............undefined
+And user send "100" to Balance and click tab................................undefined
+And user send "transfer between accounts" to Description and click tab......undefined
+And user click Make Transfer link...........................................undefined
+And user clicks customer myOperations link..................................undefined
+And user clicks My Accounts link............................................undefined
+And user click View Transaction link........................................undefined
+And verify the transaction is accomplished..................................undefined
+Then user signOut from customer Website.....................................undefined
 ]]></skipped>
 </testcase>
 </testsuite>

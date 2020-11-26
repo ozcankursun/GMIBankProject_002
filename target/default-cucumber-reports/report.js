@@ -1,21 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/passwordCreate.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US16_TransferMoneyFromTwoAccount.feature");
 formatter.feature({
-  "name": "Regristration page should restrict password usage to a secure high level passcode",
+  "name": "US_16 tests",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@US0103"
+      "name": "@US_16"
     }
   ]
 });
 formatter.background({
-  "name": "User got to the GMI Bank home page (https://gmibank.com)",
+  "name": "user enters gmibank homepage then sign in as a customer",
   "description": "",
   "keyword": "Background"
 });
 formatter.step({
-  "name": "User got to the GMI bank home page",
+  "name": "user enters gmibank homepage",
   "keyword": "Given "
 });
 formatter.match({});
@@ -23,7 +23,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Click on user button",
+  "name": "user clicks userEntry icon",
   "keyword": "And "
 });
 formatter.match({});
@@ -31,7 +31,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "You should navigate to registration page",
+  "name": "user clicks signIn link",
   "keyword": "And "
 });
 formatter.match({});
@@ -39,28 +39,60 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Click on password textbox",
+  "name": "user enters customer username \"aaabbb\"",
   "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user enters customer password \"AaaBbb-21\"",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks signIn button",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks customer myOperations link",
+  "keyword": "Then "
 });
 formatter.match({});
 formatter.result({
   "status": "undefined"
 });
 formatter.scenario({
-  "name": "There should be at least 1 lowercase char for stronger password and see the level chart change accordingly",
+  "name": "TC1601 User should have at least 2 accounts",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US0103"
+      "name": "@US_16"
     },
     {
-      "name": "@US03TC01"
+      "name": "@TC1601"
     }
   ]
 });
 formatter.step({
-  "name": "Enter a password with 1 lowercase letter of at least 7 characters",
+  "name": "user clicks My Accounts link",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user verify Account Type1 \"19669\" can be seen",
   "keyword": "And "
 });
 formatter.match({});
@@ -68,7 +100,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Color line must be orange or green",
+  "name": "user verify Account Type2 \"19670\" can be seen",
   "keyword": "And "
 });
 formatter.match({});
@@ -76,15 +108,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Click on password confirmation textbox",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "Enter to second textbox with 1 lowercase letter of at least 7 characters",
+  "name": "user signOut from customer Website",
   "keyword": "Then "
 });
 formatter.match({});
@@ -92,12 +116,12 @@ formatter.result({
   "status": "undefined"
 });
 formatter.background({
-  "name": "User got to the GMI Bank home page (https://gmibank.com)",
+  "name": "user enters gmibank homepage then sign in as a customer",
   "description": "",
   "keyword": "Background"
 });
 formatter.step({
-  "name": "User got to the GMI bank home page",
+  "name": "user enters gmibank homepage",
   "keyword": "Given "
 });
 formatter.match({});
@@ -105,7 +129,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Click on user button",
+  "name": "user clicks userEntry icon",
   "keyword": "And "
 });
 formatter.match({});
@@ -113,7 +137,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "You should navigate to registration page",
+  "name": "user clicks signIn link",
   "keyword": "And "
 });
 formatter.match({});
@@ -121,28 +145,60 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Click on password textbox",
+  "name": "user enters customer username \"aaabbb\"",
   "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user enters customer password \"AaaBbb-21\"",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks signIn button",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks customer myOperations link",
+  "keyword": "Then "
 });
 formatter.match({});
 formatter.result({
   "status": "undefined"
 });
 formatter.scenario({
-  "name": "There should be at least 1 uppercase char and see the level  chart change accordingly",
+  "name": "TC1602 User can select the first account as From dropdown where they receive their money from",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US0103"
+      "name": "@US_16"
     },
     {
-      "name": "@US03TC02"
+      "name": "@TC1602"
     }
   ]
 });
 formatter.step({
-  "name": "Enter a password with 1 uppercase letter of at least 7 characters",
+  "name": "user clicks Transfer Money link",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user select first account from From dropdown menu and click",
   "keyword": "And "
 });
 formatter.match({});
@@ -150,7 +206,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Color line must be orange or green",
+  "name": "user verify the selected account can be seen",
   "keyword": "And "
 });
 formatter.match({});
@@ -158,15 +214,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Click on password confirmation textbox",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "Enter to second textbox with 1 uppercase letter of at least 7 characters",
+  "name": "user signOut from customer Website",
   "keyword": "Then "
 });
 formatter.match({});
@@ -174,12 +222,12 @@ formatter.result({
   "status": "undefined"
 });
 formatter.background({
-  "name": "User got to the GMI Bank home page (https://gmibank.com)",
+  "name": "user enters gmibank homepage then sign in as a customer",
   "description": "",
   "keyword": "Background"
 });
 formatter.step({
-  "name": "User got to the GMI bank home page",
+  "name": "user enters gmibank homepage",
   "keyword": "Given "
 });
 formatter.match({});
@@ -187,7 +235,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Click on user button",
+  "name": "user clicks userEntry icon",
   "keyword": "And "
 });
 formatter.match({});
@@ -195,7 +243,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "You should navigate to registration page",
+  "name": "user clicks signIn link",
   "keyword": "And "
 });
 formatter.match({});
@@ -203,28 +251,60 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Click on password textbox",
+  "name": "user enters customer username \"aaabbb\"",
   "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user enters customer password \"AaaBbb-21\"",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks signIn button",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks customer myOperations link",
+  "keyword": "Then "
 });
 formatter.match({});
 formatter.result({
   "status": "undefined"
 });
 formatter.scenario({
-  "name": "There should be at least 1 digit  and see the level  chart change accordingly",
+  "name": "TC1603 User can select a balance that they want to proceed with",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US0103"
+      "name": "@US_16"
     },
     {
-      "name": "@US03TC03"
+      "name": "@TC1603"
     }
   ]
 });
 formatter.step({
-  "name": "Enter a password with 1 digit of at least 7 characters",
+  "name": "user clicks Transfer Money link",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user select first account from From dropdown menu and click",
   "keyword": "And "
 });
 formatter.match({});
@@ -232,7 +312,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Color line must be orange or green",
+  "name": "user select other account from To dropdown menu and click",
   "keyword": "And "
 });
 formatter.match({});
@@ -240,7 +320,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Click on password confirmation textbox",
+  "name": "user send \"100\" to Balance and click tab",
   "keyword": "And "
 });
 formatter.match({});
@@ -248,7 +328,15 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Enter to second textbox with 1 digit of at least 7 characters",
+  "name": "user click tab and verify the amount can be seen in Balance",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user signOut from customer Website",
   "keyword": "Then "
 });
 formatter.match({});
@@ -256,12 +344,12 @@ formatter.result({
   "status": "undefined"
 });
 formatter.background({
-  "name": "User got to the GMI Bank home page (https://gmibank.com)",
+  "name": "user enters gmibank homepage then sign in as a customer",
   "description": "",
   "keyword": "Background"
 });
 formatter.step({
-  "name": "User got to the GMI bank home page",
+  "name": "user enters gmibank homepage",
   "keyword": "Given "
 });
 formatter.match({});
@@ -269,7 +357,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Click on user button",
+  "name": "user clicks userEntry icon",
   "keyword": "And "
 });
 formatter.match({});
@@ -277,7 +365,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "You should navigate to registration page",
+  "name": "user clicks signIn link",
   "keyword": "And "
 });
 formatter.match({});
@@ -285,28 +373,60 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Click on password textbox",
+  "name": "user enters customer username \"aaabbb\"",
   "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user enters customer password \"AaaBbb-21\"",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks signIn button",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks customer myOperations link",
+  "keyword": "Then "
 });
 formatter.match({});
 formatter.result({
   "status": "undefined"
 });
 formatter.scenario({
-  "name": "There should be at least 1 special char and see the level bar change accordingly",
+  "name": "TC1604 User should provide a description for that transfer",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US0103"
+      "name": "@US_16"
     },
     {
-      "name": "@US03TC04"
+      "name": "@TC1604"
     }
   ]
 });
 formatter.step({
-  "name": "Enter a password with 1 special char of at least 7 characters",
+  "name": "user clicks Transfer Money link",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user select first account from From dropdown menu and click",
   "keyword": "And "
 });
 formatter.match({});
@@ -314,7 +434,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Color line must be orange or green",
+  "name": "user select other account from To dropdown menu and click",
   "keyword": "And "
 });
 formatter.match({});
@@ -322,7 +442,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Click on password confirmation textbox",
+  "name": "user send \"100\" to Balance and click tab",
   "keyword": "And "
 });
 formatter.match({});
@@ -330,7 +450,15 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Enter to second textbox with 1 special char of at least 7 characters",
+  "name": "user send \"transfer between accounts\" to Description and click tab",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user signOut from customer Website",
   "keyword": "Then "
 });
 formatter.match({});
@@ -338,12 +466,12 @@ formatter.result({
   "status": "undefined"
 });
 formatter.background({
-  "name": "User got to the GMI Bank home page (https://gmibank.com)",
+  "name": "user enters gmibank homepage then sign in as a customer",
   "description": "",
   "keyword": "Background"
 });
 formatter.step({
-  "name": "User got to the GMI bank home page",
+  "name": "user enters gmibank homepage",
   "keyword": "Given "
 });
 formatter.match({});
@@ -351,7 +479,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Click on user button",
+  "name": "user clicks userEntry icon",
   "keyword": "And "
 });
 formatter.match({});
@@ -359,7 +487,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "You should navigate to registration page",
+  "name": "user clicks signIn link",
   "keyword": "And "
 });
 formatter.match({});
@@ -367,28 +495,60 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Click on password textbox",
+  "name": "user enters customer username \"aaabbb\"",
   "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user enters customer password \"AaaBbb-21\"",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks signIn button",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks customer myOperations link",
+  "keyword": "Then "
 });
 formatter.match({});
 formatter.result({
   "status": "undefined"
 });
 formatter.scenario({
-  "name": "There should be at least 7 chars for a stronger password",
+  "name": "TC1605 User can make sure transfer is done successfully validating the message an amount of the transaction\"",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US0103"
+      "name": "@US_16"
     },
     {
-      "name": "@US03TC05"
+      "name": "@TC1605"
     }
   ]
 });
 formatter.step({
-  "name": "Enter a password with 7 chars",
+  "name": "user clicks Transfer Money link",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user select first account from From dropdown menu and click",
   "keyword": "And "
 });
 formatter.match({});
@@ -396,7 +556,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Color line must be orange or green",
+  "name": "user select other account from To dropdown menu and click",
   "keyword": "And "
 });
 formatter.match({});
@@ -404,7 +564,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Click on password confirmation textbox",
+  "name": "user send \"100\" to Balance and click tab",
   "keyword": "And "
 });
 formatter.match({});
@@ -412,7 +572,55 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Enter to second textbox a password with 7 chars",
+  "name": "user send \"transfer between accounts\" to Description and click tab",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user click Make Transfer link",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks customer myOperations link",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks My Accounts link",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user click View Transaction link",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "verify the transaction is accomplished",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user signOut from customer Website",
   "keyword": "Then "
 });
 formatter.match({});

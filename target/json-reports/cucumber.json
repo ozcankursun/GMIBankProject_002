@@ -1,10 +1,10 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "line": 5,
-        "name": "User got to the GMI Bank home page (https://gmibank.com)",
+        "line": 4,
+        "name": "user enters gmibank homepage then sign in as a customer",
         "description": "",
         "type": "background",
         "keyword": "Background",
@@ -13,8 +13,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 6,
-            "name": "User got to the GMI bank home page",
+            "line": 5,
+            "name": "user enters gmibank homepage",
             "match": {},
             "keyword": "Given "
           },
@@ -22,8 +22,17 @@
             "result": {
               "status": "undefined"
             },
+            "line": 6,
+            "name": "user clicks userEntry icon",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
             "line": 7,
-            "name": "Click on user button",
+            "name": "user clicks signIn link",
             "match": {},
             "keyword": "And "
           },
@@ -32,7 +41,7 @@
               "status": "undefined"
             },
             "line": 8,
-            "name": "You should navigate to registration page",
+            "name": "user enters customer username \"aaabbb\"",
             "match": {},
             "keyword": "And "
           },
@@ -41,18 +50,36 @@
               "status": "undefined"
             },
             "line": 9,
-            "name": "Click on password textbox",
+            "name": "user enters customer password \"AaaBbb-21\"",
             "match": {},
             "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "user clicks signIn button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "user clicks customer myOperations link",
+            "match": {},
+            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-14T10:53:56.856Z",
-        "line": 12,
-        "name": "There should be at least 1 lowercase char for stronger password and see the level chart change accordingly",
+        "start_timestamp": "2020-11-26T12:07:42.764Z",
+        "line": 14,
+        "name": "TC1601 User should have at least 2 accounts",
         "description": "",
-        "id": "regristration-page-should-restrict-password-usage-to-a-secure-high-level-passcode;there-should-be-at-least-1-lowercase-char-for-stronger-password-and-see-the-level-chart-change-accordingly",
+        "id": "us-16-tests;tc1601-user-should-have-at-least-2-accounts",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
@@ -60,51 +87,51 @@
             "result": {
               "status": "undefined"
             },
-            "line": 13,
-            "name": "Enter a password with 1 lowercase letter of at least 7 characters",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 14,
-            "name": "Color line must be orange or green",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
             "line": 15,
-            "name": "Click on password confirmation textbox",
+            "name": "user clicks My Accounts link",
             "match": {},
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
               "status": "undefined"
             },
             "line": 16,
-            "name": "Enter to second textbox with 1 lowercase letter of at least 7 characters",
+            "name": "user verify Account Type1 \"19669\" can be seen",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "user verify Account Type2 \"19670\" can be seen",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "user signOut from customer Website",
             "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@US0103"
+            "name": "@US_16"
           },
           {
-            "name": "@US03TC01"
+            "name": "@TC1601"
           }
         ]
       },
       {
-        "line": 5,
-        "name": "User got to the GMI Bank home page (https://gmibank.com)",
+        "line": 4,
+        "name": "user enters gmibank homepage then sign in as a customer",
         "description": "",
         "type": "background",
         "keyword": "Background",
@@ -113,8 +140,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 6,
-            "name": "User got to the GMI bank home page",
+            "line": 5,
+            "name": "user enters gmibank homepage",
             "match": {},
             "keyword": "Given "
           },
@@ -122,8 +149,17 @@
             "result": {
               "status": "undefined"
             },
+            "line": 6,
+            "name": "user clicks userEntry icon",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
             "line": 7,
-            "name": "Click on user button",
+            "name": "user clicks signIn link",
             "match": {},
             "keyword": "And "
           },
@@ -132,7 +168,7 @@
               "status": "undefined"
             },
             "line": 8,
-            "name": "You should navigate to registration page",
+            "name": "user enters customer username \"aaabbb\"",
             "match": {},
             "keyword": "And "
           },
@@ -141,18 +177,36 @@
               "status": "undefined"
             },
             "line": 9,
-            "name": "Click on password textbox",
+            "name": "user enters customer password \"AaaBbb-21\"",
             "match": {},
             "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "user clicks signIn button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "user clicks customer myOperations link",
+            "match": {},
+            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-14T10:53:57.059Z",
-        "line": 19,
-        "name": "There should be at least 1 uppercase char and see the level  chart change accordingly",
+        "start_timestamp": "2020-11-26T12:07:43.026Z",
+        "line": 21,
+        "name": "TC1602 User can select the first account as From dropdown where they receive their money from",
         "description": "",
-        "id": "regristration-page-should-restrict-password-usage-to-a-secure-high-level-passcode;there-should-be-at-least-1-uppercase-char-and-see-the-level--chart-change-accordingly",
+        "id": "us-16-tests;tc1602-user-can-select-the-first-account-as-from-dropdown-where-they-receive-their-money-from",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
@@ -160,51 +214,51 @@
             "result": {
               "status": "undefined"
             },
-            "line": 20,
-            "name": "Enter a password with 1 uppercase letter of at least 7 characters",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 21,
-            "name": "Color line must be orange or green",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
             "line": 22,
-            "name": "Click on password confirmation textbox",
+            "name": "user clicks Transfer Money link",
             "match": {},
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
               "status": "undefined"
             },
             "line": 23,
-            "name": "Enter to second textbox with 1 uppercase letter of at least 7 characters",
+            "name": "user select first account from From dropdown menu and click",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "user verify the selected account can be seen",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "user signOut from customer Website",
             "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@US0103"
+            "name": "@US_16"
           },
           {
-            "name": "@US03TC02"
+            "name": "@TC1602"
           }
         ]
       },
       {
-        "line": 5,
-        "name": "User got to the GMI Bank home page (https://gmibank.com)",
+        "line": 4,
+        "name": "user enters gmibank homepage then sign in as a customer",
         "description": "",
         "type": "background",
         "keyword": "Background",
@@ -213,8 +267,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 6,
-            "name": "User got to the GMI bank home page",
+            "line": 5,
+            "name": "user enters gmibank homepage",
             "match": {},
             "keyword": "Given "
           },
@@ -222,8 +276,17 @@
             "result": {
               "status": "undefined"
             },
+            "line": 6,
+            "name": "user clicks userEntry icon",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
             "line": 7,
-            "name": "Click on user button",
+            "name": "user clicks signIn link",
             "match": {},
             "keyword": "And "
           },
@@ -232,7 +295,7 @@
               "status": "undefined"
             },
             "line": 8,
-            "name": "You should navigate to registration page",
+            "name": "user enters customer username \"aaabbb\"",
             "match": {},
             "keyword": "And "
           },
@@ -241,18 +304,36 @@
               "status": "undefined"
             },
             "line": 9,
-            "name": "Click on password textbox",
+            "name": "user enters customer password \"AaaBbb-21\"",
             "match": {},
             "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "user clicks signIn button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "user clicks customer myOperations link",
+            "match": {},
+            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-14T10:53:57.091Z",
-        "line": 26,
-        "name": "There should be at least 1 digit  and see the level  chart change accordingly",
+        "start_timestamp": "2020-11-26T12:07:43.095Z",
+        "line": 28,
+        "name": "TC1603 User can select a balance that they want to proceed with",
         "description": "",
-        "id": "regristration-page-should-restrict-password-usage-to-a-secure-high-level-passcode;there-should-be-at-least-1-digit--and-see-the-level--chart-change-accordingly",
+        "id": "us-16-tests;tc1603-user-can-select-a-balance-that-they-want-to-proceed-with",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
@@ -260,70 +341,17 @@
             "result": {
               "status": "undefined"
             },
-            "line": 27,
-            "name": "Enter a password with 1 digit of at least 7 characters",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 28,
-            "name": "Color line must be orange or green",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
             "line": 29,
-            "name": "Click on password confirmation textbox",
+            "name": "user clicks Transfer Money link",
             "match": {},
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
               "status": "undefined"
             },
             "line": 30,
-            "name": "Enter to second textbox with 1 digit of at least 7 characters",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US0103"
-          },
-          {
-            "name": "@US03TC03"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User got to the GMI Bank home page (https://gmibank.com)",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 6,
-            "name": "User got to the GMI bank home page",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7,
-            "name": "Click on user button",
+            "name": "user select first account from From dropdown menu and click",
             "match": {},
             "keyword": "And "
           },
@@ -331,8 +359,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 8,
-            "name": "You should navigate to registration page",
+            "line": 31,
+            "name": "user select other account from To dropdown menu and click",
             "match": {},
             "keyword": "And "
           },
@@ -340,71 +368,42 @@
             "result": {
               "status": "undefined"
             },
-            "line": 9,
-            "name": "Click on password textbox",
+            "line": 32,
+            "name": "user send \"100\" to Balance and click tab",
             "match": {},
             "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-14T10:53:57.122Z",
-        "line": 33,
-        "name": "There should be at least 1 special char and see the level bar change accordingly",
-        "description": "",
-        "id": "regristration-page-should-restrict-password-usage-to-a-secure-high-level-passcode;there-should-be-at-least-1-special-char-and-see-the-level-bar-change-accordingly",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 33,
+            "name": "user click tab and verify the amount can be seen in Balance",
+            "match": {},
+            "keyword": "And "
+          },
           {
             "result": {
               "status": "undefined"
             },
             "line": 34,
-            "name": "Enter a password with 1 special char of at least 7 characters",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 35,
-            "name": "Color line must be orange or green",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 36,
-            "name": "Click on password confirmation textbox",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 37,
-            "name": "Enter to second textbox with 1 special char of at least 7 characters",
+            "name": "user signOut from customer Website",
             "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@US0103"
+            "name": "@US_16"
           },
           {
-            "name": "@US03TC04"
+            "name": "@TC1603"
           }
         ]
       },
       {
-        "line": 5,
-        "name": "User got to the GMI Bank home page (https://gmibank.com)",
+        "line": 4,
+        "name": "user enters gmibank homepage then sign in as a customer",
         "description": "",
         "type": "background",
         "keyword": "Background",
@@ -413,8 +412,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 6,
-            "name": "User got to the GMI bank home page",
+            "line": 5,
+            "name": "user enters gmibank homepage",
             "match": {},
             "keyword": "Given "
           },
@@ -422,8 +421,17 @@
             "result": {
               "status": "undefined"
             },
+            "line": 6,
+            "name": "user clicks userEntry icon",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
             "line": 7,
-            "name": "Click on user button",
+            "name": "user clicks signIn link",
             "match": {},
             "keyword": "And "
           },
@@ -432,7 +440,7 @@
               "status": "undefined"
             },
             "line": 8,
-            "name": "You should navigate to registration page",
+            "name": "user enters customer username \"aaabbb\"",
             "match": {},
             "keyword": "And "
           },
@@ -441,18 +449,36 @@
               "status": "undefined"
             },
             "line": 9,
-            "name": "Click on password textbox",
+            "name": "user enters customer password \"AaaBbb-21\"",
             "match": {},
             "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "user clicks signIn button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "user clicks customer myOperations link",
+            "match": {},
+            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-14T10:53:57.138Z",
-        "line": 40,
-        "name": "There should be at least 7 chars for a stronger password",
+        "start_timestamp": "2020-11-26T12:07:43.225Z",
+        "line": 37,
+        "name": "TC1604 User should provide a description for that transfer",
         "description": "",
-        "id": "regristration-page-should-restrict-password-usage-to-a-secure-high-level-passcode;there-should-be-at-least-7-chars-for-a-stronger-password",
+        "id": "us-16-tests;tc1604-user-should-provide-a-description-for-that-transfer",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
@@ -460,8 +486,35 @@
             "result": {
               "status": "undefined"
             },
+            "line": 38,
+            "name": "user clicks Transfer Money link",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 39,
+            "name": "user select first account from From dropdown menu and click",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 40,
+            "name": "user select other account from To dropdown menu and click",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
             "line": 41,
-            "name": "Enter a password with 7 chars",
+            "name": "user send \"100\" to Balance and click tab",
             "match": {},
             "keyword": "And "
           },
@@ -470,7 +523,7 @@
               "status": "undefined"
             },
             "line": 42,
-            "name": "Color line must be orange or green",
+            "name": "user send \"transfer between accounts\" to Description and click tab",
             "match": {},
             "keyword": "And "
           },
@@ -479,7 +532,42 @@
               "status": "undefined"
             },
             "line": 43,
-            "name": "Click on password confirmation textbox",
+            "name": "user signOut from customer Website",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_16"
+          },
+          {
+            "name": "@TC1604"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "user enters gmibank homepage then sign in as a customer",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user enters gmibank homepage",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user clicks userEntry icon",
             "match": {},
             "keyword": "And "
           },
@@ -487,30 +575,176 @@
             "result": {
               "status": "undefined"
             },
-            "line": 44,
-            "name": "Enter to second textbox a password with 7 chars",
+            "line": 7,
+            "name": "user clicks signIn link",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "user enters customer username \"aaabbb\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "user enters customer password \"AaaBbb-21\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "user clicks signIn button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "user clicks customer myOperations link",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-26T12:07:43.298Z",
+        "line": 46,
+        "name": "TC1605 User can make sure transfer is done successfully validating the message an amount of the transaction\"",
+        "description": "",
+        "id": "us-16-tests;tc1605-user-can-make-sure-transfer-is-done-successfully-validating-the-message-an-amount-of-the-transaction\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 47,
+            "name": "user clicks Transfer Money link",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 48,
+            "name": "user select first account from From dropdown menu and click",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 49,
+            "name": "user select other account from To dropdown menu and click",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 50,
+            "name": "user send \"100\" to Balance and click tab",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 51,
+            "name": "user send \"transfer between accounts\" to Description and click tab",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 52,
+            "name": "user click Make Transfer link",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 53,
+            "name": "user clicks customer myOperations link",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 54,
+            "name": "user clicks My Accounts link",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 55,
+            "name": "user click View Transaction link",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 56,
+            "name": "verify the transaction is accomplished",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 57,
+            "name": "user signOut from customer Website",
             "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@US0103"
+            "name": "@US_16"
           },
           {
-            "name": "@US03TC05"
+            "name": "@TC1605"
           }
         ]
       }
     ],
-    "name": "Regristration page should restrict password usage to a secure high level passcode",
+    "name": "US_16 tests",
     "description": "",
-    "id": "regristration-page-should-restrict-password-usage-to-a-secure-high-level-passcode",
+    "id": "us-16-tests",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/passwordCreate.feature",
+    "uri": "file:src/test/resources/features/US16_TransferMoneyFromTwoAccount.feature",
     "tags": [
       {
-        "name": "@US0103",
+        "name": "@US_16",
         "type": "Tag",
         "location": {
           "line": 1,
