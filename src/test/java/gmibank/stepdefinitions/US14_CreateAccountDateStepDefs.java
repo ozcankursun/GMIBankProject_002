@@ -122,8 +122,31 @@ public class US14_CreateAccountDateStepDefs {
 
     @Given("Type valid SSN {string}")
     public void type_valid_SSN(String string) {
-        createANewCustomerPage.ssnBox.sendKeys(string);
+
+        createANewCustomerPage.ssnSearch.sendKeys(string);
+        createANewCustomerPage.search.click();
     }
+
+    @Given("Type Middle Initial {string}")
+    public void type_Middle_Initial(String string) {
+        createANewCustomerPage.middleInitial.sendKeys(string);
+    }
+
+    @Given("Type Phone Number {string}")
+    public void type_Phone_Number(String string) {
+        createANewCustomerPage.phoneNumber.sendKeys(string);
+    }
+
+    @Given("Type zip code {string}")
+    public void type_zip_code(String string) {
+        createANewCustomerPage.zipCode.sendKeys(string);
+    }
+
+    @Given("Type city to city box {string}")
+    public void type_city_to_city_box(String string) {
+       createANewCustomerPage.city.sendKeys(string);
+    }
+
 
     @Given("Select accounts")
     public void select_accounts() {
@@ -140,8 +163,6 @@ public class US14_CreateAccountDateStepDefs {
 
     }
 
-
-  //hello
 
 
 

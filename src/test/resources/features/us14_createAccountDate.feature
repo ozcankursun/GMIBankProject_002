@@ -50,11 +50,18 @@ Feature:US_015_Date creation
     And Click an ID item to choose an account created on manage accounts
     Then Verify Account
 
-  @democustomeraccount
+
+
+
+  @demo
     Scenario: employee selects accounts
     And Click on Manage Customer
     And Click on +Create a new Custumer
     And Type valid SSN "842-73-9072"
+    And Type Middle Initial "1234"
+    And Type Phone Number "121-121-1122"
+    And Type zip code "23232"
+    And Type city to city box "Lahey"
     And Select accounts
     Then click save
 
