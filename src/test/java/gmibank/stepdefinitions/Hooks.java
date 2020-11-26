@@ -25,7 +25,7 @@ public class Hooks {
     }
 
     //Her scenario dan sonra
-    @After
+//    @After
     public void tearDown(Scenario scenario){
         //System.out.println("Hooks class - tearDown Method ");
 
