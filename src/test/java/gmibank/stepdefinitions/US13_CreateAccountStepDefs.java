@@ -31,7 +31,7 @@ public class US13_CreateAccountStepDefs {
 
     @Given("Click on My Operations dropdown menu")
     public void click_on_My_Operations_dropdown_menu() {
-        homePage.myAccountDropdown.click();
+        homePage.myOperationsDropdown.click();
 
     }
 
