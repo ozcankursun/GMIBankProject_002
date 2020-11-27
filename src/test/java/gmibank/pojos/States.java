@@ -7,6 +7,25 @@ public class States {
 
     private int id;
     private String name;
+    private String tpcountry;
+
+    public States() {
+    }
+
+    @Override
+    public String toString() {
+        return "States{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", tpcountry='" + tpcountry + '\'' +
+                '}';
+    }
+
+    public States(int id, String name, String tpcountry) {
+        this.id = id;
+        this.name = name;
+        this.tpcountry = tpcountry;
+    }
 
     public int getId() {
         return id;
@@ -24,14 +43,16 @@ public class States {
         this.name = name;
     }
 
-    public Country getCountry() {
-        return country;
+    public String getTpcountry() {
+        return tpcountry;
     }
 
-    public void setCountry(Country country) {
-        this.country = country;
+    public void setTpcountry(String tpcountry) {
+        this.tpcountry = tpcountry;
     }
 
-    private Country country;
+
+
+
 }
 

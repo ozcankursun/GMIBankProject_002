@@ -9,15 +9,28 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"html:target/default-cucumber-reports",
                 "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml"},
+                "junit:target/xml-report/cucumber.xml"
+        },
         features = "src/test/resources/features",
         glue = "gmibank/stepdefinitions",
+<<<<<<< HEAD
 <<<<<<< HEAD
         tags = "@CreateNewCountry",
 =======
         tags = "@US19",
 >>>>>>> refs/remotes/origin/master
+=======
+        tags = "@US_16",
+>>>>>>> refs/remotes/origin/master
         dryRun = false
+=======
+        tags = "@US_26",
+        dryRun = false,
+        strict = true
+>>>>>>> master
+
 )
-class Runner {
+
+public class Runner {
+
 }
