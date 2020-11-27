@@ -1,27 +1,75 @@
 package gmibank.pojos;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+//import org.apache.commons.lang.builder.ToStringBuilder;
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+        "id",
+        "name",
+        "states"
+})
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Country {
-    private int id;
+    @JsonProperty("id")
+    private Integer id;
+    @JsonProperty("name")
     private String name;
-    public int getId() {
+    @JsonProperty("states")
+    private Object states;
+    /**
+     * No args constructor for use in serialization
+     *
+     */
+    public Country() {
+    }
+    public Country(String name) {
+        this.name = name;
+    }
+    public Country(String name, Object states) {
+        this.name = name;
+        this.states = states;
+    }
+    /**
+     *
+     * @param name
+     * @param id
+     * @param states
+     */
+    public Country(Integer id, String name, Object states) {
+        super();
+        this.id = id;
+        this.name = name;
+        this.states = states;
+    }
+    @JsonProperty("id")
+    public Integer getId() {
         return id;
     }
-    public void setId(int id) {
+    @JsonProperty("id")
+    public void setId(Integer id) {
         this.id = id;
     }
+    @JsonProperty("name")
     public String getName() {
         return name;
     }
+    @JsonProperty("name")
     public void setName(String name) {
         this.name = name;
     }
-    public String getStates() {
-        return state;
+    @JsonProperty("states")
+    public Object getStates() {
+        return states;
     }
-    public void setState(String state) {
-        this.state = state;
+    @JsonProperty("states")
+    public void setStates(Object states) {
+        this.states = states;
     }
-    private String state;
+//    @Override
+//    public String toString() {
+//        return new ToStringBuilder(this).append("id", id).append("name", name).append("states", states).toString();
+//    }
 }
