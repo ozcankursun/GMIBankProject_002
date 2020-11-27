@@ -7,9 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="GMIBankProject_002_Hamza_YIlmaz" />
-        <module name="GMIBankProject_002" />
         <module name="Calisma" />
         <module name="proje grup2" />
+        <module name="GMIBankProject_002" />
       </profile>
     </annotationProcessing>
   </component>
