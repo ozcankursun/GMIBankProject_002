@@ -48,6 +48,7 @@ public class US24_StateCountryStepDefinitions {
         String actualStates = responseState.getName();
         System.out.println("Actual state: " + actualStates);
         System.out.println("Actual state: " + expectedState);
+        System.out.println("Actual state: " + expectedState);
 
     }
 
