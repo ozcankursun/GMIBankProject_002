@@ -9,6 +9,10 @@
         <module name="GMIBankProject_002_Hamza_YIlmaz" />
         <module name="Calisma" />
         <module name="proje grup2" />
+<<<<<<< HEAD
+=======
+        <module name="GMIBankProject_002DEMO" />
+>>>>>>> master
         <module name="GMIBankProject_002" />
       </profile>
     </annotationProcessing>
