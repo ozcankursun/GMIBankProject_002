@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class US_29_Step_Definitions {
+public class US29_StepDefinitions {
 
     String userDataQuery = "SELECT * FROM " + ConfigurationReader.getProperty("usersTableName");
     ResultSet resultSetUser;

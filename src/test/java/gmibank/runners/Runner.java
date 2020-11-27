@@ -12,10 +12,9 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "gmibank/stepdefinitions",
-        tags = "@US_25",
+        tags = "@US19_TC01",
         dryRun = false
 )
-
 public class Runner {
 
 }
