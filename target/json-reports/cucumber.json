@@ -38,20 +38,36 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 8,
             "name": "user enters customer username \"aaabbb\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"aaabbb\"",
+                  "offset": 30
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_username(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 9,
             "name": "user enters customer password \"AaaBbb-21\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AaaBbb-21\"",
+                  "offset": 30
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_password(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
@@ -65,58 +81,103 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 16000000,
+              "status": "skipped"
             },
             "line": 11,
             "name": "user clicks customer myOperations link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_customer_myOperations_link()"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-26T12:07:42.764Z",
+        "start_timestamp": "2020-11-27T11:33:30.898Z",
+        "before": [
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
         "line": 14,
         "name": "TC1601 User should have at least 2 accounts",
         "description": "",
         "id": "us-16-tests;tc1601-user-should-have-at-least-2-accounts",
+        "after": [
+          {
+            "result": {
+              "duration": 7631000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 15,
             "name": "user clicks My Accounts link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_My_Accounts_link()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 16,
             "name": "user verify Account Type1 \"19669\" can be seen",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"19669\"",
+                  "offset": 26
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_verify_Account_Type1_can_be_seen(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 17,
             "name": "user verify Account Type2 \"19670\" can be seen",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"19670\"",
+                  "offset": 26
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_verify_Account_Type2_can_be_seen(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 18,
             "name": "user signOut from customer Website",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_signOut_from_customer_Website()"
+            },
             "keyword": "Then "
           }
         ],
@@ -165,20 +226,36 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 8,
             "name": "user enters customer username \"aaabbb\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"aaabbb\"",
+                  "offset": 30
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_username(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 9,
             "name": "user enters customer password \"AaaBbb-21\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AaaBbb-21\"",
+                  "offset": 30
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_password(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
@@ -192,58 +269,90 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 11,
             "name": "user clicks customer myOperations link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_customer_myOperations_link()"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-26T12:07:43.026Z",
+        "start_timestamp": "2020-11-27T11:33:38.686Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
         "line": 21,
         "name": "TC1602 User can select the first account as From dropdown where they receive their money from",
         "description": "",
         "id": "us-16-tests;tc1602-user-can-select-the-first-account-as-from-dropdown-where-they-receive-their-money-from",
+        "after": [
+          {
+            "result": {
+              "duration": 418000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 16000000,
+              "status": "skipped"
             },
             "line": 22,
             "name": "user clicks Transfer Money link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_Transfer_Money_link()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 23,
             "name": "user select first account from From dropdown menu and click",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_select_first_account_from_From_dropdown_menu_and_click()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 24,
             "name": "user verify the selected account can be seen",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_verify_the_selected_account_can_be_seen()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 25,
             "name": "user signOut from customer Website",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_signOut_from_customer_Website()"
+            },
             "keyword": "Then "
           }
         ],
@@ -292,20 +401,36 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 8,
             "name": "user enters customer username \"aaabbb\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"aaabbb\"",
+                  "offset": 30
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_username(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 9,
             "name": "user enters customer password \"AaaBbb-21\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AaaBbb-21\"",
+                  "offset": 30
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_password(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
@@ -319,76 +444,117 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 11,
             "name": "user clicks customer myOperations link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_customer_myOperations_link()"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-26T12:07:43.095Z",
+        "start_timestamp": "2020-11-27T11:33:39.136Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
         "line": 28,
         "name": "TC1603 User can select a balance that they want to proceed with",
         "description": "",
         "id": "us-16-tests;tc1603-user-can-select-a-balance-that-they-want-to-proceed-with",
+        "after": [
+          {
+            "result": {
+              "duration": 387000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 29,
             "name": "user clicks Transfer Money link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_Transfer_Money_link()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 30,
             "name": "user select first account from From dropdown menu and click",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_select_first_account_from_From_dropdown_menu_and_click()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 31,
             "name": "user select other account from To dropdown menu and click",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_select_other_account_from_To_dropdown_menu_and_click()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 32,
             "name": "user send \"100\" to Balance and click tab",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"100\"",
+                  "offset": 10
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_send_to_Balance_and_click_tab(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 33,
             "name": "user click tab and verify the amount can be seen in Balance",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_click_tab_and_verify_the_amount_can_be_seen_in_Balance()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 34,
             "name": "user signOut from customer Website",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_signOut_from_customer_Website()"
+            },
             "keyword": "Then "
           }
         ],
@@ -437,20 +603,36 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 8,
             "name": "user enters customer username \"aaabbb\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"aaabbb\"",
+                  "offset": 30
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_username(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 9,
             "name": "user enters customer password \"AaaBbb-21\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AaaBbb-21\"",
+                  "offset": 30
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_password(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
@@ -464,76 +646,123 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 11,
             "name": "user clicks customer myOperations link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_customer_myOperations_link()"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-26T12:07:43.225Z",
+        "start_timestamp": "2020-11-27T11:33:39.554Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
         "line": 37,
         "name": "TC1604 User should provide a description for that transfer",
         "description": "",
         "id": "us-16-tests;tc1604-user-should-provide-a-description-for-that-transfer",
+        "after": [
+          {
+            "result": {
+              "duration": 340000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 38,
             "name": "user clicks Transfer Money link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_Transfer_Money_link()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 39,
             "name": "user select first account from From dropdown menu and click",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_select_first_account_from_From_dropdown_menu_and_click()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 40,
             "name": "user select other account from To dropdown menu and click",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_select_other_account_from_To_dropdown_menu_and_click()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 41,
             "name": "user send \"100\" to Balance and click tab",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"100\"",
+                  "offset": 10
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_send_to_Balance_and_click_tab(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 42,
             "name": "user send \"transfer between accounts\" to Description and click tab",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"transfer between accounts\"",
+                  "offset": 10
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_send_to_Description_and_click_tab(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 43,
             "name": "user signOut from customer Website",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_signOut_from_customer_Website()"
+            },
             "keyword": "Then "
           }
         ],
@@ -582,20 +811,37 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 8,
             "name": "user enters customer username \"aaabbb\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"aaabbb\"",
+                  "offset": 30
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_username(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 9,
             "name": "user enters customer password \"AaaBbb-21\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AaaBbb-21\"",
+                  "offset": 30
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_password(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
@@ -609,121 +855,183 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 11,
             "name": "user clicks customer myOperations link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_customer_myOperations_link()"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-26T12:07:43.298Z",
+        "start_timestamp": "2020-11-27T11:33:39.947Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
         "line": 46,
         "name": "TC1605 User can make sure transfer is done successfully validating the message an amount of the transaction\"",
         "description": "",
         "id": "us-16-tests;tc1605-user-can-make-sure-transfer-is-done-successfully-validating-the-message-an-amount-of-the-transaction\"",
+        "after": [
+          {
+            "result": {
+              "duration": 352000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 47,
             "name": "user clicks Transfer Money link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_Transfer_Money_link()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 48,
             "name": "user select first account from From dropdown menu and click",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_select_first_account_from_From_dropdown_menu_and_click()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 49,
             "name": "user select other account from To dropdown menu and click",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_select_other_account_from_To_dropdown_menu_and_click()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 50,
             "name": "user send \"100\" to Balance and click tab",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"100\"",
+                  "offset": 10
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_send_to_Balance_and_click_tab(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 51,
             "name": "user send \"transfer between accounts\" to Description and click tab",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"transfer between accounts\"",
+                  "offset": 10
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_send_to_Description_and_click_tab(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 52,
             "name": "user click Make Transfer link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_click_Make_Transfer_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 53,
             "name": "user clicks customer myOperations link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_customer_myOperations_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 54,
             "name": "user clicks My Accounts link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_My_Accounts_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 55,
             "name": "user click View Transaction link",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_click_View_Transaction_link()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 56,
             "name": "verify the transaction is accomplished",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.verify_the_transaction_is_accomplished()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 57,
             "name": "user signOut from customer Website",
-            "match": {},
+            "match": {
+              "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_signOut_from_customer_Website()"
+            },
             "keyword": "Then "
           }
         ],

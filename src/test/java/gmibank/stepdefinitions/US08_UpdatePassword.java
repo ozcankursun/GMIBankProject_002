@@ -13,18 +13,17 @@ public class US08_UpdatePassword {
     HomePage homePage = new HomePage();
     LoginPage loginPage=new LoginPage();
     UpdatePasswordPage updatePasswordPage = new UpdatePasswordPage();
+
     @Given("Go to URL {string}")
     public void go_to_URL(String string) {
         Driver.getDriver().get(string);
     }
 
-
-
-
     @Given("Click on dropdown menu")
     public void click_on_dropdown_menu() {
         loginPage.loginDropDown.click();
     }
+
     @Given("Choose Sign-in")
     public void choose_Sign_in() {
         loginPage.signInText.click();
@@ -35,13 +34,14 @@ public class US08_UpdatePassword {
     }
     @Given("Type password {string}")
     public void type_password(String string) throws InterruptedException {
-        Thread.sleep(3000);
+        Driver.wait(2);
         loginPage.password.sendKeys(string);
     }
     @Given("Click on Sign-in button")
     public void click_on_Sign_in_button() {
         loginPage.signInButton.click();
     }
+
     @Given("Click on User dropdown menu")
     public void click_on_User_dropdown_menu() {
         homePage.userDropdown.click();
@@ -85,6 +85,8 @@ public class US08_UpdatePassword {
         String message=updatePasswordPage.warningMessage.getText();
         //System.out.println(message);
         Assert.assertEquals("A","Password changed!",message);
+        Driver.closeDriver();
+
     }
 
 
@@ -93,6 +95,7 @@ public class US08_UpdatePassword {
         String message2 = updatePasswordPage.scalaOfStrenghtFirst.getAttribute("style");
         //System.out.println(message2);
         Assert.assertNotEquals("2","background-color: rgb(255, 0, 0);",message2);
+        Driver.closeDriver();
     }
 
     @And("Confirm the the level chart change after typing last uppercase letter accorgingly")
@@ -100,6 +103,7 @@ public class US08_UpdatePassword {
         String message3 = updatePasswordPage.scalaOfStrenghtSecond.getAttribute("style");
         //System.out.println(message3);
         Assert.assertNotEquals("3","background-color: rgb(255, 0, 0);",message3);
+        Driver.closeDriver();
     }
 
     @And("Confirm the the level chart change after typing last digit accorgingly")
@@ -107,6 +111,7 @@ public class US08_UpdatePassword {
         String message4 = updatePasswordPage.scalaOfStrenghtForth.getAttribute("style");
         //System.out.println(message4);
         Assert.assertNotEquals("4","background-color: rgb(221, 221, 221);",message4);
+        Driver.closeDriver();
     }
 
     @Then("Confirm the the level chart change after typing the last character accorgingly")
@@ -114,6 +119,7 @@ public class US08_UpdatePassword {
         String message5 = updatePasswordPage.scalaOfStrenghtFifth.getAttribute("style");
         //System.out.println(message5);
         Assert.assertNotEquals("5","background-color: rgb(221, 221, 221);",message5);
+        Driver.closeDriver();
     }
 
     @Then("Confirm the the level chart change after typing {int}th char accorgingly")
@@ -121,5 +127,9 @@ public class US08_UpdatePassword {
         String message6 = updatePasswordPage.scalaOfStrenghtFifth.getAttribute("style");
         //System.out.println(message6);
         Assert.assertEquals("5","background-color: rgb(221, 221, 221);",message6);
+        Driver.closeDriver();
+
     }
+
+
 }

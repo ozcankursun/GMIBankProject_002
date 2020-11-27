@@ -20,7 +20,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
- public class RegistrationStepDefinitions {
+ public class US02_UserRegistrationStepDef {
 
     RegistrationPage registrationPage=new RegistrationPage();
     @Given("Go to registration page {string}")
