@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 import static io.restassured.RestAssured.*;
 
-public class US_23_Step_Definitions {
+public class US23_StepDefinitions {
 
     Response response;
     ObjectMapper obj;
