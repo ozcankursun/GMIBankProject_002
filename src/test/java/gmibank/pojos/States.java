@@ -12,6 +12,16 @@ public class States {
     public States() {
     }
 
+    public States(String name){
+        this.name = name;
+    }
+
+    public States(String state, Object o) {
+    }
+//    public States(String null){
+//
+//    }
+
     @Override
     public String toString() {
         return "States{" +
