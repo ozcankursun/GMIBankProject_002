@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="GMIBankProject_002_Hamza_YIlmaz" />
         <module name="GMIBankProject_002" />
+        <module name="Calisma" />
         <module name="proje grup2" />
       </profile>
     </annotationProcessing>
