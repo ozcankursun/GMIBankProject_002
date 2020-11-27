@@ -1,6 +1,5 @@
 package gmibank.runners;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -13,15 +12,9 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "gmibank/stepdefinitions",
-<<<<<<< HEAD
-        tags = "@US_16",
-        dryRun = false
-=======
-        tags = "@US_26",
-        dryRun = false,
-        strict = true
->>>>>>> master
 
+        tags = "@US_25",
+        dryRun = false
 )
 
 public class Runner {
