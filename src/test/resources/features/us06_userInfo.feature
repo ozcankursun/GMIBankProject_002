@@ -1,4 +1,4 @@
-@US06_UserInfo
+@US06_userInfo
 Feature:User info segment (User Settings) should be editable on Homepage
   Background: User Info
 
