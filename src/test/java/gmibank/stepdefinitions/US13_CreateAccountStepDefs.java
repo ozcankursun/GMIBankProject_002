@@ -19,13 +19,14 @@ public class US13_CreateAccountStepDefs {
     @Given("Go to the sign in page")
     public void go_to_the_sign_in_page() {
         Driver.getDriver().get(ConfigurationReader.getProperty("gmibank_login_url"));
-        //Driver.wait(3000);
+
     }
 
     @Given("Type username and password than click on sign in button")
     public void type_username_and_password_than_click_on_sign_in_button() {
         loginPage.username.sendKeys(ConfigurationReader.getProperty("username_employee"));
         loginPage.password.sendKeys(ConfigurationReader.getProperty("password_employee"));
+        Driver.wait(3);
         loginPage.signInButton.click();
     }
 

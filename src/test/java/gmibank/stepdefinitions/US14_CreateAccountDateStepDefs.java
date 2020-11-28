@@ -79,6 +79,7 @@ public class US14_CreateAccountDateStepDefs {
     //TC_005
     @Given("Click on Manage Customer")
     public void click_on_Manage_Customer() {
+        Driver.wait(3);
         homePage.manageCustomer.click();
 
     }
@@ -135,6 +136,7 @@ public class US14_CreateAccountDateStepDefs {
     @Given("Type Phone Number {string}")
     public void type_Phone_Number(String string) {
         createANewCustomerPage.phoneNumber.sendKeys(string);
+        Driver.wait(3);
     }
 
     @Given("Type zip code {string}")
@@ -159,7 +161,9 @@ public class US14_CreateAccountDateStepDefs {
 
     @Then("click save")
     public void click_save() {
+        Driver.wait(5);
         createANewCustomerPage.saveButton.click();
+        Driver.closeDriver();
 
     }
 

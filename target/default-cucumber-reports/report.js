@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US16_TransferMoneyFromTwoAccount.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/us02_user_register.feature");
 formatter.feature({
-  "name": "US_16 tests",
+  "name": "US_002 Create Regester",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@US_16"
+      "name": "@createregistration"
     }
   ]
 });
 formatter.background({
-  "name": "user enters gmibank homepage then sign in as a customer",
+  "name": "Create a new register",
   "description": "",
   "keyword": "Background"
 });
@@ -18,125 +18,151 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters gmibank homepage",
+  "name": "Go to registration page \"http://gmibank.com/account/register\"",
   "keyword": "Given "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks userEntry icon",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks signIn link",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user enters customer username \"aaabbb\"",
-  "keyword": "And "
-});
 formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_username(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US02_UserRegistrationStepDef.go_to_registration_page(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user enters customer password \"AaaBbb-21\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_password(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks signIn button",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks customer myOperations link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_customer_myOperations_link()"
-});
-formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
-  "name": "TC1601 User should have at least 2 accounts",
+  "name": "TC_demo User should type uniqe SSN",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US_16"
+      "name": "@createregistration"
     },
     {
-      "name": "@TC1601"
+      "name": "@demo"
     }
   ]
 });
 formatter.step({
-  "name": "user clicks My Accounts link",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_My_Accounts_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user verify Account Type1 \"19669\" can be seen",
+  "name": "Type a valid SSN \"842-73-9072\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_verify_Account_Type1_can_be_seen(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US02_UserRegistrationStepDef.type_a_valid_SSN(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user verify Account Type2 \"19670\" can be seen",
+  "name": "Type firstname \"Team02\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_verify_Account_Type2_can_be_seen(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US02_UserRegistrationStepDef.type_firstname(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user signOut from customer Website",
+  "name": "Type  lastname \"Europe\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US02_UserRegistrationStepDef.type_lastname(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Type address \"Lahey/Netherland\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US02_UserRegistrationStepDef.type_address(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Type valid mobile phone number \"444-555-6666\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US02_UserRegistrationStepDef.type_valid_mobile_phone_number(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Type username \"Team02halleder\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US02_UserRegistrationStepDef.type_username(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Type  email \"team02@gmail.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US02_UserRegistrationStepDef.type_email(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Type valid password \"Team.02\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US02_UserRegistrationStepDef.type_valid_password(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Type valid  password confirmation \"Team.02\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US02_UserRegistrationStepDef.type_valid_password_confirmation(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click register button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US02_UserRegistrationStepDef.click_register_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the user register is not success",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_signOut_from_customer_Website()"
+  "location": "gmibank.stepdefinitions.US02_UserRegistrationStepDef.verify_the_user_register_is_not_success()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.after({
   "status": "passed"
 });
+formatter.uri("file:src/test/resources/features/us14_createAccountDate.feature");
+formatter.feature({
+  "name": "US_015_Date creation",
+  "description": "",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@datecreate"
+    }
+  ]
+});
 formatter.background({
-  "name": "user enters gmibank homepage then sign in as a customer",
+  "name": "US_015 Create a new account",
   "description": "",
   "keyword": "Background"
 });
@@ -144,125 +170,151 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters gmibank homepage",
+  "name": "Go to the sign in page",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US13_CreateAccountStepDefs.go_to_the_sign_in_page()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user clicks userEntry icon",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks signIn link",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user enters customer username \"aaabbb\"",
+  "name": "Type username and password than click on sign in button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_username(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US13_CreateAccountStepDefs.type_username_and_password_than_click_on_sign_in_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user enters customer password \"AaaBbb-21\"",
+  "name": "Click on My Operations dropdown menu",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_password(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US13_CreateAccountStepDefs.click_on_My_Operations_dropdown_menu()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks signIn button",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks customer myOperations link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_customer_myOperations_link()"
-});
-formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
-  "name": "TC1602 User can select the first account as From dropdown where they receive their money from",
+  "name": "employee selects accounts",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US_16"
+      "name": "@datecreate"
     },
     {
-      "name": "@TC1602"
+      "name": "@demo"
     }
   ]
 });
 formatter.step({
-  "name": "user clicks Transfer Money link",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_Transfer_Money_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user select first account from From dropdown menu and click",
+  "name": "Click on Manage Customer",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_select_first_account_from_From_dropdown_menu_and_click()"
+  "location": "gmibank.stepdefinitions.US14_CreateAccountDateStepDefs.click_on_Manage_Customer()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user verify the selected account can be seen",
+  "name": "Click on +Create a new Custumer",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_verify_the_selected_account_can_be_seen()"
+  "location": "gmibank.stepdefinitions.US14_CreateAccountDateStepDefs.click_on_Create_a_new_Custumer()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user signOut from customer Website",
+  "name": "Type valid SSN \"842-73-9072\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US14_CreateAccountDateStepDefs.type_valid_SSN(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Type Middle Initial \"1234\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US14_CreateAccountDateStepDefs.type_Middle_Initial(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Type Phone Number \"121-121-1122\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US14_CreateAccountDateStepDefs.type_Phone_Number(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Type zip code \"23232\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US14_CreateAccountDateStepDefs.type_zip_code(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Type city to city box \"Lahey\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US14_CreateAccountDateStepDefs.type_city_to_city_box(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Select accounts",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US14_CreateAccountDateStepDefs.select_accounts()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click save",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_signOut_from_customer_Website()"
+  "location": "gmibank.stepdefinitions.US14_CreateAccountDateStepDefs.click_save()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.after({
   "status": "passed"
 });
+formatter.uri("file:src/test/resources/features/us15_CheckingAccount.feature");
+formatter.feature({
+  "name": "",
+  "description": "",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@US015"
+    }
+  ]
+});
 formatter.background({
-  "name": "user enters gmibank homepage then sign in as a customer",
+  "name": "",
   "description": "",
   "keyword": "Background"
 });
@@ -270,483 +322,119 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters gmibank homepage",
+  "name": "Go to URL \"https://gmibank.com/\"",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US08_UpdatePassword.go_to_URL(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user clicks userEntry icon",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks signIn link",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user enters customer username \"aaabbb\"",
+  "name": "Click on dropdown menu",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_username(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US08_UpdatePassword.click_on_dropdown_menu()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user enters customer password \"AaaBbb-21\"",
+  "name": "Choose Sign-in",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_password(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US08_UpdatePassword.choose_Sign_in()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user clicks signIn button",
+  "name": "Type username of customer \"Team02halleder\"",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US08_UpdatePassword.type_username_of_customer(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user clicks customer myOperations link",
-  "keyword": "Then "
+  "name": "Type password \"Team.02\"",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_customer_myOperations_link()"
+  "location": "gmibank.stepdefinitions.US08_UpdatePassword.type_password(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Sign-in button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US08_UpdatePassword.click_on_Sign_in_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on My Operations dropdown",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US15_CheckingAccount.clickOnMyOperationsDropdown()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Choose My Account from dropdown menu",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.US15_CheckingAccount.choose_My_Account_from_dropdown_menu()"
+});
+formatter.result({
+  "status": "passed"
 });
 formatter.scenario({
-  "name": "TC1603 User can select a balance that they want to proceed with",
+  "name": "TC-002",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US_16"
+      "name": "@US015"
     },
     {
-      "name": "@TC1603"
+      "name": "@US015-TC002"
+    },
+    {
+      "name": "@demo"
     }
   ]
 });
 formatter.step({
-  "name": "user clicks Transfer Money link",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_Transfer_Money_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user select first account from From dropdown menu and click",
+  "name": "Click on Transaction button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_select_first_account_from_From_dropdown_menu_and_click()"
+  "location": "gmibank.stepdefinitions.US15_CheckingAccount.click_on_Transaction_button()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user select other account from To dropdown menu and click",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_select_other_account_from_To_dropdown_menu_and_click()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user send \"100\" to Balance and click tab",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_send_to_Balance_and_click_tab(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user click tab and verify the amount can be seen in Balance",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_click_tab_and_verify_the_amount_can_be_seen_in_Balance()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user signOut from customer Website",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_signOut_from_customer_Website()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "user enters gmibank homepage then sign in as a customer",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters gmibank homepage",
-  "keyword": "Given "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks userEntry icon",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks signIn link",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user enters customer username \"aaabbb\"",
+  "name": "Confirm the seeing of transaction",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_username(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US15_CheckingAccount.confirm_the_seeing_of_transaction()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user enters customer password \"AaaBbb-21\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_password(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks signIn button",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks customer myOperations link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_customer_myOperations_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "TC1604 User should provide a description for that transfer",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US_16"
-    },
-    {
-      "name": "@TC1604"
-    }
-  ]
-});
-formatter.step({
-  "name": "user clicks Transfer Money link",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_Transfer_Money_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user select first account from From dropdown menu and click",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_select_first_account_from_From_dropdown_menu_and_click()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user select other account from To dropdown menu and click",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_select_other_account_from_To_dropdown_menu_and_click()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user send \"100\" to Balance and click tab",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_send_to_Balance_and_click_tab(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user send \"transfer between accounts\" to Description and click tab",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_send_to_Description_and_click_tab(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user signOut from customer Website",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_signOut_from_customer_Website()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "user enters gmibank homepage then sign in as a customer",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enters gmibank homepage",
-  "keyword": "Given "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks userEntry icon",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks signIn link",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user enters customer username \"aaabbb\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_username(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user enters customer password \"AaaBbb-21\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_enters_customer_password(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks signIn button",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "user clicks customer myOperations link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_customer_myOperations_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "TC1605 User can make sure transfer is done successfully validating the message an amount of the transaction\"",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@US_16"
-    },
-    {
-      "name": "@TC1605"
-    }
-  ]
-});
-formatter.step({
-  "name": "user clicks Transfer Money link",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_Transfer_Money_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user select first account from From dropdown menu and click",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_select_first_account_from_From_dropdown_menu_and_click()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user select other account from To dropdown menu and click",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_select_other_account_from_To_dropdown_menu_and_click()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user send \"100\" to Balance and click tab",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_send_to_Balance_and_click_tab(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user send \"transfer between accounts\" to Description and click tab",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_send_to_Description_and_click_tab(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user click Make Transfer link",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_click_Make_Transfer_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks customer myOperations link",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_customer_myOperations_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks My Accounts link",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_clicks_My_Accounts_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user click View Transaction link",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_click_View_Transaction_link()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "verify the transaction is accomplished",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.verify_the_transaction_is_accomplished()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user signOut from customer Website",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US16_TransferMoneyTwoAccounts.user_signOut_from_customer_Website()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
   "status": "passed"
 });
 });

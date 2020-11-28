@@ -28,7 +28,7 @@ public class US15_CheckingAccount {
     @Given("Confirm the seeing of acount types and balance populated")
     public void confirm_the_seeing_of_acount_types_and_balance_populated() {
         Assert.assertEquals("Customer Accounts",customerAccountPage.customerAccountText.getText());
-        Driver.closeDriver();
+
     }
     @Given("Click on Transaction button")
     public void click_on_Transaction_button() {
@@ -38,8 +38,7 @@ public class US15_CheckingAccount {
 
     @Given("Confirm the seeing of transaction")
     public void confirm_the_seeing_of_transaction() {
-        Assert.assertEquals("Transfer 500.00 to account ID: 19665",customerAccountPage.validateTransfer.getText());
-        Driver.closeDriver();
+        Assert.assertEquals("Transfer 100.00 to account ID: 19668",customerAccountPage.validateTransfer.getText());
     }
 
 }

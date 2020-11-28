@@ -32,6 +32,7 @@ import java.util.concurrent.TimeUnit;
     @Given("Type a valid SSN {string}")
     public void type_a_valid_SSN(String string) {
     registrationPage.SSN.sendKeys(string);
+    Driver.wait(3);
     }
 
     @Given("Type firstname {string}")
@@ -78,7 +79,7 @@ import java.util.concurrent.TimeUnit;
 
     @Given("Click register button")
     public void click_register_button() {
-
+       Driver.wait(3);
        registrationPage.button.click();
     }
 

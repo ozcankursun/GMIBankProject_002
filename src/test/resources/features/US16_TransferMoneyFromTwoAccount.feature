@@ -2,13 +2,14 @@
 Feature: US_16 tests
 
   Background: user enters gmibank homepage then sign in as a customer
-    Given user enters gmibank homepage
-    And user clicks userEntry icon
-    And user clicks signIn link
-    And user enters customer username "aaabbb"
-    And user enters customer password "AaaBbb-21"
-    And user clicks signIn button
-    Then user clicks customer myOperations link
+    Given Go to URL "https://gmibank.com/"
+    And Click on dropdown menu
+    And Choose Sign-in
+    And Type username of customer "Team02halleder"
+    And Type password "Team.02"
+    And Click on Sign-in button
+    And Click on My Operations dropdown
+
 
   @TC1601
   Scenario: TC1601 User should have at least 2 accounts

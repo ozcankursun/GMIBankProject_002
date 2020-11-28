@@ -16,6 +16,6 @@ public class CustomerAccountPage {
     @FindBy (xpath = "(//button)[2]")
     public WebElement buttonOfTransactionView;
 
-    @FindBy (xpath = "//*[contains(text(),'Transfer 500')]")
+    @FindBy (xpath = "//*[contains(text(),'Transfer 100')]")
     public WebElement validateTransfer;
 }
