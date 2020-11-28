@@ -114,7 +114,8 @@ import java.util.concurrent.TimeUnit;
 
     @And("Type  username {string}")
     public void typeUsername(String arg0) {
-    registrationPage.username.sendKeys(arg0);
+
+       registrationPage.username.sendKeys(arg0);
     }
 
     @And("Type email {string}")
@@ -148,7 +149,7 @@ import java.util.concurrent.TimeUnit;
                .withTimeout(30, TimeUnit.SECONDS)
                .pollingEvery(5, TimeUnit.SECONDS)
                .ignoring(Exception.class);
-       WebElement invalid=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='invalid-feedback']")));
+       WebElement invalid=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[.='Edit']")));
        boolean message=invalid.isDisplayed();
        Assert.assertTrue(message);
 
