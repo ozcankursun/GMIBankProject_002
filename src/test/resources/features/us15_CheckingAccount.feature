@@ -11,12 +11,12 @@ Feature:
     And Choose My Account from dropdown menu
 
   @US015-TC001
-  Scenario:
+  Scenario:TC-001
 
     And Confirm the seeing of acount types and balance populated
 
   @US015-TC002
-  Scenario:
+  Scenario:TC-002
 
     And Click on Transaction button
     And Confirm the seeing of transaction

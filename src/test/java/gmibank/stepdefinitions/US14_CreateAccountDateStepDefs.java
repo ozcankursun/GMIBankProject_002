@@ -1,5 +1,6 @@
 package gmibank.stepdefinitions;
 
+import gmibank.pages.CreateANewCustomerPage;
 import gmibank.pages.HomePage;
 import gmibank.pages.ManageAccountPage;
 import gmibank.pages.ManageCustomerPage;
@@ -8,11 +9,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 
 public class US14_CreateAccountDateStepDefs {
     ManageAccountPage manageAccountPage = new ManageAccountPage();
     ManageCustomerPage manageCustomerPage = new ManageCustomerPage();
     HomePage homePage = new HomePage();
+    CreateANewCustomerPage createANewCustomerPage = new CreateANewCustomerPage();
 
     //TC_001
     @Given("Click on the Create Date textbox and type the time of account creation")
@@ -111,11 +114,54 @@ public class US14_CreateAccountDateStepDefs {
         String accountInf = manageAccountPage.accountInformation.getText();
         Assert.assertTrue(accountInf.equals("Account"));
 
-        //Hello
 
     }
 
 
+    //demo
+
+    @Given("Type valid SSN {string}")
+    public void type_valid_SSN(String string) {
+
+        createANewCustomerPage.ssnSearch.sendKeys(string);
+        createANewCustomerPage.search.click();
+    }
+
+    @Given("Type Middle Initial {string}")
+    public void type_Middle_Initial(String string) {
+        createANewCustomerPage.middleInitial.sendKeys(string);
+    }
+
+    @Given("Type Phone Number {string}")
+    public void type_Phone_Number(String string) {
+        createANewCustomerPage.phoneNumber.sendKeys(string);
+    }
+
+    @Given("Type zip code {string}")
+    public void type_zip_code(String string) {
+        createANewCustomerPage.zipCode.sendKeys(string);
+    }
+
+    @Given("Type city to city box {string}")
+    public void type_city_to_city_box(String string) {
+       createANewCustomerPage.city.sendKeys(string);
+    }
+
+
+    @Given("Select accounts")
+    public void select_accounts() {
+        createANewCustomerPage.account1.click();
+        Actions actions = new Actions(Driver.getDriver());
+        actions.keyDown(Keys.CONTROL).perform();
+        createANewCustomerPage.account2.click();
+        actions.keyUp(Keys.CONTROL).perform();
+    }
+
+    @Then("click save")
+    public void click_save() {
+        createANewCustomerPage.saveButton.click();
+
+    }
 
 
 

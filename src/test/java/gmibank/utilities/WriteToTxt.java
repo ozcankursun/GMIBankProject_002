@@ -5,6 +5,8 @@ import gmibank.pojos.States;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
+import java.util.List;
+import java.util.Map;
 
 public class WriteToTxt {
     public static void saveDataInFileWithSSN(String fileName, Customer[] customers)  {
@@ -44,10 +46,36 @@ public class WriteToTxt {
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
             for (int i=0; i<states.length; i++){
-                writer.append(states[i].getName()+","+states[i].getCountry()+"\n");
+                writer.append(states[i].getName()+","+states[i].getTpcountry()+"\n");
             }
             writer.close();
         } catch(Exception e){
+        }
+    }
+    public static void saveDataInFileWithJsonListMap(String fileName, List<Map<String,Object>> json) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
+
+            for (int i = 0; i <json.size() ; i++) {
+                writer.append(json.get(i).get("id") + " , " + json.get(i).get("name") + " , " + json.get(i).get("states") + "\n");
+            }
+
+            writer.close();
+        } catch (Exception e) {
+
+        }
+    }
+    public static void saveDataInFileWithJsonListMapState(String fileName, List<Map<String,Object>> json) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
+
+            for (int i = 0; i <json.size() ; i++) {
+                writer.append(json.get(i).get("id") + " , " + json.get(i).get("name") + " , " + json.get(i).get("tpcountry") + "\n");
+            }
+
+            writer.close();
+        } catch (Exception e) {
+
         }
     }
 

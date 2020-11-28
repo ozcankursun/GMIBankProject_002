@@ -61,6 +61,9 @@ public class ManageAccountPage {
     @FindBy(xpath = "//span[.='Account']")
     public WebElement accountInformation;
 
+    @FindBy (xpath = "//span[.='You are not authorized to access this page.']")
+    public WebElement negativeMessage;
+
 
 
 

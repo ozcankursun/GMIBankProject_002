@@ -31,6 +31,9 @@ public class CreateANewCustomerPage {
     @FindBy(id = "search-ssn")
     public WebElement ssnSearch;
 
+    @FindBy(xpath = "//button[@class='btn btn-secondary']")
+    public WebElement search;
+
     @FindBy(name = "firstName")
     public WebElement firstName;
 
@@ -85,9 +88,11 @@ public class CreateANewCustomerPage {
     @FindBy(id = "save-entity")
     public WebElement saveButton;
 
+    @FindBy (xpath = "(//option[.='my first account'])[2]")
+    public WebElement account1;
 
-
-
+    @FindBy (xpath = "//option[.='my second account']")
+    public WebElement account2;
 
 
 }
