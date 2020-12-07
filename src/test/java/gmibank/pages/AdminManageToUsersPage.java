@@ -43,4 +43,6 @@ public class AdminManageToUsersPage {
     @FindBy(xpath = "(//button[@class='btn btn-danger'])[4]")
     public WebElement activateButton1;
 
+
+
 }
